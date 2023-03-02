@@ -1,0 +1,20 @@
+##
+## Manjaro Linux default mirrorlist
+## Generated on 2022-11-10 15:25
+##
+## Please use 'pacman-mirrors -f [NUMBER] [NUMBER]' to modify mirrorlist
+## (Use 0 for all mirrors)
+##
+
+## Country : United_States
+Server = https://mnvoip.mm.fcix.net/manjaro/stable/$repo/$arch
+
+## Country : Netherlands
+Server = https://mirror.koddos.net/manjaro/stable/$repo/$arch
+
+## Country : Poland
+Server = https://ftp.icm.edu.pl/pub/Linux/dist/manjaro/stable/$repo/$arch
+
+## Country : Ukraine
+Server = http://mirrors.colocall.net/manjaro/stable/$repo/$arch
+

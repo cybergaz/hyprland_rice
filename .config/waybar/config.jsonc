@@ -1,0 +1,102 @@
+{
+  "layer": "top",
+  "position": "top",
+  /*"mode": "dock",*/
+  "height": 0,
+
+
+  "modules-left":   ["wlr/workspaces","hyprland/window","custom/player"],
+  "modules-center": ["clock"],
+  "modules-right":  ["tray","network","idle_inhibitor", "cpu" ,"memory", "backlight", "pulseaudio","battery"],
+
+  "wlr/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate"
+  },
+  "hyprland/window": {
+    "format": "{}"
+  },
+  "custom/player": {
+    "exec": "/usr/bin/python3 /home/gaz/.config/waybar/scripts/player.py",
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "playerctl play-pause"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " 👁 👁 " ,
+      "deactivated": " 👁 👁 "
+    }
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 5
+  },
+  "backlight":{
+    "device": "intel_backlight",
+    "format": "{icon}  {percent}",
+    "format-icons": ["🌌","","","","✺","❄️"],
+    "on-scroll-down": "brightnessctl set 1%+",
+    "on-scroll-up": "brightnessctl set 1%-",
+    "min-length": 5 
+  },
+  "cpu":{
+    "format": "🛸  {usage}",
+    "tooltip": true,
+    "on-click": "alacritty -t btop -e btop"
+  },
+  "memory":{
+    "format": "{}  🏔️"
+  },
+  /*"temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },*/
+    "battery": {
+      "states": {
+        "good": 95,
+        "warning": 20,
+        "critical": 10
+      },
+      "format": "{icon}    {capacity}",
+      "format-charging": "⚡   {capacity}",
+      "format-plugged": "⚡   {capacity}",
+      "format-alt": "{time} {icon} ",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+      "format": "{:%R}",
+      "on-click":"alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock",
+      "on-click-right":"$HOME/.config/waybar/scripts/wallpaper.sh"
+    },
+    "network": {
+      "format-wifi": "📡  {essid} ",
+      "format-ethernet": " {essid}",
+      "format-linked": "{ifname} (No IP) ",
+      "format-disconnected": "! Disconnected",
+      "tooltip-format-wifi": "{signalStrength}% | ⬇ {bandwidthDownBits} ⬆ {bandwidthUpBits} | {ipaddr}/{cidr}",
+      "on-click":"alacritty -t nmtui -e nmtui"
+
+    },
+    "pulseaudio": {
+      "format": "{icon}  {volume}",
+      "format-muted": "🔕 Quiet",
+      "on-click": "pavucontrol",
+      "scroll-step": 1,
+      "format-icons": {
+        "headphone": "🧣",
+        "hands-free": "🧣",
+        "headset": "🧣",
+        "phone": "📞",
+        "portable": "📞",
+        "car": "",
+        "default": ["☁️","🌧️","🌨️","⛈️"]
+      }
+    }
+}
