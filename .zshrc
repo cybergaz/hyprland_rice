@@ -1,7 +1,7 @@
 #nitch
 
 ~/scripts/greetings.sh | lolcat
-
+eval "$(zoxide init zsh)"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 
 # Initialization code that may require console input (password prompts, [y/n]
@@ -165,6 +165,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git
 	zsh-autosuggestions
+    nix-zsh-completions
 	web-search)
 
 
@@ -271,6 +272,12 @@ alias hs="history"
 alias nixy="nix-env -iA"
 alias histroy="history"
 alias hisgrep="history | grep"
+
+alias nv="nvim"
+alias se="sudo -E nvim"
+alias nvsu="sudo -E nvim"
+alias nvimsu="sudo -E nvim"
+alias nvimsudo="sudo -E nvim"
 
 
 export MOZ_ENABLE_WAYLAND="1"

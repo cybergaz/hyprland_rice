@@ -12,7 +12,7 @@ italic_font      auto
 bold_italic_font auto
 
 #: You can specify different fonts for the bold/italic/bold-italic
-#. To get a full list of supported fonts use the `kitty
+#: variants. To get a full list of supported fonts use the `kitty
 #: list-fonts` command. By default they are derived automatically, by
 #: the OSes font system. Setting them manually is useful for font
 #: families that have many weight variants like Book, Medium, Thick,
@@ -567,7 +567,7 @@ background #000000
 
 #: The foreground and background colors
 
-background_opacity 0.2
+background_opacity 0.1
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
 #: opaque and 0 is fully transparent.  This will only work if

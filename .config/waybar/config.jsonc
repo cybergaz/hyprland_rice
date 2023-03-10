@@ -5,21 +5,45 @@
   "height": 0,
 
 
-  "modules-left":   ["wlr/workspaces","hyprland/window","custom/player"],
+  "modules-left":   ["wlr/workspaces","custom/player"],
   "modules-center": ["clock"],
   "modules-right":  ["tray","network","idle_inhibitor", "cpu" ,"memory", "backlight", "pulseaudio","battery"],
 
   "wlr/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
-    "on-click": "activate"
-  },
-  "hyprland/window": {
-    "format": "{}"
-  },
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+    "1": "🌐",
+    // "2": "",
+    "10": "",
+    "urgent": "",
+    "active": "",
+    "default": ""
+      },
+     "sort-by-number": true
+      },
+
+  // "hyprland/window": {
+  //   "format": "{}",
+  //     },
+
+    // "wlr/taskbar": {
+    // "format": "{icon}",
+    // "icon-size": 20,
+    // "tooltip-format": "{title}",
+    //     "active-first":true,
+    // "on-click": "activate",
+    // "on-click-middle": "close",
+    // "app_ids-mapping": {
+    //   "firefoxdeveloperedition": "firefox-developer-edition"
+    // }
+    // },
+
   "custom/player": {
     "exec": "/usr/bin/python3 /home/gaz/.config/waybar/scripts/player.py",
-    "format": "{}",
+    "format": "Playing :    {}",
     "return-type": "json",
     "on-click": "playerctl play-pause"
   },
@@ -33,14 +57,6 @@
   "tray": {
     "icon-size": 16,
     "spacing": 5
-  },
-  "backlight":{
-    "device": "intel_backlight",
-    "format": "{icon}  {percent}",
-    "format-icons": ["🌌","","","","✺","❄️"],
-    "on-scroll-down": "brightnessctl set 1%+",
-    "on-scroll-up": "brightnessctl set 1%-",
-    "min-length": 5 
   },
   "cpu":{
     "format": "🛸  {usage}",
@@ -76,7 +92,7 @@
       "on-click-right":"$HOME/.config/waybar/scripts/wallpaper.sh"
     },
     "network": {
-      "format-wifi": "📡  {essid} ",
+      "format-wifi": "🧊  {essid} ",
       "format-ethernet": " {essid}",
       "format-linked": "{ifname} (No IP) ",
       "format-disconnected": "! Disconnected",
@@ -84,19 +100,27 @@
       "on-click":"alacritty -t nmtui -e nmtui"
 
     },
+  "backlight":{
+    "device": "intel_backlight",
+    "format": "{icon}  {percent}",
+    "format-icons": ["🌌","","","","❄️","🪩"],
+    "on-scroll-down": "brightnessctl set 1%+",
+    "on-scroll-up": "brightnessctl set 1%-",
+    "min-length": 5 
+  },
     "pulseaudio": {
       "format": "{icon}  {volume}",
-      "format-muted": "🔕 Quiet",
+      "format-muted": "🔇 sssh..",
       "on-click": "pavucontrol",
       "scroll-step": 1,
       "format-icons": {
-        "headphone": "🧣",
-        "hands-free": "🧣",
-        "headset": "🧣",
+        "headphone": "🎐",
+        "hands-free": "🎐",
+        "headset": "🎐",
         "phone": "📞",
         "portable": "📞",
         "car": "",
-        "default": ["☁️","🌧️","🌨️","⛈️"]
+        "default": ["☁️","🌧️","🌨️","🌩️","⛈️"]
       }
     }
 }

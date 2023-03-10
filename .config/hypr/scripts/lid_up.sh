@@ -1,6 +1,7 @@
 if [ -f /tmp/lid_script_check_up ]
 
 then
+    $HOME/.config/waybar/scripts/caffeine.sh
     hyprctl dispatch dpms on
     sleep 0.4
     $HOME/.config/waybar/scripts/wallpaper.sh

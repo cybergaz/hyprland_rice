@@ -5,18 +5,6 @@
   font-size: 15px;
 }
 
-@keyframes colored-gradient {
-  0% {
-    background-position: 71% 0%;
-  }
-  50% {
-    background-position: 30% 100%;
-  }
-  100% {
-    background-position: 71% 0%;
-  }
-}
-
 
 window#waybar {
 	background : transparent; 
@@ -119,8 +107,8 @@ tooltip {
   opacity:0.7
 }
 #idle_inhibitor.activated {
-  transition-duration: 2s;
-  color: #0fffff;
+  transition-duration: 1.5s;
+  color: #4BBAEC;
   opacity:1
 }
 
@@ -203,13 +191,13 @@ background: linear-gradient(
 }
 
 #custom-player{
-  font-size: 11.5px;
-  color: #0fffff;
+  font-size: 12px;
+  color: #4BBAEC;
   margin: 5px 2.5px;
   background-color : rgba(35, 50, 70,0.4);
   border-radius : 6px;
   box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px;
-  opacity : 0.85;
+  opacity : 0.95;
 
 }
 

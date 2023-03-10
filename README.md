@@ -12,7 +12,7 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 ## Dependencies :
 
 ```
-make wlroots wayland-protocols pkgconf ninja patch catch2-git waybar-hyprland-git brightnessctl pulseaudio-ctl grim slurp sddm hyprland-git 
+make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pulseaudio-ctl grim slurp sddm hyprland-git 
 
 ```
 > systemctl enable sddm ( must before starting your hyprland setup )    
