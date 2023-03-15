@@ -19,7 +19,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 
 ## Additional packages :
-    wofi kitty alacritty nemo ranger mako neofetch nitch btop viewnior swaybg swayidle swaylock-effects waylogout-git swww zoxide 
+    wofi kitty alacritty nemo ranger mako neofetch nitch btop viewnior swaybg swayidle swaylock-effects waylogout-git swww zoxide cliphist wtype wl-clipboard
 
 
 <br>
@@ -74,14 +74,13 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 #### Fonts 
 > Download ttf files and put them in : /usr/local/share/fonts     
 > then give'em necesarry permissions like : chmod 444 , chmod 555    
-> i use 
-
-    yay -S ttf-meslo-nerd ttf-meslo-nerd-font-powerlevel10k
-> or refer to powerlevel10k github readme font section for mesloLGS-nf  fonts
+> 
+>  refer to powerlevel10k github readme font section for mesloLGS-nf  fonts
 
 #### SDDM theme 
 >Download sddm theme you want , and place them at : /usr/share/sddm/themes/         
 >set the theme , at "/usr/lib/sddm/sddm.conf.d/default.conf"        
+>if that doesn't work , check out this place : /etc/sddm.conf.d/
 
 #### GRUB theme
 >Download and place at : /usr/share/grub/themes/            
@@ -101,11 +100,17 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 ### tips
 
-    > install lolcat and figlet via pip instead of pacman
+    > hijack power key's deafult function : /etc/systemd/logind.conf --> HandlePowerKey=ignore
 
-    > hijack power key's deafult function : /etc/systemd/logind.conf.d/ --> HandlePowerKey=ignore
+    > install powertop and tlp   --> for power management        
+    > if you're facing intense pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : "pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git"
 
-    > install powertop and tlp   --> for power management 
+    > for nix packages search : {
+        nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
+        sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
+        nix-channel --update         
+        nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
+    > } 
 
 ### for emoji's stuff
 
