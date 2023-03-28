@@ -12,7 +12,7 @@ window {
     padding-left: 20px;
     color: #fff;
     font-weight: bold;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
     /*background: linear-gradient(90deg, rgba(203,166,247,1) 0%, rgba(245,194,231,1) 100%);
    	outline: none; */
     border-radius:15px;
@@ -54,7 +54,7 @@ window {
 	padding-left : 16px;
 }
 #text:selected {
-    color: #fff;
+    color: #000;
     margin: 0px 0px;
     /* margin-left: 3px; */
     /* border: 2px solid blue; */
@@ -80,6 +80,6 @@ window {
     /* padding-left: 20px; */
     /*border-left: 2px solid #f5c2e7;
     border-right:2px solid #f5c2e7;*/
-    
-    /*background: linear-gradient(45deg, rgba(203,166,247,1) 30%, rgba(245,194,231,1) 100%);*/
+
+    background: linear-gradient(60deg,  #57f2d3 30% ,#47A5FF   90%);
     }

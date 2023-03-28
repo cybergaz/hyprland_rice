@@ -1,7 +1,7 @@
 * {
   border: none;
   font-family: Poppins;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 15px;
 }
 
@@ -23,28 +23,26 @@ tooltip {
   border-radius: 10px;
 }
 #workspaces button {
-  color: #49CCF1;
+  color: #0fffff;
   background-color : rgba(35, 50, 70,0.4);
   margin: 0 5px;
   padding: 0 5px;
   border-radius: 80px;
-  opacity: 0.6;
+  opacity: 0.5;
   transition: all 0.2s ease;
-  box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px;
 }
 
 #workspaces button.active {
   opacity:1;
   transition: all 0.2s ease-in-out;
-  color: white;
-  padding: 0 10px 0 11.5px;
-  border-radius: 50px;
+  color: black;
+  padding: 0 10px;
+  border-radius: 8px;
   background: linear-gradient(
-    60deg,
-    #1441A7,
-    #1441A7,
+    58deg,
     #5261ff,
-    #7C92D0
+    #51e4ff
+
   );
 }
 
@@ -72,8 +70,8 @@ tooltip {
 
 #clock {
   margin: 4px 5px;
-  color: white;
-  border-radius: 50px;
+  color: black;
+  border-radius: 8px;
   padding-top: 2px;
   padding-bottom: 2px;
   box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px;
@@ -81,19 +79,25 @@ tooltip {
   background: linear-gradient(
     58deg,
     #5261ff,
-    #083B96
+    #51e4ff
+
   );
 
 
 }
 
 #network {
-  color: #CFDBFC;
+  color: #a1cfff;
   margin: 4px 2.5px;
-  background-color : rgba(35, 50, 70,0.5);
+  background: linear-gradient(
+    148deg,
+    rgba(35, 50, 90,0.7),
+    rgba(35, 50, 70,0.6)
+
+  );
   box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px;
-  border-radius: 50px;
-  opacity: 0.95;
+  border-radius: 8px;
+  opacity: 1;
 
 }
 
@@ -109,43 +113,62 @@ tooltip {
 }
 
 #cpu{
-  color: #9a9da6;
+  color: #8a8a8a;
   margin: 4px 0;
-  background-color : rgba(35, 50, 70,0.5);
+  background: linear-gradient(
+    148deg,
+    rgba(35, 50, 90,0.7),
+    rgba(35, 50, 70,0.6)
+
+  );
   border-right : none;
-  border-radius: 30px 0px 0px 30px;
-  opacity: 0.95;
+  border-radius: 8px 0px 0px 8px;
+
 }
 
 #memory{
-  color: #9a9da6;
   margin: 4px 0;
-  background-color : rgba(35, 50, 70,0.5);
+  color: #8a8a8a;
+  background: linear-gradient(
+    210deg,
+    rgba(35, 50, 90,0.7),
+    rgba(35, 50, 70,0.6)
+
+  );
   border-left : none;
   margin-right : 8px;
-  border-radius: 0px 30px 30px 0px;
-  opacity: 0.95;
+  border-radius: 0px 8px 8px 0px;
 }
 
 
 #backlight{
-  color: #c1c7de;
   margin: 4px 0;
-  background-color : rgba(35, 50, 70,0.5);
-  opacity:0.95;
+  background: linear-gradient(
+    148deg,
+    rgba(35, 50, 90,0.7),
+    rgba(35, 50, 70,0.6)
+
+  );
+  opacity:0.9;
+  color: #a1cfff;
   border-right: none;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 
 #pulseaudio {
-  color: #c1c7de;
   margin: 4px 0;
   padding-left: 3px;
-  background-color : rgba(35, 50, 70,0.5);
-  opacity:0.95;
+  background: linear-gradient(
+    210deg,
+    rgba(35, 50, 90,0.7),
+    rgba(35, 50, 70,0.6)
+
+  );
+  opacity:0.9;
+  color: #a1cfff;
   border-left: none;
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 0px 8px 8px 0px;
 
 }
 #pulseaudio.muted {
@@ -154,29 +177,22 @@ tooltip {
 #battery{
   margin: 4px 8px;
   
-  background: linear-gradient(
+background: linear-gradient(
     58deg,
     #5261ff,
-    #083B96
+    #51e4ff
+
   );
 
 
-  color: white;
-  border-radius: 50px;
+  color: black;
+  border-radius: 8px;
   box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px;
-}
-#battery.charging {
-background: linear-gradient(
-    60deg,
-    #0B6B81,
-    #18BE7F
-  );
-
 }
 
 #custom-player{
   font-size: 12px;
-  color: #C3BAF8;
+  color: #4BBAEC;
   margin: 5px 2.5px;
   background-color : rgba(35, 50, 70,0.4);
   border-radius : 6px;
@@ -185,3 +201,13 @@ background: linear-gradient(
 
 }
 
+#window {
+  font-size: 11.5px;
+  padding: 0px 10px;
+  margin: 5px 5px;
+  color : whitesmoke;
+  border-radius : 6px;
+  background-color : rgba(35, 50, 70,0.6);
+  box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px;
+  opacity: 0.85
+}

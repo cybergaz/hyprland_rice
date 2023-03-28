@@ -15,7 +15,7 @@ video/x-flv=mpv.desktop
 video/x-ms-wmv=mpv.desktop
 video/x-ogm+ogg=mpv.desktop
 video/x-theora+ogg=mpv.desktop
-x-scheme-handler/tg=org.telegram.desktop.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-PWJY11.desktop
 text/html=firefox.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
@@ -36,7 +36,7 @@ x-scheme-handler/fleet=jetbrains-fleet.desktop
 x-scheme-handler/mailspring=Mailspring.desktop
 
 [Added Associations]
-x-scheme-handler/tg=userapp-Telegram Desktop-EAXNQ1.desktop;org.telegram.desktop.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-EAXNQ1.desktop;org.telegram.desktop.desktop;userapp-Telegram Desktop-PWJY11.desktop;
 x-scheme-handler/http=firefox.desktop;firefoxdeveloperedition.desktop;
 x-scheme-handler/https=firefox.desktop;firefoxdeveloperedition.desktop;
 x-scheme-handler/chrome=firefox.desktop;firefoxdeveloperedition.desktop;

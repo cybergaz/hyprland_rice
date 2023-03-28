@@ -84,14 +84,14 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 #### GRUB theme
 >Download and place at : /usr/share/grub/themes/            
->then just edit /etc/default/grub : GRUB_THEME="/usr/share/grub/themes/whitesur/theme.txt"      
+>then just edit /etc/default/grub : GRUB_THEME="/usr/share/grub/themes/{theme_name}/theme.txt"      
 >a lil grub-update and you are good to go           
 
 <br>
 
 ## extras :
 
-### pkgs
+### pkgs// here if you don't clone the value here and passes directly then the
 
     mtpfs   --> for media transfer protocol
     jmtpfs --> for later version supports
@@ -111,6 +111,15 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
         nix-channel --update         
         nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
     > } 
+    >   
+    > to get rid of shutdown related errors -> 
+    > head to the /etc/systemd/system.conf 
+    > and overwrite these line -> 
+    > DefaultTimeoutStartSec=1s
+    > DefaultTimeoutStopSec=1s
+    > DefaultTimeoutAbortSec=
+    > DefaultDeviceTimeoutSec=1s
+
 
 ### for emoji's stuff
 
