@@ -15,6 +15,7 @@
     "network",
     "idle_inhibitor",
     "cpu",
+    // "temperature",
     "memory",
     "backlight",
     "pulseaudio",
@@ -74,14 +75,18 @@
   "memory": {
     "format": "{}  🏔️"
   },
-  /*"temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
-    },*/
+  "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C {icon}",
+    "format": "{temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
   "battery": {
     "states": {
       "good": 95,
@@ -102,6 +107,7 @@
   },
   "clock": {
     "format": "{:%R}",
+    // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "on-click": "alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock",
     "on-click-right": "$HOME/.config/waybar/scripts/wallpaper.sh"
   },
@@ -118,12 +124,23 @@
     "format": "{icon}  {percent}",
     "format-icons": [
       "🌌",
-      "",
-      "",
-      "",
-      "❄️",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
       "🪩"
     ],
+    // "format-icons": [
+    //   "🌌",
+    //   "",
+    //   "",
+    //   "",
+    //   "❄️",
+    //   "🪩"
+    // ],
     "on-scroll-down": "brightnessctl set 1%+",
     "on-scroll-up": "brightnessctl set 1%-",
     "min-length": 5
