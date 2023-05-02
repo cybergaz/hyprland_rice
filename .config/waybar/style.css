@@ -12,7 +12,7 @@ window#waybar {
 
 tooltip {
   color: black;
-  background-color : rgba(255, 255, 255,0.4);
+  background-color : rgba(200, 200, 230,0.9);
   border-radius: 10px;
 }
 
@@ -25,15 +25,19 @@ tooltip {
 
 /* text-align: center; */
 /* } */
-#workspaces * {
+#workspaces{
   /* font-family: Poppins; */
+  /* background-color : rgba(170, 170, 170,0.1); */
+  margin-left: 5px;
+  border-radius: 80px;
+  border: 0.2px solid rgba(170, 170, 170,0.5);
   /* font-weight: 600; */
 }
 #workspaces button {
-  color: #49CCF1;
+  color: white;
   opacity: 0.7;
-  margin: 0px 0 0 3px; 
-  padding: 1.5px 10px;
+  margin: 0px 0 0 0px; 
+  padding: 0px 9px;
   transition: all 0.5s ease-in-out;
   border: 0.1px solid rgba(0,0,0,0.2);
   /* border-color: cyan; */
@@ -43,11 +47,12 @@ tooltip {
 }
 #workspaces button.active {
   transition: all 0.5s ease-in-out;
-  border: 0.1px solid cyan;
+  /* border: 0.1px solid cyan; */
   opacity: 1;
-  border-radius: 8px;
-  color: cyan;
-  background-color : rgba(0, 0, 0,0.4);
+  /* border-radius: 8px; */
+  color: white;
+  background-color : rgba(170, 170, 170,0.2);
+  border-radius: 80px;
   /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
 
 }
@@ -58,16 +63,16 @@ tooltip {
 }
 
 #clock {
-  color: cyan;
-  background-color : rgba(0, 0, 0,0.4);
+  color: white;
+  /* background-color : rgba(0, 0, 0,0.4); */
   /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
   border-radius: 8px;
   padding: 2px 8px 0px 8px;
-  border: 0.1px solid cyan;
+  /* border: 0.1px solid cyan; */
 }
 
 #tray {
-  background-color : rgba(255, 255, 255,0.4);
+  background-color : rgba(170, 170, 170,0.3);
   margin-right: 10px;
   padding: 0 8px;
   border-radius: 8px;
@@ -75,15 +80,15 @@ tooltip {
 
 #network {
   color: white;
-  background-color : rgba(170, 170, 170,0.1);
-  border-radius: 8px;
+  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border-radius: 90px;
   padding: 0 8px;
 
 }
 
 #idle_inhibitor {
   margin: 0 2px;
-  color: black;
+  color:  rgba(170, 170, 170,0.4);
   opacity: 0.7;
 }
 #idle_inhibitor.activated {
@@ -95,8 +100,8 @@ tooltip {
 #cpu {
   padding: 0 8px;
   color: white;
-  background-color : rgba(170, 170, 170,0.1);
-  border-radius: 8px 0 0 8px;
+  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border-radius: 80px 0 0 80px;
   border-right: none;
   opacity: 0.9;
 }
@@ -104,9 +109,9 @@ tooltip {
 #memory {
   padding: 0 8px;
   color: white;
-  background-color : rgba(170, 170, 170,0.1);
-  border-radius: 0 8px 8px 0;
-  border-right: none;
+  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border-radius: 0 80px 80px 0;
+  border-left: none;
   opacity: 0.9;
 
 }
@@ -115,8 +120,8 @@ tooltip {
   margin-left: 5px ;
   padding: 0 8px;
   color: white;
-  background-color : rgba(170, 170, 170,0.1);
-  border-radius: 8px 0 0 8px;
+  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border-radius: 80px 0 0 80px;
   border-right: none;
   opacity: 0.9;
 }
@@ -124,33 +129,30 @@ tooltip {
 #pulseaudio {
   padding: 0 8px;
   color: white;
-  background-color : rgba(170, 170, 170,0.1);
-  border-radius: 0 8px 8px 0;
-  border-right: none;
+  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border-radius: 0 80px 80px 0;
+  border-left: none;
   opacity: 0.9;
 
 }
 
 #battery {
-  color: cyan;
+  color: white;
   margin-left: 5px;
   margin-right: 3px;
-  padding: 0 8px;
-  background-color : rgba(0, 0, 0,0.4);
-  border-radius: 8px;
-  border: 0.1px solid cyan;
-  
-  
+  padding: 0 10px;
+  border-radius: 80px;
+  background-color : rgba(170, 170, 170,0.1);
 }
 
-#battery.charging {
+#battery.plugged {
   transition: all 1s ease-in-out;
-  border: none;
-  color: white;
-  background: linear-gradient(
-    60deg,
-    #0b6b81,
-    #18be7f
+  border: 0.2px solid rgba(170, 170, 170,0.6);
+  background: radial-gradient(
+    /* 60deg, */
+    rgba(33, 234, 150,0.5),
+    transparent
+    /* rgba(170, 170, 170,0.2) */
   );
 
 }

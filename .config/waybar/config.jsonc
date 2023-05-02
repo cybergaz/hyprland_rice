@@ -106,13 +106,13 @@
     ]
   },
   "clock": {
-    "format": "{:%R}",
+    "format": "{:%H:%M  %a %d %B}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "on-click": "alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock",
     "on-click-right": "$HOME/.config/waybar/scripts/wallpaper.sh"
   },
   "network": {
-    "format-wifi": "🧊  {essid} ",
+    "format-wifi": "  {essid} ",
     "format-ethernet": " {essid}",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "! Disconnected",
