@@ -1,6 +1,6 @@
 if [ -f /tmp/lid_script_check_down ]; then
 	hyprctl dispatch dpms off
-	# $HOME/.config/waybar/scripts/caffeine.sh
+	$HOME/.config/waybar/scripts/caffeine.sh
 #     rm -rf /tmp/hyprctl_log
 #     hyprctl clients | grep Window >> /tmp/hyprctl_log
 #
