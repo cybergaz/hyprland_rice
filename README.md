@@ -112,6 +112,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 >hijack power key,lid, idle related actions : /etc/systemd/logind.conf 
 <br>
+
 >install powertop and tlp   --> for power management    
 
 >if you're facing intense pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : "pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git"
