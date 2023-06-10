@@ -42,19 +42,19 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 ## Theming :
 
 #### GTK theme 
->Download your fav theme and place the theme folder at : /usr/share/themes/         
+>Download your fav theme and place the theme folder at : `/usr/share/themes/`         
 > i just use        
 
     yay -S layan-gtk-theme-git
 >to set it up , just run        
     
     gsettings set org.gnome.desktop.interface gtk-theme Layan-Dark
->for dark theme , you have to make changes at your : ~/.config/gtk-3.0/settings.ini         
->settings.ini -->  gtk-application-prefer-dark-theme=true  &  gtk-theme-name=Layan-Dark         
+>for dark theme , you have to make changes at your : `~/.config/gtk-3.0/settings.ini`         
+>settings.ini -->  `gtk-application-prefer-dark-theme=true`  &  `gtk-theme-name=Layan-Dark`         
 
 #### GTK icons 
 
->Download and place in /usr/share/icon   ( i use Kora btw )    
+>Download and place in `/usr/share/icon`   ( i use Kora btw )    
     
     yay -S kora-icon-theme
 >and then just run          
@@ -62,30 +62,30 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     gsettings set org.gnome.desktop.interface icon-theme {theme-folder}
 
 #### cursor theme 
-> Download and put them in : /usr/share/icons/          
+> Download and put them in : `/usr/share/icons/`          
 >i use          
 
     yay -S catppuccin-mocha-dark-cursors 
->and then edit "/usr/share/icons/default/index.theme"           
+>and then edit `/usr/share/icons/default/index.theme`           
 >and also       
 
     gsettings set org.gnome.desktop.interface cursor-theme {theme-folder}
  
 #### Fonts 
-> Download ttf files and put them in : /usr/local/share/fonts     
-> then give'em necesarry permissions like : chmod 444 , chmod 555    
+> Download ttf files and put them in : `/usr/local/share/fonts`     
+> then give'em necesarry permissions like : `chmod 444 and 555`    
 > 
 >  refer to powerlevel10k github readme font section for mesloLGS-nf  fonts
 
 #### SDDM theme 
->Download sddm theme you want , and place them at : /usr/share/sddm/themes/         
->set the theme , at "/usr/lib/sddm/sddm.conf.d/default.conf"        
->if that doesn't work , check out this place : /etc/sddm.conf.d/
+>Download sddm theme you want , and place them at : `/usr/share/sddm/themes/`         
+>set the theme , at `/usr/lib/sddm/sddm.conf.d/default.conf`        
+>if that doesn't work , check out this place : `/etc/sddm.conf.d/`
 
 #### GRUB theme
->Download and place at : /usr/share/grub/themes/            
->then just edit /etc/default/grub : GRUB_THEME="/usr/share/grub/themes/{theme_name}/theme.txt"      
->a lil grub-update and you are good to go           
+>Download and place at : `/usr/share/grub/themes/`            
+>then just edit `/etc/default/grub` : GRUB_THEME=`/usr/share/grub/themes/{theme_name}/theme.txt`      
+>a lil `grub-update` and you are good to go           
 
 <br>
 
@@ -111,15 +111,15 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 ### Tips
 
->hijack power key,lid, idle related actions : /etc/systemd/logind.conf 
+>hijack power key,lid, idle related actions : `/etc/systemd/logind.conf`
 
->install powertop and tlp   --> for power management    
+>install `powertop and tlp`   --> for power management    
 
->if you're facing pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
+>if you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
 
     pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
 
-##### for nix packages search :    
+>for nix packages search :    
   
     nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
     sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
@@ -127,7 +127,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
 
 >to get rid of that 90s shutdown issue :   
->  head to the `/etc/systemd/system.conf` and overwrite these line -> 
+>head to the `/etc/systemd/system.conf` and overwrite these line -> 
 ```
 DefaultTimeoutStartSec=1s
 DefaultTimeoutStopSec=1s
