@@ -2,7 +2,7 @@
   border: none;
   font-family: comfortaa;
   font-weight: 800;
-  /* font-size: 14.5px; */
+  /* font-size: 13.5px; */
 }
 
 window#waybar {
@@ -30,9 +30,10 @@ tooltip {
   /* background-color : rgba(170, 170, 170,0.1); */
   margin-left: 5px;
   border-radius: 80px;
-  border: 0.2px solid rgba(170, 170, 170,0.5);
+  border: 0.3px solid rgba(170, 170, 170,0.5);
   /* font-weight: 600; */
 }
+
 #workspaces button {
   color: white;
   opacity: 0.7;
@@ -45,6 +46,7 @@ tooltip {
 
   
 }
+
 #workspaces button.active {
   transition: all 0.5s ease-in-out;
   /* border: 0.1px solid cyan; */
@@ -56,6 +58,7 @@ tooltip {
   /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
 
 }
+
 #custom-player{
   margin: 0 8px;
   opacity : 0.95;
@@ -80,7 +83,7 @@ tooltip {
 
 #network {
   color: white;
-  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border: 0.4px solid rgba(170, 170, 170,0.6);
   border-radius: 90px;
   padding: 0 8px;
 
@@ -100,7 +103,7 @@ tooltip {
 #cpu {
   padding: 0 8px;
   color: white;
-  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border: 0.3px solid rgba(170, 170, 170,0.6);
   border-radius: 80px 0 0 80px;
   border-right: none;
   opacity: 0.9;
@@ -109,7 +112,7 @@ tooltip {
 #memory {
   padding: 0 8px;
   color: white;
-  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border: 0.3px solid rgba(170, 170, 170,0.6);
   border-radius: 0 80px 80px 0;
   border-left: none;
   opacity: 0.9;
@@ -120,7 +123,7 @@ tooltip {
   margin-left: 5px ;
   padding: 0 8px;
   color: white;
-  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border: 0.3px solid rgba(170, 170, 170,0.6);
   border-radius: 80px 0 0 80px;
   border-right: none;
   opacity: 0.9;
@@ -129,7 +132,7 @@ tooltip {
 #pulseaudio {
   padding: 0 8px;
   color: white;
-  border: 0.2px solid rgba(170, 170, 170,0.6);
+  border: 0.3px solid rgba(170, 170, 170,0.6);
   border-radius: 0 80px 80px 0;
   border-left: none;
   opacity: 0.9;
@@ -142,7 +145,7 @@ tooltip {
   margin-right: 3px;
   padding: 0 10px;
   border-radius: 80px;
-  background-color : rgba(170, 170, 170,0.1);
+  background-color : rgba(170, 170, 170,0.16);
 }
 
 #battery.plugged {

@@ -58,6 +58,8 @@
   },
   "idle_inhibitor": {
     "format": "{icon}",
+    // "on-click": "hyprctl reload ; notify-send 'lid down sleep DISABLED..'",
+    // "on-click-right": "hyprctl --batch 'keyword bindl ,switch:on:Lid Switch,exec,systemctl suspend ; keyword bindl ,switch:off:Lid Switch,exec,notify-send 𝕎 𝕖 𝕝 𝕔 𝕠 𝕞 𝕖  𝔹 𝕒 𝕔 𝕜  𝔾 𝕒 𝕫 ' ; notify-send 'lid down sleep ENABLED again...'",
     "format-icons": {
       "activated": " 👁 👁 ",
       "deactivated": " 👁 👁 "
@@ -106,13 +108,14 @@
     ]
   },
   "clock": {
-    "format": "{:%H:%M  %a %d %B}",
+    "interval": 1,
+    "format": "{:%H:%M:%S  %a %d %B}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "on-click": "alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock",
     "on-click-right": "$HOME/.config/waybar/scripts/wallpaper.sh"
   },
   "network": {
-    "format-wifi": "  {essid} ",
+    "format-wifi": "   {essid} ",
     "format-ethernet": " {essid}",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "! Disconnected",

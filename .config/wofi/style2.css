@@ -2,6 +2,9 @@ window {
     margin: 0px;
     padding-bottom:8px;
     background-color: transparent;
+    font-family: "comfortaa";
+    /* font-weight: 200; */
+    font-size: 14px;
 }
 
 #input {

@@ -15,7 +15,7 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pulseaudio-ctl grim slurp sddm hyprland-git 
 
 ```
-> systemctl enable sddm ( must before starting your hyprland setup )    
+> systemctl enable sddm ( must before restarting to hyprland )    
 
 
 ## Additional packages :
@@ -89,20 +89,21 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 <br>
 
-## extras :
+## Extras :
 
-### pkgs// here if you don't clone the value here and passes directly then the
+### pkgs
 
     mtpfs   --> for media transfer protocol
     jmtpfs --> for later version supports
     gvfs-mtp --> for automount and all ( usb android file transfer )
     gvfs-gphoto2  --> for picture transfer protocol
 
-### tips
+### Tips
 
-    > hijack power key's deafult function : /etc/systemd/logind.conf --> HandlePowerKey=ignore
+>hijack power key,lid, idle related actions : /etc/systemd/logind.conf 
+<br>
+> install powertop and tlp   --> for power management    
 
-    > install powertop and tlp   --> for power management        
     > if you're facing intense pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : "pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git"
 
     > for nix packages search : {
@@ -112,7 +113,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
         nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
     > } 
     >   
-    > to get rid of shutdown related errors -> 
+    > to get rid of that 90s shutdown issue -> 
     > head to the /etc/systemd/system.conf 
     > and overwrite these line -> 
     > DefaultTimeoutStartSec=1s
@@ -134,3 +135,4 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
     # ______________Environment Variables
     > /etc/environment
+    > change your locale language , location etc.. here : /etc/locale.conf

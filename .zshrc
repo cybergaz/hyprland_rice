@@ -165,7 +165,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git
 	zsh-autosuggestions
-    nix-zsh-completions
 	web-search)
 
 
@@ -226,8 +225,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias cpr='rsync -ah --progress'
 alias rat='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
-alias ss="shutdown now"
-alias sr="reboot"
 
 alias zshrc="nvim ~/.zshrc"
 alias spd="speedtest"
@@ -267,17 +264,14 @@ function usbmount() {
 
 alias cin="xclip -selection c"
 alias cout="xclip -selection clipboard -o"
-alias gittoken="xclip -selection clipboard $HOME/Desktop/workspace/my_token"
+alias gittoken="cat $HOME/Desktop/workspace/my_token | wl-copy -n"
 alias hs="history"
 alias nixy="nix-env -iA"
 alias histroy="history"
 alias hisgrep="history | grep"
+alias pacgrep="pacman -Q | rg"
 
 alias nv="nvim"
-alias se="sudo -E nvim"
-alias nvsu="sudo -E nvim"
-alias nvimsu="sudo -E nvim"
-alias nvimsudo="sudo -E nvim"
 
 
 export MOZ_ENABLE_WAYLAND="1"
@@ -298,3 +292,4 @@ PROMPT_EOL_MARK=''
 export PATH=$PATH:$HOME/.spicetify
 : undercover && export PS1='C:${PWD//\//\\}> '
 : undercover && new_line_before_prompt=no
+export PATH=$PATH:/home/gaz/.spicetify
