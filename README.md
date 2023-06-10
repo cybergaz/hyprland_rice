@@ -128,7 +128,6 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 >to get rid of that 90s shutdown issue :   
 >  head to the `/etc/systemd/system.conf` and overwrite these line -> 
- 
 ```
 DefaultTimeoutStartSec=1s
 DefaultTimeoutStopSec=1s
