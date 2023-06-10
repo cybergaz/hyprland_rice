@@ -119,7 +119,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
     pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
 
-#### for nix packages search :    
+###### for nix packages search :    
   
     nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
     sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
