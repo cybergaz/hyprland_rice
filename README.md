@@ -98,13 +98,23 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     gvfs-mtp --> for automount and all ( usb android file transfer )
     gvfs-gphoto2  --> for picture transfer protocol
 
+
+### for emoji's stuff
+
+    yay -S wtype wl-clipboard ttf-twemoji-color noto-fonts-emoji
+    
+    git clone https://github.com/cybergaz/scripts.git
+    cd scripts/wofi-emoji
+    sudo cp wofi-emoji /usr/bin/
+
+
 ### Tips
 
 >hijack power key,lid, idle related actions : /etc/systemd/logind.conf 
 <br>
-> install powertop and tlp   --> for power management    
+>install powertop and tlp   --> for power management    
 
-    > if you're facing intense pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : "pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git"
+>if you're facing intense pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : "pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git"
 
     > for nix packages search : {
         nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
@@ -121,14 +131,6 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     > DefaultTimeoutAbortSec=
     > DefaultDeviceTimeoutSec=1s
 
-
-### for emoji's stuff
-
-    yay -S wtype wl-clipboard ttf-twemoji-color noto-fonts-emoji
-    
-    git clone https://github.com/cybergaz/scripts.git
-    cd scripts/wofi-emoji
-    sudo cp wofi-emoji /usr/bin/
 
 
 ### Only For My short-term memory 📝
