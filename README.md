@@ -91,14 +91,6 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 ## Extras :
 
-### pkgs
-
-    mtpfs   --> for media transfer protocol
-    jmtpfs --> for later version supports
-    gvfs-mtp --> for automount and all ( usb android file transfer )
-    gvfs-gphoto2  --> for picture transfer protocol
-
-
 ### for emoji's stuff
 
     yay -S wtype wl-clipboard ttf-twemoji-color noto-fonts-emoji
@@ -108,34 +100,37 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     sudo cp wofi-emoji /usr/bin/
 
 
+### pkgs
+
+    mtpfs   --> for media transfer protocol
+    jmtpfs --> for later version supports
+    gvfs-mtp --> for automount and all ( usb android file transfer )
+    gvfs-gphoto2  --> for picture transfer protocol
+
+
+
 ### Tips
 
 >hijack power key,lid, idle related actions : /etc/systemd/logind.conf 
-<br>
 
 >install powertop and tlp   --> for power management    
 
->if you're facing intense pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : "pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git"
+>if you're facing pulseaudio & bluetooth related issue then : uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
 
-    > for nix packages search : {
-        nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
-        sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
-        nix-channel --update         
-        nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
-    > } 
-    >   
-    > to get rid of that 90s shutdown issue -> 
-    > head to the /etc/systemd/system.conf 
-    > and overwrite these line -> 
-    > DefaultTimeoutStartSec=1s
-    > DefaultTimeoutStopSec=1s
-    > DefaultTimeoutAbortSec=
-    > DefaultDeviceTimeoutSec=1s
+    pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
+
+>for nix packages search :    
+  
+    nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
+    sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
+    nix-channel --update         
+    nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
+
+>to get rid of that 90s shutdown issue :   
+>  head to the `/etc/systemd/system.conf` and overwrite these line -> 
+    ```DefaultTimeoutStartSec=1s
+    DefaultTimeoutStopSec=1s
+    DefaultTimeoutAbortSec=
+    DefaultDeviceTimeoutSec=1s```
 
 
-
-### Only For My short-term memory 📝
-
-    # ______________Environment Variables
-    > /etc/environment
-    > change your locale language , location etc.. here : /etc/locale.conf
