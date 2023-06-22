@@ -12,14 +12,14 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 ## Dependencies :
 
 ```
-make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pulseaudio-ctl grim slurp sddm hyprland-git 
+make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr grim slurp sddm hyprland-git 
 
 ```
 > systemctl enable sddm ( must before restarting to hyprland )    
 
 
 ## Additional packages :
-    wofi kitty alacritty nemo ranger mako neofetch nitch btop viewnior swaybg swayidle swaylock-effects waylogout-git swww zoxide cliphist wtype wl-clipboard
+    wofi kitty alacritty nemo ranger mako neofetch nitch btop viewnior swaybg swayidle swaylock-effects waylogout-git swww zoxide cliphist wtype wl-clipboard polkit-gnome
 
 
 <br>
@@ -112,12 +112,15 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 ### Tips
 
 >hijack power key,lid, idle related actions : `/etc/systemd/logind.conf`
+---
 
 >install `powertop and tlp`   --> for power management    
+---
 
 >if you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
 
     pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
+---
 
 >for nix packages search :    
   
@@ -125,6 +128,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
     nix-channel --update         
     nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
+---
 
 >to get rid of that 90s shutdown issue :   
 >head to the `/etc/systemd/system.conf` and overwrite these line -> 
@@ -134,5 +138,25 @@ DefaultTimeoutStopSec=1s
 DefaultTimeoutAbortSec=
 DefaultDeviceTimeoutSec=1s
 ```
+---
 
+>switching from `pulseaudio` to `pipewire`  
+>install necessary packages   
+```
+sudo yay -S pipewire pipewire-alsa pipewire-pulse pipewire-jack
+```
+>Stop the PulseAudio services and enable pipewire services: 
+```
+systemctl --user stop pulseaudio.socket
+systemctl --user stop pulseaudio.service
+systemctl --user disable pulseaudio.socket
+systemctl --user disable pulseaudio.service
 
+systemctl --user enable pipewire.socket
+systemctl --user enable pipewire.service
+systemctl --user start pipewire.socket
+systemctl --user start pipewire.service
+```
+---
+
+>if you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` in using pavucontrol
