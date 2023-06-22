@@ -143,7 +143,7 @@ DefaultDeviceTimeoutSec=1s
 >switching from `pulseaudio` to `pipewire`  
 >install necessary packages   
 ```
-sudo yay -S pipewire pipewire-alsa pipewire-pulse pipewire-jack
+yay -S pipewire pipewire-alsa pipewire-pulse pipewire-jack
 ```
 >Stop the PulseAudio services and enable pipewire services: 
 ```
@@ -159,4 +159,4 @@ systemctl --user start pipewire.service
 ```
 ---
 
->if you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` in using pavucontrol
+>if you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol
