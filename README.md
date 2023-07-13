@@ -11,10 +11,10 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 <br>
 
 ___
+
 <div style="text-align: center;">
 
 quick setup 
-===========
 
 </div>
 
