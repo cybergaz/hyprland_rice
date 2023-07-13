@@ -8,7 +8,7 @@
 
 Main purpose of this README is , I usually just forget what changes I've done , so ...    
 
-<div style="text-align: center;">
+<div align="center">
 # My Centered Heading
 </div>
 
