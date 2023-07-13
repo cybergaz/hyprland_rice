@@ -19,10 +19,10 @@ quick setup
 **To setup most of the things at ones :**
 <br>
 *either*
-> clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts)
+clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts)
 
 *or*
-> just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
+just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
 
 </div>
 
@@ -39,8 +39,7 @@ ___
 make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr grim slurp sddm hyprland-git 
 
 ```
-> systemctl enable sddm ( must before restarting to hyprland )    
-
+<br>
 
 ## Additional packages :
     wofi kitty alacritty nemo ranger mako neofetch nitch btop viewnior swaybg swayidle swaylock-effects waylogout-git swww zoxide cliphist wtype wl-clipboard polkit-gnome
@@ -48,11 +47,13 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 <br>
 
-## Screen sharing / recording issue
-> remove every package named xdg-desktop-portal-* , check em by :  
+### Screen sharing / recording issue
+remove every package named xdg-desktop-portal-* , check em by :
+<br>
     
     pacman -Q | grep xdg-desktop-portal-
-> now just install : 
+now just install :
+<br>
 
     yay -S pipewire wireplumber xdg-desktop-portal-hyprland-git
 
@@ -60,7 +61,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 [someone's notes](https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580)
 
     
-## Setup a polkit agent 
+### Setup a polkit agent 
     yay -S polkit-gnome
 >and then just initiate it at your hyprland exec section        
 
