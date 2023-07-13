@@ -8,15 +8,14 @@
 
 Main purpose of this README is , I usually just forget what changes I've done , so ...    
 
-<div align="center">
-# My Centered Heading
-</div>
-
 <br>
 
 ___
+<div align="center">
+
 quick setup
 ===========
+
 **To setup most of the things at ones :**
 <br>
 *either*
@@ -24,6 +23,8 @@ quick setup
 
 *or*
 > just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
+
+</div>
 
 ___
 
