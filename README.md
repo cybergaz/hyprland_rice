@@ -19,9 +19,11 @@ quick setup
 **To setup most of the things at ones :**
 <br>
 *either*
+<br>
 clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts)
 
 *or*
+<br>
 just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
 
 </div>
