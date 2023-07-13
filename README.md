@@ -11,7 +11,8 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 <br>
 
 ___
-### quick setup
+quick setup 
+===========
 **To setup most of the things at ones :**
 <br>
 *either*
@@ -22,6 +23,10 @@ ___
 
 ___
 
+
+<br>
+
+<br>
 
 ## Required packages (mostly afaik) :
 
