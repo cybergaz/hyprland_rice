@@ -43,31 +43,31 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 #### GTK theme 
 >Download your fav theme and place the theme folder at : `/usr/share/themes/`         
-> i just use        
+> > i just use        
 
     yay -S layan-gtk-theme-git
->to set it up , just run        
+> > to set it up , just run        
     
     gsettings set org.gnome.desktop.interface gtk-theme Layan-Dark
->for dark theme , you have to make changes at your : `~/.config/gtk-3.0/settings.ini`         
->settings.ini -->  `gtk-application-prefer-dark-theme=true`  &  `gtk-theme-name=Layan-Dark`         
+> for dark theme , you have to make changes at your : `~/.config/gtk-3.0/settings.ini`         
+> > settings.ini -->  `gtk-application-prefer-dark-theme=true`  &  `gtk-theme-name=Layan-Dark`         
 
 #### GTK icons 
 
 >Download and place in `/usr/share/icon`   ( i use Kora btw )    
     
     yay -S kora-icon-theme
->and then just run          
+> >and then just run          
     
     gsettings set org.gnome.desktop.interface icon-theme {theme-folder}
 
 #### cursor theme 
 > Download and put them in : `/usr/share/icons/`          
->i use          
+> >i use          
 
     yay -S catppuccin-mocha-dark-cursors 
->and then edit `/usr/share/icons/default/index.theme`           
->and also       
+> >and then edit `/usr/share/icons/default/index.theme`           
+> >and also       
 
     gsettings set org.gnome.desktop.interface cursor-theme {theme-folder}
  
