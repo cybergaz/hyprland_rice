@@ -51,7 +51,7 @@
   // }
   // },
   "custom/player": {
-    "exec": "/usr/bin/python3 /home/gaz/.config/waybar/scripts/player.py",
+    "exec": "/usr/bin/python3 ~/scripts/waybar/player.py",
     "format": "Playing :    {}",
     "return-type": "json",
     "on-click": "playerctl play-pause"
@@ -112,7 +112,7 @@
     "format": "{:%H:%M:%S  %a %d %B}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "on-click": "alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock",
-    "on-click-right": "$HOME/.config/waybar/scripts/wallpaper.sh"
+    "on-click-right": "$HOME/scripts/waybar/wallpaper.sh"
   },
   "network": {
     "format-wifi": "   {essid} ",

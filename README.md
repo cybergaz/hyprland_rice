@@ -8,8 +8,14 @@
 
 Main purpose of this README is , I usually just forget what changes I've done , so ...    
 
+#### quick setup
+to setup most of the things at ones :   
+either clone this repo to your home dir and execute `hypr_setup.sh` : [link](https://github.com/cybergaz/scripts)    
+> or
+just copy paste entire script in your terminal : [link](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
 
-## Dependencies :
+
+## Required packages (mostly afaik) :
 
 ```
 make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr grim slurp sddm hyprland-git 
@@ -25,12 +31,15 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 <br>
 
 ## Screen sharing / recording issue
-    yay -S pipewire wireplumber
->then remove every package named xdg-desktop-portal-*    
+> remove every package named xdg-desktop-portal-* , check em by :  
+    
+    pacman -Q | grep xdg-desktop-portal-
+> now just install : 
 
-    yay -S xdg-desktop-portal-wlr
+    yay -S pipewire wireplumber xdg-desktop-portal-hyprland-git
 
->https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580      
+> more detailed docs :
+[link](https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580)
 
     
 ## Setup a polkit agent 
@@ -42,7 +51,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 ## Theming :
 
 #### GTK theme 
->Download your fav theme and place the theme folder at : `/usr/share/themes/`         
+>Download your fav theme and place the theme folder at : `/usr/share/themes/` or `.local/share/fonts`    
 > > i just use        
 
     yay -S layan-gtk-theme-git

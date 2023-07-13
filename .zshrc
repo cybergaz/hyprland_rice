@@ -240,10 +240,7 @@ function workspace() {
 	"$HOME/Desktop/workspace/$1" 
 
 }
-function learnspace() {
-	"$HOME/Desktop/learnspace/$1" 
 
-}
 function confg(){
 	"$HOME/.config/$1"
 }
@@ -265,7 +262,6 @@ function usbmount() {
 alias cin="xclip -selection c"
 alias cout="xclip -selection clipboard -o"
 alias gittoken="cat $HOME/Desktop/workspace/my_token | wl-copy -n"
-alias hs="history"
 alias nixy="nix-env -iA"
 alias histroy="history"
 alias hisgrep="history | grep"
@@ -293,3 +289,4 @@ export PATH=$PATH:$HOME/.spicetify
 : undercover && export PS1='C:${PWD//\//\\}> '
 : undercover && new_line_before_prompt=no
 export PATH=$PATH:/home/gaz/.spicetify
+

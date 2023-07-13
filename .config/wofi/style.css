@@ -18,7 +18,7 @@ window {
     /*background: linear-gradient(90deg, rgba(203,166,247,1) 0%, rgba(245,194,231,1) 100%);
    	outline: none;*/
     /* background: linear-gradient(60deg,  #47A5FF 30% ,#4dd6bb  90%); */
-    border-radius:15px;
+    border-radius:30px;
 }
 #input:focus {
     border: none;
@@ -41,7 +41,7 @@ window {
     border: none;
     padding: 0 5px;
     border-radius: 15px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.0);
 }
 
 #scroll {
