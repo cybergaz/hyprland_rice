@@ -16,11 +16,10 @@ ___
 <br>
 *either*
 > clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts)
-<br>
 
 *or*
 > just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
-<br>
+
 ___
 
 
