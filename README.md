@@ -12,10 +12,11 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 **To setup most of the things at ones :**
 <br>
 *either*
-> clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts) 
+> clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts)
 <br>
 *or*
 > just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
+<br>
 
 
 ## Required packages (mostly afaik) :
