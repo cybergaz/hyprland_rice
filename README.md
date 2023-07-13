@@ -47,13 +47,11 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 <br>
 
-### Screen sharing / recording issue
-remove every package named xdg-desktop-portal-* , check em by :
-<br>
+### Screen sharing / recording issue :
+> remove every package named xdg-desktop-portal-* , check em by :  
     
     pacman -Q | grep xdg-desktop-portal-
-now just install :
-<br>
+> now just install : 
 
     yay -S pipewire wireplumber xdg-desktop-portal-hyprland-git
 
@@ -61,13 +59,16 @@ now just install :
 [someone's notes](https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580)
 
     
-### Setup a polkit agent 
+### Setup a polkit agent :
     yay -S polkit-gnome
 >and then just initiate it at your hyprland exec section        
 
 <br>
 
-## Theming :
+<div align="center">
+
+## Theming
+</div>
 
 #### GTK theme 
 >Download your fav theme and place the theme folder at : `/usr/share/themes/` or `.local/share/fonts`    
@@ -117,7 +118,10 @@ now just install :
 
 <br>
 
-## Extras :
+<div align="center">
+
+## Extras
+</div>
 
 ### for emoji's stuff
 
