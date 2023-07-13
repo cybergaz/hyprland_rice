@@ -8,6 +8,9 @@
 
 Main purpose of this README is , I usually just forget what changes I've done , so ...    
 
+<br>
+
+___
 ### quick setup
 **To setup most of the things at ones :**
 <br>
@@ -18,6 +21,7 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 *or*
 > just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
 <br>
+___
 
 
 ## Required packages (mostly afaik) :
