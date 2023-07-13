@@ -13,11 +13,8 @@ Main purpose of this README is , I usually just forget what changes I've done , 
 <br>
 *either*
 > clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts)
-
 <br>
-
 *or*
-
 > just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
 <br>
 
@@ -46,7 +43,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     yay -S pipewire wireplumber xdg-desktop-portal-hyprland-git
 
 > more detailed docs :
-[link](https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580)
+[someone's notes](https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580)
 
     
 ## Setup a polkit agent 
