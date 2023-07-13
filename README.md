@@ -8,16 +8,15 @@
 
 Main purpose of this README is , I usually just forget what changes I've done , so ...    
 
+<div style="text-align: center;">
+# My Centered Heading
+</div>
+
 <br>
 
 ___
-
-<div style="text-align: center;">
-
-quick setup 
-
-</div>
-
+quick setup
+===========
 **To setup most of the things at ones :**
 <br>
 *either*
