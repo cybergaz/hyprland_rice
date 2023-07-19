@@ -58,8 +58,7 @@
   },
   "idle_inhibitor": {
     "format": "{icon}",
-    // "on-click": "hyprctl reload ; notify-send 'lid down sleep DISABLED..'",
-    // "on-click-right": "hyprctl --batch 'keyword bindl ,switch:on:Lid Switch,exec,systemctl suspend ; keyword bindl ,switch:off:Lid Switch,exec,notify-send 𝕎 𝕖 𝕝 𝕔 𝕠 𝕞 𝕖  𝔹 𝕒 𝕔 𝕜  𝔾 𝕒 𝕫 ' ; notify-send 'lid down sleep ENABLED again...'",
+    "on-click": "$HOME/scripts/hyprland/caffeine.sh",
     "format-icons": {
       "activated": " 👁 👁 ",
       "deactivated": " 👁 👁 "

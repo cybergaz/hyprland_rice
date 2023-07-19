@@ -16,15 +16,10 @@ ___
 quick setup
 ===========
 
-**To setup most of the things at ones :**
+**To setup most of the things at ones :** (errors may raise out of nowhere)
 <br>
-*either*
-<br>
-clone this repo to your home dir and execute `hypr_setup.sh` : [cybergaz/scripts](https://github.com/cybergaz/scripts)
-
-*or*
-<br>
-just copy paste entire script in your terminal : [hypr_setup.sh](https://github.com/cybergaz/scripts/blob/main/hypr_setup.sh)
+    
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/cybergaz/scripts/main/hypr_setup.sh)"
 
 </div>
 

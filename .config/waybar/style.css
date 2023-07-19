@@ -66,17 +66,11 @@ tooltip {
 
 #clock {
   color: white;
-  /* background-color : rgba(0, 0, 0,0.4); */
+  background-color : rgba(0, 0, 0,0.2);
   /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
   border-radius: 8px;
   padding: 2px 8px 0px 8px;
   /* border: 0.1px solid cyan; */
-  background: radial-gradient(
-    /* 60deg, */
-    rgba(0, 0, 0,0.1),
-    transparent
-    /* rgba(170, 170, 170,0.2) */
-  );
 }
 
 #tray {
