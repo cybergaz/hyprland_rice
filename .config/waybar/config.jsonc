@@ -74,7 +74,7 @@
     "on-click": "alacritty -t btop -e btop --utf-force"
   },
   "memory": {
-    "format": "{}  🏔️"
+    "format": "{used}  🏔️"
   },
   "temperature": {
     // "thermal-zone": 2,
