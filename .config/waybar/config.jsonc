@@ -111,7 +111,8 @@
     "format": "{:%H:%M:%S  %a %d %B}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "on-click": "alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock",
-    "on-click-right": "$HOME/scripts/waybar/wallpaper.sh"
+    "on-click-right": "$HOME/scripts/waybar/wallpaper.sh",
+    "on-click-middle": "alacritty -T fast -e fast"
   },
   "network": {
     "format-wifi": "   {essid} ",

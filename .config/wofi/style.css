@@ -19,9 +19,9 @@ window {
    	outline: none;*/
     /* background: linear-gradient(60deg,  #47A5FF 30% ,#4dd6bb  90%); */
     border-radius:30px;
+
 }
 #input:focus {
-    border: none;
     /* color:black; */
     margin-bottom: 0px;
     border-radius:15px;
@@ -32,7 +32,7 @@ window {
     padding: 10px;
     color: #aecfff;
     font-weight: bold;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.0);
     border-radius: 15px;
 }
 
@@ -41,7 +41,7 @@ window {
     border: none;
     padding: 0 5px;
     border-radius: 15px;
-    background-color: rgba(0,0,0,0.0);
+    background-color: rgba(0,0,0,0.2);
 }
 
 #scroll {
@@ -80,6 +80,6 @@ window {
     /*border-left: 2px solid #f5c2e7;
     border-right:2px solid #f5c2e7;*/
     
-    background: linear-gradient(60deg, #18545E,transparent);
+    background: linear-gradient(60deg, rgba(154,153,185,0.4),transparent);
     /*background: linear-gradient(45deg, rgba(203,166,247,1) 30%, rgba(245,194,231,1) 100%);*/
     }

@@ -73,7 +73,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.6
+  opacity: 0.5
 
   # Startup Mode (changes require restart)
   #
@@ -126,7 +126,7 @@ font:
     family: "MesloLGS NF" 
 
     # The `style` can be specified to pick a specific face.
-    #style: Regular
+    style: Regular
 
   # Bold font face
   #bold:
@@ -199,7 +199,7 @@ colors:
   # Default colors
   primary:
     background: '#000000'
-    foreground: '#cdd6f4'
+    foreground: '#d0e0f0'
 
     # Bright and dim foreground colors
     #
