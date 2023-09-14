@@ -4,7 +4,7 @@
   /*"mode": "dock",*/
   "height": 0,
   "modules-left": [
-    "wlr/workspaces",
+    "hyprland/workspaces",
     "custom/player"
   ],
   "modules-center": [
@@ -21,20 +21,19 @@
     "pulseaudio",
     "battery"
   ],
-  "wlr/workspaces": {
-    "disable-scroll": true,
+  "hyprland/workspaces": {
+    "active-only": false,
     "all-outputs": true,
+    "disable-scroll": true,
+    "format": "{name}",
     "on-click": "activate",
-    "format": "{icon}",
-    // "format-icons": {
-    //   "1": "🌐",
-    //   // "2": "",
-    //   "10": "",
-    //   "urgent": "",
-    //   "active": "",
-    //   "default": ""
-    // },
+    "show-special": true,
     "sort-by-number": true
+    // "format-icons": {
+    //   "special": ""
+    //   // "active": "",
+    //   // "default": ""
+    // }
   },
   // "hyprland/window": {
   //   "format": "{}",
@@ -50,11 +49,16 @@
   //   "firefoxdeveloperedition": "firefox-developer-edition"
   // }
   // },
+  //
+  //
   "custom/player": {
-    "exec": "/usr/bin/python3 ~/scripts/waybar/player.py",
+    "exec": "~/scripts/waybar/waybar_player",
     "format": "Playing :    {}",
+    "interval": 5,
     "return-type": "json",
-    "on-click": "playerctl play-pause"
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous"
   },
   "idle_inhibitor": {
     "format": "{icon}",
@@ -70,25 +74,28 @@
   },
   "cpu": {
     "format": "🛸  {usage}",
+    "interval": 10,
     "tooltip": true,
     "on-click": "alacritty -t btop -e btop --utf-force"
   },
   "memory": {
-    "format": "{used}  🏔️"
+    "format": "{used}  🏔️",
+    "interval": 10
   },
-  "temperature": {
-    // "thermal-zone": 2,
-    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    "critical-threshold": 80,
-    // "format-critical": "{temperatureC}°C {icon}",
-    "format": "{temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ]
-  },
+  // "temperature": {
+  //   // "thermal-zone": 2,
+  //   // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+  //   "critical-threshold": 80,
+  //   // "format-critical": "{temperatureC}°C {icon}",
+  //   "format": "{temperatureC}°C",
+  //   "format-icons": [
+  //     "",
+  //     "",
+  //     ""
+  //   ]
+  // },
   "battery": {
+    "interval": 5,
     "states": {
       "good": 95,
       "warning": 20,
@@ -115,7 +122,8 @@
     "on-click-middle": "alacritty -T fast -e fast"
   },
   "network": {
-    "format-wifi": "   {essid} ",
+    "interval": 2,
+    "format-wifi": "   {essid}  :  {bandwidthTotalBytes}",
     "format-ethernet": " {essid}",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "! Disconnected",

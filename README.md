@@ -189,3 +189,12 @@ systemctl --user start pipewire.service
 ---
 
 >if you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol
+---
+
+>to adjust the ownership and permissions of drives :    
+>then mount the partition first at desired location say /mnt and then the following commands   
+```
+sudo chown -R yourusername:yourusername /mnt
+sudo chmod -R u+w /mnt
+sudo usermod -aG dis,storage,uuidd yourusername
+```

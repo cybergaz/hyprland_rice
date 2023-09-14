@@ -73,7 +73,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.2
+  opacity: 0.4
 
   # Startup Mode (changes require restart)
   #
@@ -162,7 +162,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 12
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -198,7 +198,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#000000'
+    background: '#000006'
     foreground: '#d0e0f0'
 
     # Bright and dim foreground colors
