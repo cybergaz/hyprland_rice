@@ -28,7 +28,7 @@ tooltip {
 /* } */
 #workspaces{
   /* font-family: Poppins; */
-  background-color : rgba(0, 0, 0,0.15);
+  background-color : rgba(0, 0, 0,0.3);
   margin-left: 5px;
   border-radius: 80px;
   border: 0.3px solid rgba(170, 170, 170,0.8);
@@ -68,7 +68,7 @@ tooltip {
 
 #clock {
   color: white;
-  background-color : rgba(0, 0, 0,0.2);
+  background-color : rgba(0, 0, 0,0.35);
   /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
   border-radius: 8px;
   padding: 2px 8px 0px 8px;
@@ -76,30 +76,14 @@ tooltip {
 }
 
 #tray {
-  background-color : rgba(170, 170, 170,0.15);
+  background-color : rgba(170, 170, 170,0.3);
   margin-right: 10px;
   padding: 0 8px;
   border-radius: 8px;
 }
 
-#idle_inhibitor {
-  margin-right: 5px;
-  margin-left: 5px;
-  padding: 0 4px;
-  background-color: rgba(0, 0, 0, 0.15);
-  color:  rgba(170, 170, 170,0.4);
-  border: 0.3px solid rgba(180, 180, 180,0.9);
-  border-radius: 10px;
-}
-#idle_inhibitor.activated {
-  transition: all 0.6s ease-in-out;
-  background-color : rgba(170, 170, 170,0.3);
-  border: 0.3px solid rgba(0, 0, 0,0.9);
-  color: white;
-}
-
 #network {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.35);
   min-width: 160px;
   color: white;
   border: 0.4px solid rgba(170, 170, 170,0.6);
@@ -109,11 +93,27 @@ tooltip {
 
 }
 
+#idle_inhibitor {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color:  rgba(170, 170, 170,0.4);
+  border: 0.3px solid rgba(180, 180, 180,0.9);
+  border-radius: 10px;
+}
+#idle_inhibitor.activated {
+  transition: all 1.5s ease-in-out;
+  background-color : rgba(170, 170, 170,0.3);
+  border: 0.3px solid rgba(0, 0, 0,0.9);
+  color: white;
+}
+
 #cpu {
   padding: 0 8px;
   min-width: 40px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 0.3px solid rgba(180, 180, 180,0.8);
   border-radius: 80px 0 0 80px;
   border-right: none;
@@ -124,7 +124,7 @@ tooltip {
   padding: 0 8px;
   min-width: 50px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 0.3px solid rgba(170, 170, 170,0.8);
   border-radius: 0 80px 80px 0;
   border-left: none;
@@ -136,7 +136,7 @@ tooltip {
   margin-left: 5px ;
   padding: 0 8px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 0.3px solid rgba(170, 170, 170,0.8);
   border-radius: 80px 0 0 80px;
   border-right: none;
@@ -146,7 +146,7 @@ tooltip {
 #pulseaudio {
   padding: 0 8px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 0.3px solid rgba(170, 170, 170,0.8);
   border-radius: 0 80px 80px 0;
   border-left: none;
