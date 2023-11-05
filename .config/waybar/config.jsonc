@@ -70,7 +70,7 @@
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 5
+    "spacing": 12
   },
   "cpu": {
     "interval": 6,
@@ -128,9 +128,10 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "! Disconnected",
     "tooltip-format-wifi": "{signalStrength}% | ⬇ {bandwidthDownBits} ⬆ {bandwidthUpBits} | {ipaddr}/{cidr}",
-    "on-click": "alacritty -t nmtui -e nmtui",
-    "on-click-right": "~/scripts/warp.sh",
-    "on-click-middle": "systemctl stop warp-svc.service ; warp-cli disconnect ; notify-send 'warp Diconnected'"
+    // "on-click": "alacritty -t nmtui -e nmtui",
+    "on-click": "iwgtk",
+    "on-click-right": "~/scripts/warp_start.sh",
+    "on-click-middle": "~/scripts/warp_stop.sh"
   },
   "backlight": {
     "device": "intel_backlight",
