@@ -30,7 +30,7 @@ ___
 
 <br>
 
-## Required packages (mostly afaik) :
+## Required packages (afaik) :
 
 ```
 make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr grim slurp sddm hyprland-git 
