@@ -129,7 +129,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     sudo cp wofi-emoji /usr/bin/
 
 
-### pkgs
+### android mount pkgs
 
     mtpfs   --> for media transfer protocol
     jmtpfs --> for later version supports
