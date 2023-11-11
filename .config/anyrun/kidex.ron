@@ -1,0 +1,4 @@
+Config(
+  max_entries: 5,
+)
+

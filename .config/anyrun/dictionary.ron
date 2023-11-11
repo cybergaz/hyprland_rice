@@ -1,0 +1,4 @@
+Config(
+  prefix: "?",
+  max_entries: 5,
+)

@@ -58,8 +58,8 @@ radio:active, row.activatable:active {
  * Base States
  */
 .background {
-  background-color: rgba(0,0,0,0.2);
-  color: #cdc7d3;
+  background-color: rgba(12, 18, 23, 0.4);
+  color: #cdc7d4;
 }
 
 /*
@@ -148,7 +148,7 @@ flowbox flowboxchild {
   border-radius: 4px;
 }
 flowbox flowboxchild:selected {
-  background-color: rgba(54, 73, 149, 0.2);
+  background-color: rgba(54, 73, 100, 0.2);
 }
 
 .content-view .tile:selected {
@@ -165,7 +165,7 @@ label.error {
   color: #eaa2a6;
 }
 label selection {
-  background-color: rgba(54, 73, 149, 0.4);
+  background-color: rgba(54, 73, 19, 0.4);
 }
 label:disabled {
   color: rgba(205, 199, 211, 0.5);
@@ -2812,7 +2812,8 @@ row.activatable.has-open-popup {
   background-color: rgba(205, 199, 211, 0.12);
 }
 row:selected {
-  background-color: rgba(54, 73, 149, 0.4);
+  border-radius: 5px;
+  background-color: rgba(200, 200, 200, 0.2);
 }
 row:selected:drop(active), row:selected:hover {
   background-color: rgba(54, 73, 149, 0.424);

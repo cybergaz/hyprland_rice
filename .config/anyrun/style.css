@@ -1,0 +1,47 @@
+#window {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+box#main {
+  border-radius: 10px;
+  background-color: transparent;
+  padding-bottom: 5px;
+}
+
+list#main {
+  padding: 8px 5px;
+  font-size: 20px;
+  border: 1px solid rgba(220, 220, 220, 0.1);
+  border-top: none;
+  background-color: rgba(12, 18, 23, 0.4);
+  border-radius: 0 0 10px 10px;
+}
+
+#entry {
+  border: 1px solid rgba(220, 220, 220, 0.05);
+  border-bottom: none;
+  background-color: rgba(52, 64, 71, 0.4);
+  border-radius: 10px 10px 0 0;
+  font-size: 18px;
+}
+
+/* #match { */
+/*   margin-bottom: 5px; */
+/* } */
+box#match {
+  padding: 4px 5px;
+}
+#match-desc {
+  font-size: 14px;
+}
+#match-title {
+  font-size: 20px;
+}
+
+list#plugin {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+label#plugin {
+  font-size: 14px;
+}

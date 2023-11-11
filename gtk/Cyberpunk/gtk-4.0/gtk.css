@@ -41,7 +41,7 @@ radio:active, row.activatable:active, listview > row:active, expander:active, ca
  * Base States
  */
 .background {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.5);
   color: #cdc7d3;
 }
 
