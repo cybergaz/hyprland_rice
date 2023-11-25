@@ -1,8 +1,6 @@
 sort=-time
 layer=overlay
-width=400
-border-size=0
-border-radius=10
+width=410
 icons=1
 max-icon-size=30
 max-visible=5
@@ -15,8 +13,10 @@ padding=10
 margin=0,0,8,0
 outer-margin=10,0,0,0
 anchor=top-center
-border-color=#00000010
-background-color=#ffffff15
+border-size=1
+border-radius=10
+border-color=#637C86aa
+background-color=#272F3950
 text-color=#ffffff
 progress-color=over #302D41
 
@@ -26,9 +26,11 @@ border-color=#BB1122
 anchor=center
 border-size=2
 default-timeout=5000
+background-color=#CF707415
 
 [urgency=low]
 border-size=1
-border-color=#03a7ff
+border-color=#1ED76090
 anchor=bottom-center
 outer-margin=10,0,50,0
+background-color=#1ED76005

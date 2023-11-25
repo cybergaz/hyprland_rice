@@ -123,10 +123,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "MesloLGS NF"
+    family: "jetbrains mono"
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: regular
 
   # Bold font face
   #bold:
@@ -198,7 +198,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#000006'
+    background: '#000000'
     foreground: '#d0e0f0'
 
     # Bright and dim foreground colors

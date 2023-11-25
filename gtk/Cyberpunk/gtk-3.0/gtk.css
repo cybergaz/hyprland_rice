@@ -58,7 +58,7 @@ radio:active, row.activatable:active {
  * Base States
  */
 .background {
-  background-color: rgba(12, 18, 23, 0.4);
+  background-color: rgba(15, 18, 20, 0.65);
   color: #cdc7d4;
 }
 
