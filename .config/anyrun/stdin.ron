@@ -1,4 +1,4 @@
 Config(
       allow_invalid: false,
-      max_entries: 15,
+      max_entries: 13,
 )
