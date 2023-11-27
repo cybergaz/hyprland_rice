@@ -68,7 +68,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 </div>
 
 #### GTK theme 
->Download your fav theme and place the theme folder at : `/usr/share/themes/` or `.local/share/fonts`    
+>Download your fav theme and place the theme folder at : `/usr/share/themes` or `.local/share/themes`    
 > > i just use        
 
     yay -S layan-gtk-theme-git
