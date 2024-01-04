@@ -171,7 +171,7 @@ nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"
 ```
 ---
 
-* To get rid of that `90s shutdown issue` :
+* To get rid of that **90s shutdown issue** :
 * * head to the `/etc/systemd/system.conf` and overwrite these line -> 
 ```
 DefaultTimeoutStartSec=1s
