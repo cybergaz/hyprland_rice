@@ -45,7 +45,7 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 
 ### Screen sharing / recording issue :
-* remove every package named xdg-desktop-portal-* , check'em by :  
+* remove every package named `xdg-desktop-portal-*` , check'em by :  
 ```
 pacman -Q | grep xdg-desktop-portal-
 ```
@@ -84,8 +84,9 @@ gsettings set org.gnome.desktop.interface gtk-theme Layan-Dark
 #### GTK icons 
 
 * Download and place in `/usr/share/icon`   ( i use Kora btw )    
-    
-    yay -S kora-icon-theme
+```
+yay -S kora-icon-theme
+```
 * * and then just run          
 ```
 gsettings set org.gnome.desktop.interface icon-theme {theme-folder}
@@ -154,18 +155,19 @@ gsettings set org.gnome.desktop.interface cursor-theme {theme-folder}
 
 * if you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
 
-    pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
+pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
 ---
 
 * for nix packages search :    
-  
-    nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
-    sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
-    nix-channel --update         
-    nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
+```
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes
+nix-channel --update
+nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"
+```
 ---
 
-* to get rid of that 90s shutdown issue :   
+* to get rid of that `90s shutdown issue` :   
 * * head to the `/etc/systemd/system.conf` and overwrite these line -> 
 ```
 DefaultTimeoutStartSec=1s
