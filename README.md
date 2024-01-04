@@ -33,19 +33,19 @@ ___
 ## Essential packages (afaik) :
 
 ```
-make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr grim slurp sddm hyprland-git 
+make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr grim slurp sddm hyprland-git foot
 
 ```
 <br>
 
 ## Additional packages :
-    wofi kitty alacritty nemo ranger mako neofetch nitch btop viewnior swaybg swayidle swaylock-effects waylogout-git swww zoxide cliphist wtype wl-clipboard polkit-gnome
-
+    wofi alacritty nemo ranger mako neofetch btop viewnior swaybg swayidle swaylock-effects waylogout-git swww zoxide cliphist wtype wl-clipboard polkit-gnome grim slurp satty-bin
 
 <br>
 
+
 ### Screen sharing / recording issue :
-> remove every package named xdg-desktop-portal-* , check em by :  
+> remove every package named xdg-desktop-portal-* , check'em by :  
     
     pacman -Q | grep xdg-desktop-portal-
 > now just install : 
@@ -140,10 +140,10 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 ### Tips
 
->hijack power key,lid, idle related actions : `/etc/systemd/logind.conf`
+>hijack power key,lid, idle related actions at `/etc/systemd/logind.conf`
 ---
 
->install `powertop and tlp`   --> for power management    
+>install `powertop and tlp`   --> for power management in laptops    
 ---
 
 >if you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
@@ -197,4 +197,32 @@ systemctl --user start pipewire.service
 sudo chown -R yourusername:yourusername /mnt
 sudo chmod -R u+w /mnt
 sudo usermod -aG dis,storage,uuidd yourusername
+```
+---
+
+#### iwd setup
+
++ create `/etc/iwd/main.conf` with following content :   
+```
+[General]
+EnableNetworkConfiguration=true
+
+[Network]
+EnableIPv6=true
+```
++ enable following services 
+```
+sudo systemctl enable --now systemd-networkd
+sudo systemctl enable --now systemd-resolved
+sudo systemctl enable --now iwd
+```
+
+##### systemd-networkd for ethernet connections
++ create `/etc/systemd/network/20-wired.network` with following content (change the name of ethernet interface to yours)
+```
+[Match]
+Name=enp0s20f0u5
+
+[Network]
+DHCP=yes
 ```
