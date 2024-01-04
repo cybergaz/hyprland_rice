@@ -145,20 +145,24 @@ gsettings set org.gnome.desktop.interface cursor-theme {theme-folder}
 
 
 
-### Tips
+<div align="center">
 
-* alter power key,lid, idle related actions at `/etc/systemd/logind.conf`
+## Tips
+</div>
+
+* Alter power key,lid, idle related actions at `/etc/systemd/logind.conf`
 ---
 
-* install `powertop and tlp`   --> for power management in laptops    
+* Install `powertop and tlp`   --> for power management in laptops    
 ---
 
-* if you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
-
+* If you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
+```
 pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
+```
 ---
 
-* for nix packages search :    
+* For nix packages search :    
 ```
 nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes
@@ -167,7 +171,7 @@ nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"
 ```
 ---
 
-* to get rid of that `90s shutdown issue` :   
+* To get rid of that `90s shutdown issue` :
 * * head to the `/etc/systemd/system.conf` and overwrite these line -> 
 ```
 DefaultTimeoutStartSec=1s
@@ -196,11 +200,11 @@ systemctl --user start pipewire.service
 ```
 ---
 
-* if you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol
+* If you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol
 ---
 
-* to adjust the ownership and permissions of drives :    
-* * then mount the partition first at desired location say /mnt and then the following commands   
+* To adjust the `ownership and permissions of drives` :    
+* * mount the partition first at desired location say /mnt and then the following commands   
 ```
 sudo chown -R yourusername:yourusername /mnt
 sudo chmod -R u+w /mnt
@@ -225,7 +229,7 @@ sudo systemctl enable --now systemd-resolved
 sudo systemctl enable --now iwd
 ```
 
-##### systemd-networkd for ethernet connections
+#### systemd-networkd for ethernet connections
 + create `/etc/systemd/network/20-wired.network` with following content (change the name of ethernet interface to yours)
 ```
 [Match]
