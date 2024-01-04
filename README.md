@@ -140,18 +140,18 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
 
 ### Tips
 
->hijack power key,lid, idle related actions at `/etc/systemd/logind.conf`
+* alter power key,lid, idle related actions at `/etc/systemd/logind.conf`
 ---
 
->install `powertop and tlp`   --> for power management in laptops    
+* install `powertop and tlp`   --> for power management in laptops    
 ---
 
->if you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
+* if you're facing pulseaudio & bluetooth related issue then, uninstall everything related to pulseaudio , pipewire and bluetooth ( bluez and all.. ) and then install : 
 
     pulseaudio pulseaudio-bluetooth pulseaudio-ctl bluez bluez-utils blueman-git
 ---
 
->for nix packages search :    
+* for nix packages search :    
   
     nix-channel --add https://nixos.org/channels/nixpkgs-unstable   
     sudo nix search nixpkgs --extra-experimental-features nix-command --extra-experimental-features flakes  
@@ -159,8 +159,8 @@ make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git br
     nix-env -qaP --description | awk '{$2 = ":"; print $0;}' > "nps.cache"  
 ---
 
->to get rid of that 90s shutdown issue :   
->head to the `/etc/systemd/system.conf` and overwrite these line -> 
+* to get rid of that 90s shutdown issue :   
+* * head to the `/etc/systemd/system.conf` and overwrite these line -> 
 ```
 DefaultTimeoutStartSec=1s
 DefaultTimeoutStopSec=1s
@@ -169,12 +169,12 @@ DefaultDeviceTimeoutSec=1s
 ```
 ---
 
->switching from `pulseaudio` to `pipewire`  
->install necessary packages   
+#### switching from `pulseaudio` to `pipewire`  
+* install necessary packages   
 ```
 yay -S pipewire pipewire-alsa pipewire-pulse pipewire-jack
 ```
->Stop the PulseAudio services and enable pipewire services: 
+* Stop PulseAudio services and enable pipewire services: 
 ```
 systemctl --user stop pulseaudio.socket
 systemctl --user stop pulseaudio.service
@@ -188,11 +188,11 @@ systemctl --user start pipewire.service
 ```
 ---
 
->if you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol
+* if you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol
 ---
 
->to adjust the ownership and permissions of drives :    
->then mount the partition first at desired location say /mnt and then the following commands   
+* to adjust the ownership and permissions of drives :    
+* * then mount the partition first at desired location say /mnt and then the following commands   
 ```
 sudo chown -R yourusername:yourusername /mnt
 sudo chmod -R u+w /mnt
