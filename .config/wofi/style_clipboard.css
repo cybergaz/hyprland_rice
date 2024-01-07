@@ -1,0 +1,66 @@
+window {
+    background-color: transparent;
+    font-family: "noto sans";
+    /* font-weight: regular; */
+    font-size: 17px;
+}
+
+#outer-box {
+    padding: 0 5px;
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(220, 220, 220, 0.1);
+}
+
+#input {
+    color: #d6d6d6;
+    font-size: 15px;
+    padding: 0px 15px 0px 20px;
+    margin: 8px 8px 0px 8px ;
+    background-color: rgba(0,0,0,0);
+    /* background: rgba(255,255,255,0.04); */
+    border-radius: 30px;
+
+}
+#input:focus {
+    transition-duration:0.3s;
+    background: rgba(255,255,255,0.04);
+}
+
+#inner-box {
+    color: #d6d6d6;
+    margin: 4px;
+    /* padding: 6px; */
+    /* background-color: rgba(0,0,0,9); */
+    border-radius: 10px;
+}
+
+#scroll {
+    margin: 5px;
+    margin-bottom: 5px;
+    /* background: rgba(255,255,255,0.1); */
+    border-radius: 10px;
+}
+
+#text {
+    color: #d6d6d6;
+    padding-left : 15px;
+}
+#text:selected {
+    color: #ffffff;
+}
+
+#entry {
+    /* important for that annoying border around selected entries */
+    color: transparent;
+    padding: 5px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+#entry:selected {
+    transition-duration:0.1s;
+    /* background: rgba(255,255,255,0.15); */
+    padding-left: 10px;
+    background: linear-gradient(60deg, rgba(255,255,255,0.2),transparent);
+}
+
