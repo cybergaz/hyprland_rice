@@ -238,3 +238,14 @@ Name=enp0s20f0u5
 [Network]
 DHCP=yes
 ```
+___
+
+#### PGP keys importing error
++ run following cmds
+```
+sudo rm -rf /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate
+sudo pacman -S archlinux-keyring
+```
+
