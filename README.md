@@ -71,7 +71,7 @@ exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 ## Theming
 </div>
 
-#### GTK theme 
+### GTK theme 
 1. Download your fav theme and place the theme folder at : `/usr/share/themes` or `.local/share/themes`    
 * i just use        
 ```
@@ -84,7 +84,7 @@ gsettings set org.gnome.desktop.interface gtk-theme Layan-Dark
 * for dark theme , you have to make changes at your : `~/.config/gtk-3.0/settings.ini`         
 * * settings.ini -->  `gtk-application-prefer-dark-theme=true`  &  `gtk-theme-name=Layan-Dark`         
 
-#### GTK icons 
+### GTK icons 
 
 1. Download and place in `/usr/share/icon`   ( i use Kora btw )    
 ```
@@ -95,7 +95,7 @@ yay -S kora-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme {theme-folder}
 ```
 
-#### cursor theme 
+### cursor theme 
 1. Download and put them in : `/usr/share/icons/`          
 * i use          
 ```
@@ -107,18 +107,18 @@ yay -S catppuccin-mocha-dark-cursors
 gsettings set org.gnome.desktop.interface cursor-theme {theme-folder}
 ```
  
-#### Fonts 
+### Fonts 
 1.  Download ttf files and put them in : `/usr/local/share/fonts`     
 2.  then give'em necesarry permissions like : `chmod 444 and 555`    
 
 >  refer to powerlevel10k github readme font section for mesloLGS-nf  fonts
 
-#### SDDM theme 
+### SDDM theme 
 1. Download sddm theme you want , and place them at : `/usr/share/sddm/themes/`         
 2. set the theme , at `/usr/lib/sddm/sddm.conf.d/default.conf`        
 * if that doesn't work , check out this place : `/etc/sddm.conf.d/`
 
-#### GRUB theme
+### GRUB theme
 1. Download and place at : `/usr/share/grub/themes/`            
 2. then just edit `/etc/default/grub` : GRUB_THEME=`/usr/share/grub/themes/{theme_name}/theme.txt`      
 3. a lil `grub-update` and you are good to go           
@@ -234,7 +234,7 @@ sudo systemctl enable --now iwd
 sudo ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 ```
 > NOTE :
-> To provide DNS for software that reads `/etc/resolv.conf` (which is created and used by NetworkManager) , such as `Go-lang softwares` like github-cli , some web-browsers etc, so we need to link `/run/systemd/resolve/stub-resolv.conf` (which is created and used by IWD) to resolv.conf     
+> To provide DNS for software that reads `/etc/resolv.conf` (which is created and used by NetworkManager) , such as `Go-lang softwares` like github-cli , some web-browsers etc, we need to link `/run/systemd/resolve/stub-resolv.conf` (which is created and used by IWD) to resolv.conf     
 > more detailed docs : [arch wiki systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved#DNS) 
 
 #### systemd-networkd for ethernet connections
