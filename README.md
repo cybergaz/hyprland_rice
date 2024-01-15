@@ -230,7 +230,7 @@ sudo systemctl enable --now iwd
 sudo ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 ```
 > NOTE :
-> To provide DNS for software that reads `/etc/resolv.conf` (which is created and used by NetworkManager) , such as `Go-lang softwares`,some github domains,some web-browsers etc, so we need to link `/run/systemd/resolve/stub-resolv.conf` (which is created and used by IWD) to resolv.conf
+> To provide DNS for software that reads `/etc/resolv.conf` (which is created and used by NetworkManager) , such as `Go-lang softwares` like github-cli , some web-browsers etc, so we need to link `/run/systemd/resolve/stub-resolv.conf` (which is created and used by IWD) to resolv.conf     
 > more detailed docs : [arch wiki systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved#DNS) 
 
 #### systemd-networkd for ethernet connections
