@@ -132,11 +132,11 @@ gsettings set org.gnome.desktop.interface cursor-theme {theme-folder}
 
 ### for emoji's stuff
 
-    yay -S wtype wl-clipboard ttf-twemoji-color noto-fonts-emoji
+    yay -S wofi wtype wl-clipboard ttf-twemoji-color noto-fonts-emoji
     
-    git clone https://github.com/cybergaz/scripts.git
+    git clone https://github.com/cybergaz/scripts
     cd scripts/wofi-emoji
-    sudo cp wofi-emoji /usr/bin/
+    sh wofi-emoji.sh
 
 
 ### android mount pkgs
