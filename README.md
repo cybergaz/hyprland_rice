@@ -213,7 +213,7 @@ sudo usermod -aG dis,storage,uuidd yourusername
 
 #### iwd setup
 
-+ create `/etc/iwd/main.conf` with following content :   
+1. create `/etc/iwd/main.conf` with following content :
 ```
 [General]
 EnableNetworkConfiguration=true
@@ -221,15 +221,17 @@ EnableNetworkConfiguration=true
 [Network]
 EnableIPv6=true
 ```
-+ enable following services 
+2. enable following services 
 ```
 sudo systemctl enable --now systemd-networkd
 sudo systemctl enable --now systemd-resolved
 sudo systemctl enable --now iwd
+# important for some DNS related issues like GH auth login will not work
+sudo ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 ```
 
 #### systemd-networkd for ethernet connections
-+ create `/etc/systemd/network/20-wired.network` with following content (change the name of ethernet interface to yours)
++ create `/etc/systemd/network/20-wired.network` with following content (**change the name of ethernet interface to yours**)
 ```
 [Match]
 Name=enp0s20f0u5
