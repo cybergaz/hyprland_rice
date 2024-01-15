@@ -226,7 +226,7 @@ EnableIPv6=true
 sudo systemctl enable --now systemd-networkd
 sudo systemctl enable --now systemd-resolved
 sudo systemctl enable --now iwd
-# important for some DNS related issues like GH auth login will not work
+# important for some packages that relies only on resolv.conf (which is a NetworkManager thing)
 sudo ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 ```
 > NOTE :
