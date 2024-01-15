@@ -58,7 +58,11 @@ yay -S pipewire wireplumber xdg-desktop-portal-hyprland-git
     
 ### Setup a polkit agent :
     yay -S polkit-gnome
-* and then just initiate it at your hyprland exec section        
+* and then just initiate it your `hyprland.conf`        
+```
+exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+```
+
 
 <br>
 
