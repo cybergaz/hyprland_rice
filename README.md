@@ -229,6 +229,9 @@ sudo systemctl enable --now iwd
 # important for some DNS related issues like GH auth login will not work
 sudo ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 ```
+> NOTE :
+> To provide DNS for software that reads `/etc/resolv.conf` (which is created and used by NetworkManager) , such as `Go-lang softwares`,some github domains,some web-browsers etc, so we need to link `/run/systemd/resolve/stub-resolv.conf` (which is created and used by IWD) to resolv.conf
+> more detailed docs : [arch wiki systemd-resolved](https://wiki.archlinux.org/title/Systemd-resolved#DNS) 
 
 #### systemd-networkd for ethernet connections
 + create `/etc/systemd/network/20-wired.network` with following content (**change the name of ethernet interface to yours**)
