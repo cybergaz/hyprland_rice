@@ -81,7 +81,7 @@ window.background.csd stack stack stack frame > list row.activatable:only-child,
  * Base States *
  ***************/
 .background {
-  background-color: rgba(52, 52, 59, 0.999);
+  background-color: rgba(52, 52, 59, 0.7);
   color: #FFFFFF;
 }
 

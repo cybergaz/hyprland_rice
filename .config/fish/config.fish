@@ -6,40 +6,63 @@ if status is-interactive
 
     #......................alias............................
 
+    # core utils rust replacements
     alias ls="exa"
     alias l="exa -la"
+    alias grep="rg"
+    alias unzip="ripunzip unzip-file"
+    alias cp="xcp"
 
     alias vim="nvim"
     alias nv="nvim"
     alias sunv="sudo -E -s nvim"
     alias svim="sudo -E -s nvim"
+    alias tm="tmux"
+    alias tma="tmux a"
+    alias tk="tmux kill-session"
+    alias tkk="tmux kill-server"
 
     alias fishrc="vim ~/.config/fish/config.fish"
     alias hyper="nvim ~/.config/hypr/hyprland.conf"
+    alias niriconf="nvim ~/.config/niri/config.kdl"
 
     alias rat='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
-    alias yin='yay -S'
-    alias yre='yay -R'
+    alias yy='yay -S'
+    alias yr='yay -R'
+    alias yrc='yay -Rsc'
+    alias ariad='aria2c -s 32 -x 16'
 
     alias lokate="sudo updatedb && sudo locate"
-    alias runzip="ripunzip unzip-file"
+    alias piper-play="piper-tts --model $HOME/.local/en_US-hfc_female-medium.onnx --output_file /tmp/temp_piper_audio.wav && mpv /tmp/temp_piper_audio.wav"
 
     alias winmount="sudo mkdir -p /run/media/gaz/windows_mount ; sudo mount /dev/nvme0n1p3 /run/media/gaz/windows_mount"
-
-    alias gittoken="cat $HOME/Desktop/workspace/my_token | wl-copy -n"
-    alias gcl="git clone"
-    alias gcm="git commit -a -m"
-    alias ga="git add ."
-    alias gp="git push"
-    function gcp
-        git commit -a -m $argv[1]
-        git push
-    end
-
+    alias budsbattery='echo "$(bluetoothctl info | grep "Name:" | cut -b 8-)  ->  $(bluetoothctl info | grep "Battery" | sed "s/.*(\([0-9]\+\))/\1/") %"'
 
     alias netscan="iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') scan on ; iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') get-networks"
     alias netconnect="iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') connect"
     alias netdevice="iwctl device $(iwctl device list | tail -n +5 | awk '{ print($2) }') set-property Powered"
+    alias warpon="sh $HOME/scripts/warp_start.sh"
+    alias warpoff="sh $HOME/scripts/warp_stop.sh"
+
+
+    # git aliases
+    # -------------------------------------------------------------------------
+    alias gittoken="cat $HOME/Desktop/workspace/my_token | wl-copy -n"
+    alias gcl="git clone"
+    alias gcm="git commit -m"
+    alias ga="git add"
+    alias gps="git push"
+    alias gpl="git pull"
+    alias gst="git status"
+    alias gck="git checkout"
+    alias gl="git log --all --graph --decorate"
+    alias gll="git log --all --graph --oneline --decorate"
+    function gacp
+        git add .
+        git commit -m $argv[1]
+        git push
+    end
+    # -------------------------------------------------------------------------
 
 
 

@@ -26,6 +26,9 @@ window {
     transition-duration:0.3s;
     background: rgba(255,255,255,0.04);
 }
+#input > image {
+    -gtk-icon-transform:scalex(0);
+}
 
 #inner-box {
     color: #d6d6d6;

@@ -1,0 +1,16 @@
+width=1050
+height=600
+location=center
+show=drun
+prompt=
+filter_rate=100
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=start
+insensitive=true
+allow_images=true
+image_size=30
+gtk_dark=true
+hide_search=true

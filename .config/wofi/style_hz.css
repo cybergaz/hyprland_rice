@@ -15,7 +15,7 @@ window {
 #input {
     color: #d6d6d6;
     font-size: 16px;
-    padding: 4px 10px 4px 20px;
+    padding: 4px 15px 4px 20px;
     margin: 35px 8px 42px 8px ;
     background-color: rgba(0,0,0,0.0);
     /* background: rgba(255,255,255,0.04); */
@@ -26,6 +26,15 @@ window {
     transition-duration:0.3s;
     background: rgba(255,255,255,0.04);
 }
+/* #input > image.left { */
+/*     -gtk-icon-transform:scaleX(0); */
+/* } */
+#input > image.right {
+    -gtk-icon-transform:scaleX(0);
+}
+/* #input > image { */
+/*     -gtk-icon-transform:scalex(0); */
+/* } */
 
 #inner-box {
     color: #d6d6d6;

@@ -5,7 +5,7 @@ window {
 }
 
 #outer-box {
-    padding: 0 5px;
+    padding: 0 15px;
     background-color: rgba(0,0,0,0.25);
     border-radius: 15px;
     border: 1px solid rgba(220, 220, 220, 0.1);
@@ -15,7 +15,7 @@ window {
     color: #d6d6d6;
     font-size: 15px;
     padding: 0px 15px 0px 20px;
-    margin: 8px 8px 2px 8px ;
+    margin: 0px 8px 0px 8px ;
     background-color: rgba(0,0,0,0);
     border-radius: 30px;
 
@@ -28,14 +28,15 @@ window {
 #inner-box {
     color: #d6d6d6;
     margin: 4px;
+    margin-top: 0;
     border-radius: 10px;
 }
 
 #scroll {
     margin-top: 5px;
+    margin-bottom: 24px;
     border: none;
     border-radius: 15px;
-    margin-bottom: 5px;
 }
 #text {
     font-size: 30px;

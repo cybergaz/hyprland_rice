@@ -3314,10 +3314,9 @@ listview > row,
 list > row {
   padding: 2px;
   background-clip: padding-box;
-  border-radius: 7px;
 }
 
-listview > row.expander,
+listview 0 row.expander,
 list > row.expander {
   padding: 0px;
 }

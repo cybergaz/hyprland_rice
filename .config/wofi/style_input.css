@@ -1,0 +1,32 @@
+window {
+    background-color: transparent;
+    font-family: "noto sans";
+    /* font-weight: regular; */
+    font-size: 18px;
+}
+
+#outer-box {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    border: 1px solid rgba(220, 220, 220, 0.1);
+}
+
+#input {
+    color: #d6d6d6;
+    font-size: 18px;
+    padding: 6px 15px 6px 10px;
+    margin: 25px 8px 0px 8px ;
+    background-color: rgba(0,0,0,0.0);
+    /* background: rgba(255,255,255,0.04); */
+    border-radius: 30px;
+
+}
+#input:focus {
+    transition-duration:0.3s;
+    background: rgba(255,255,255,0.05);
+}
+#input > image {
+    -gtk-icon-transform:scalex(0);
+}
