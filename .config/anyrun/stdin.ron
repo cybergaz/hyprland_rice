@@ -1,4 +1,0 @@
-Config(
-      allow_invalid: false,
-      max_entries: 13,
-)

@@ -31,6 +31,7 @@ if status is-interactive
     alias yr='yay -R'
     alias yrc='yay -Rsc'
     alias ariad='aria2c -s 32 -x 16'
+    alias ariar='aria2c -s 32 -x 16 -c'
 
     alias lokate="sudo updatedb && sudo locate"
     alias piper-play="piper-tts --model $HOME/.local/en_US-hfc_female-medium.onnx --output_file /tmp/temp_piper_audio.wav && mpv /tmp/temp_piper_audio.wav"

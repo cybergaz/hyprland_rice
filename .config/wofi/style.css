@@ -6,36 +6,44 @@ window {
 }
 
 #outer-box {
-    padding: 0 5px;
+    padding: 5px 5px;
     background-color: rgba(0,0,0,0.35);
-    border-radius: 15px;
-    border: 1px solid rgba(220, 220, 220, 0.1);
+    /* opacity: 0.2; */
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba(220, 220, 220, 0.1); */
 }
 
 #input {
     color: #d6d6d6;
     font-size: 16px;
-    padding: 4px 15px 4px 26px;
-    margin: 8px 8px 2px 8px ;
-    background-color: rgba(0,0,0,0.0);
+    padding: 6px 15px 6px 30px;
+    margin: 5px 8px 0px 8px ;
+    background: transparent;
     /* background: rgba(255,255,255,0.04); */
-    border-radius: 30px;
+    border-radius: 50px;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0);
 
 }
 #input:focus {
-    transition-duration:0.3s;
-    background: rgba(255,255,255,0.04);
+    transition-duration: 0.3s;
+    /* border: 1px solid rgba(220, 220, 220, 0.5); */
+    /* background: rgba(255,255,255,0.05); */
+
+    background: linear-gradient(40deg,transparent, rgba(255,255,255,0.05) ,transparent,transparent,transparent,transparent);
 }
 #input > image {
-    -gtk-icon-transform:scalex(0);
+    -gtk-icon-transform:scalex(1);
 }
 
 #inner-box {
     color: #d6d6d6;
     margin: 4px;
-    /* padding-left: 10px; */
-    /* background-color: rgba(0,0,0,9); */
+    padding: 8px;
+    /* background: rgba(0,0,0,0.4); */
     border-radius: 10px;
+    /* border: 1px solid rgba(0,0,0,0.3); */
+    /* border-top: none; */
 }
 
 #scroll {
@@ -46,7 +54,7 @@ window {
 }
 
 #text {
-    color: #d6d6d6;
+    color: #a2acb0;
     padding-left : 15px;
 }
 #text:selected {
@@ -59,11 +67,13 @@ window {
     padding: 10px;
     padding-left: 20px;
     margin-bottom: 5px;
-    border-radius: 10px;
+    border-radius: 0px;
+    /* background: rgba(255,255,255,0.03); */
 }
 #entry:selected {
     transition-duration:0.1s;
     /* background: rgba(255,255,255,0.15); */
     padding-left: 27px;
-    background: linear-gradient(60deg, rgba(255,255,255,0.2),transparent);
+    background: linear-gradient(60deg,transparent, rgba(255,255,255,0.05) ,transparent,transparent,transparent);
+    border-left: 2px solid rgba(220, 220, 220, 0.6);
 }

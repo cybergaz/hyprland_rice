@@ -1,8 +1,8 @@
-width=550
+width=650
 height=450
 location=center
 show=drun
-prompt=
+prompt=.    type to search . . .
 filter_rate=100
 allow_markup=true
 no_actions=true

@@ -1,8 +1,10 @@
 {
   "layer": "top",
   "position": "top",
-  /*"mode": "dock",*/
-  "height": 0,
+  // "mode": "hide",
+  // "start-hidden": true,
+  "height": 30,
+  // "spacing": 2,
   "modules-left": [
     "hyprland/workspaces",
     "custom/player"
@@ -12,6 +14,7 @@
   ],
   "modules-right": [
     "tray",
+    // "bluetooth",
     "idle_inhibitor",
     "network",
     "cpu",
@@ -35,25 +38,30 @@
     //   // "default": ""
     // }
   },
-  // "hyprland/window": {
-  //   "format": "{}",
-  //     },
-  // "wlr/taskbar": {
-  // "format": "{icon}",
-  // "icon-size": 20,
-  // "tooltip-format": "{title}",
-  //     "active-first":true,
-  // "on-click": "activate",
-  // "on-click-middle": "close",
-  // "app_ids-mapping": {
-  //   "firefoxdeveloperedition": "firefox-developer-edition"
-  // }
+  // "bluetooth": {
+  //   "format": " {status}",
+  //   "format-connected": " {device_alias}",
+  //   "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+  //   // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+  //   "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+  //   "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+  //   "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+  //   "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
   // },
-  //
-  //
+  // "wlr/taskbar": {
+  //   "format": "{icon}",
+  //   "icon-size": 20,
+  //   "tooltip-format": "{title}",
+  //   "active-first": true,
+  //   "on-click": "activate",
+  //   "on-click-middle": "close",
+  //   "app_ids-mapping": {
+  //     "firefoxdeveloperedition": "firefox-developer-edition"
+  //   }
+  // },
   "custom/player": {
     "interval": 5,
-    "exec": "~/scripts/waybar/waybar_player",
+    "exec": "~/scripts/waybar/waybar_now_playing",
     "format": "Playing :    {}",
     "return-type": "json",
     "on-click": "playerctl play-pause",
@@ -62,7 +70,7 @@
   },
   "idle_inhibitor": {
     "format": "{icon}",
-    "on-click": "$HOME/scripts/hyprland/caffeine.sh",
+    "on-click": "$HOME/scripts/hyprland/hypridle_caffeine.sh",
     "format-icons": {
       "activated": " ☕ ",
       "deactivated": " ☕ "
@@ -117,13 +125,12 @@
     "interval": 1,
     "format": "{:%H:%M:%S  %a %d %B}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "on-click": "alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock",
-    "on-click-right": "$HOME/scripts/waybar/wallpaper.sh",
-    "on-click-middle": "alacritty -T fast -e fast"
+    "on-click": "$HOME/scripts/waybar/wallpapers_v2.sh",
+    "on-click-right": "alacritty -T fast -e fast"
   },
   "network": {
     "interval": 2,
-    "format-wifi": "   {essid}  :  {bandwidthTotalBytes}",
+    "format-wifi": "    {essid}  :  {bandwidthTotalBytes}",
     "format-ethernet": " {essid}",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "! Disconnected",

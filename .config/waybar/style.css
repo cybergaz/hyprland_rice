@@ -26,7 +26,7 @@ tooltip {
 
 /* text-align: center; */
 /* } */
-#workspaces{
+#workspaces {
   /* font-family: Poppins; */
   background-color : rgba(0, 0, 0,0.15);
   margin-left: 5px;
@@ -72,7 +72,7 @@ tooltip {
   /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
   border-radius: 8px;
   padding: 2px 8px 0px 8px;
-  /* border: 0.1px solid cyan; */
+  /* border: 0.5px solid rgba(86 ,87 ,245, 1); */
 }
 
 #tray {

@@ -44,6 +44,8 @@ TERM = "xterm-256color"
 
 # [shell]
 # program = "tmux"
+# args = ["attach"]
+# command = "notify-send hehe"
 
 [font]
 size = 12.0
@@ -66,3 +68,4 @@ lines = 28
 [window.padding]
 x = 10
 y = 8
+

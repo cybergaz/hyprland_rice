@@ -1,5 +1,0 @@
-Config(
-  prefix: ">>",
-  language_delimiter: ">",
-  max_entries: 5,
-)
