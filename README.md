@@ -262,6 +262,11 @@ sudo pacman-key --populate
 sudo pacman -S archlinux-keyring
 ```
 
+---
+#### incorrect password limit
++ open `/etc/security/faillock.conf` file and look for variable **deny and unlock-time** and change them accordingly
+
+
 
 
 
