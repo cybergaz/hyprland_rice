@@ -120,7 +120,6 @@ tooltip {
 }
 
 #pulseaudio {
-    min-width: 50px;
     padding: 0 8px;
     margin: 2px 5px;
     margin-left: 0px;

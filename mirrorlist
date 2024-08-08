@@ -1,716 +1,261 @@
-# STARTED AT: 2023-08-13 20:19:38.680193369 +05:30
+# STARTED AT: 2024-07-06 11:14:59.147705455 +05:30
 # ARGS: rate-mirrors --allow-root arch
-# FETCHED MIRRORS: 1113
-# MIRRORS LEFT AFTER FILTERING: 538
+# FETCHED MIRRORS: 1205
+# MIRRORS LEFT AFTER FILTERING: 488
 # JUMP #1
 # EXPLORING US
 # VISITED US
-#     + NEIGHBOR UK (by HubsFirst)
 #     + NEIGHBOR ID (by HubsFirst)
-#     + NEIGHBOR FR (by HubsFirst)
+#     + NEIGHBOR UK (by HubsFirst)
+#     + NEIGHBOR CA (by HubsFirst)
 #     + NEIGHBOR DE (by DistanceFirst)
-#     + NEIGHBOR CA (by DistanceFirst)
 #     + NEIGHBOR NL (by DistanceFirst)
-# TOO FEW BYTES LOADED http://mirror.sunred.org/archlinux/
-# TOO FEW BYTES LOADED http://arch.hu.fo/archlinux/
-# TOO FEW BYTES LOADED http://mirror.quantum5.ca/archlinux/
-# [FR] SpeedTestResult { speed: 112.30 KB/s; elapsed: 900.637726ms; connection_time: 2.025282403s }
-# [ID] SpeedTestResult { speed: 142.85 KB/s; elapsed: 998.061715ms; connection_time: 2.226381858s }
-# [UK] SpeedTestResult { speed: 112.94 KB/s; elapsed: 795.887634ms; connection_time: 3.340665057s }
-# [ID] SpeedTestResult { speed: 392.84 KB/s; elapsed: 416.076702ms; connection_time: 3.529089679s }
-# [FR] SpeedTestResult { speed: 170.26 KB/s; elapsed: 575.865143ms; connection_time: 3.578761682s }
-# TOO FEW BYTES LOADED https://mirror.quantum5.ca/archlinux/
-# TOO FEW BYTES LOADED http://mirror.moson.org/arch/
-# [NL] SpeedTestResult { speed: 294.26 KB/s; elapsed: 962.101695ms; connection_time: 6.050996372s }
-# TOO FEW BYTES LOADED https://mirrors.melbourne.co.uk/archlinux/
-# [US] FAILED TO CONNECT TO http://mirror.lty.me/archlinux/extra/os/x86_64/extra.files
-# [NL] SpeedTestResult { speed: 451.21 KB/s; elapsed: 761.751149ms; connection_time: 7.138469284s }
-#     TOP NEIGHBOR - CONNECTION TIME: FR - 2.025282403s
-#     TOP NEIGHBOR - SPEED: NL - 451.21 KB/s
+#     + NEIGHBOR FR (by DistanceFirst)
+# [ID] SpeedTestResult { speed: 981.07 KB/s; elapsed: 999.968195ms; connection_time: 254.368116ms }
+# [FR] SpeedTestResult { speed: 287.08 KB/s; elapsed: 823.277718ms; connection_time: 361.278477ms }
+# [DE] SpeedTestResult { speed: 424.93 KB/s; elapsed: 809.307528ms; connection_time: 389.370161ms }
+# [NL] SpeedTestResult { speed: 258.42 KB/s; elapsed: 876.224295ms; connection_time: 392.954651ms }
+# TOO FEW BYTES LOADED http://archlinux.uk.mirror.allworldit.com/archlinux/
+# [US] SpeedTestResult { speed: 4.94 MB/s; elapsed: 998.917017ms; connection_time: 414.558661ms }
+# [DE] SpeedTestResult { speed: 125.58 KB/s; elapsed: 651.715792ms; connection_time: 423.516334ms }
+# TOO FEW BYTES LOADED http://ftp.nluug.nl/os/Linux/distr/archlinux/
+# [US] SpeedTestResult { speed: 78.51 KB/s; elapsed: 996.858421ms; connection_time: 603.938607ms }
+# [ID] SpeedTestResult { speed: 431.40 KB/s; elapsed: 986.55189ms; connection_time: 622.486093ms }
+# [CA] SpeedTestResult { speed: 488.60 KB/s; elapsed: 999.916418ms; connection_time: 982.376802ms }
+# [FR] SpeedTestResult { speed: 367.81 KB/s; elapsed: 979.281912ms; connection_time: 1.002562878s }
+# TOO FEW BYTES LOADED https://archlinux.uk.mirror.allworldit.com/archlinux/
+# [CA] SpeedTestResult { speed: 106.07 KB/s; elapsed: 707.904487ms; connection_time: 2.367860775s }
+#     TOP NEIGHBOR - CONNECTION TIME: ID - 254.368116ms
+#     TOP SPEED: US - 4.94 MB/s
+#     TOP NEIGHBOR - SPEED: ID - 981.07 KB/s
 # 
 # JUMP #2
-# EXPLORING FR
+# EXPLORING ID
 #     + NEIGHBOR CN (by HubsFirst)
-#     + NEIGHBOR JP (by HubsFirst)
-#     + NEIGHBOR NO (by HubsFirst)
-#     + NEIGHBOR CH (by DistanceFirst)
-#     + NEIGHBOR CZ (by DistanceFirst)
-#     + NEIGHBOR PL (by DistanceFirst)
-# EXPLORING NL
 #     + NEIGHBOR SG (by HubsFirst)
-#     + NEIGHBOR SE (by HubsFirst)
-#     + NEIGHBOR DK (by HubsFirst)
+#     + NEIGHBOR JP (by HubsFirst)
+#     + NEIGHBOR HK (by DistanceFirst)
 #     + NEIGHBOR RO (by DistanceFirst)
-#     + NEIGHBOR FI (by DistanceFirst)
-#     + NEIGHBOR HU (by DistanceFirst)
-# [SG] SpeedTestResult { speed: 174.77 KB/s; elapsed: 937.44151ms; connection_time: 1.478478943s }
-# [SE] SpeedTestResult { speed: 390.59 KB/s; elapsed: 878.46773ms; connection_time: 1.517365526s }
-# TOO FEW BYTES LOADED http://mirrors.pidginhost.com/arch/
-# TOO FEW BYTES LOADED http://pkg.adfinis.com/archlinux/
-# TOO FEW BYTES LOADED http://mirrors.dotsrc.org/archlinux/
-# [SE] SpeedTestResult { speed: 108.40 KB/s; elapsed: 805.365219ms; connection_time: 2.794303916s }
-# [FI] SpeedTestResult { speed: 184.94 KB/s; elapsed: 918.019511ms; connection_time: 2.918032523s }
-# [SG] SpeedTestResult { speed: 328.13 KB/s; elapsed: 965.050569ms; connection_time: 513.055798ms }
-# TOO FEW BYTES LOADED http://ftp.sh.cvut.cz/arch/
-# TOO FEW BYTES LOADED https://mirrors.dotsrc.org/archlinux/
-# TOO FEW BYTES LOADED https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/
-# TOO FEW BYTES LOADED http://mirror.neuf.no/archlinux/
-# TOO FEW BYTES LOADED http://arch.yhtez.xyz/
-# TOO FEW BYTES LOADED http://nova.quantum-mirror.hu/mirrors/pub/archlinux/
-# TOO FEW BYTES LOADED http://super.quantum-mirror.hu/mirrors/pub/archlinux/
-# TOO FEW BYTES LOADED http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/
-# [RO] SpeedTestResult { speed: 249.31 KB/s; elapsed: 774.099132ms; connection_time: 6.262619527s }
-# [NO] SpeedTestResult { speed: 258.43 KB/s; elapsed: 632.935674ms; connection_time: 3.361674622s }
-# [PL] FAILED TO CONNECT TO http://mirror.juniorjpdj.pl/archlinux/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO https://europe.mirror.pkgbuild.com/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO http://mirrors.tuna.tsinghua.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO https://mirror.juniorjpdj.pl/archlinux/extra/os/x86_64/extra.files
-# [CH] SpeedTestResult { speed: 112.10 KB/s; elapsed: 986.568477ms; connection_time: 3.412634202s }
-# TOO FEW BYTES LOADED https://mirrors.bfsu.edu.cn/archlinux/
-#     TOP NEIGHBOR - CONNECTION TIME: SG - 513.055798ms
-#     TOP NEIGHBOR - SPEED: SE - 390.59 KB/s
+#     + NEIGHBOR PL (by DistanceFirst)
+# [SG] SpeedTestResult { speed: 605.94 KB/s; elapsed: 960.201546ms; connection_time: 273.328669ms }
+# [SG] SpeedTestResult { speed: 972.99 KB/s; elapsed: 996.972403ms; connection_time: 493.518318ms }
+# [PL] SpeedTestResult { speed: 224.11 KB/s; elapsed: 856.312973ms; connection_time: 509.360769ms }
+# [RO] SpeedTestResult { speed: 363.36 KB/s; elapsed: 984.671439ms; connection_time: 570.147435ms }
+# TOO FEW BYTES LOADED http://mirror.xtom.com.hk/archlinux/
+# TOO FEW BYTES LOADED http://mirrors.qvq.net.cn/archlinux/
+# [JP] SpeedTestResult { speed: 409.83 KB/s; elapsed: 997.025531ms; connection_time: 1.53471182s }
+# [PL] SpeedTestResult { speed: 392.31 KB/s; elapsed: 834.603661ms; connection_time: 1.551695846s }
+# [RO] SpeedTestResult { speed: 444.72 KB/s; elapsed: 772.817045ms; connection_time: 1.857842304s }
+# [JP] SpeedTestResult { speed: 446.38 KB/s; elapsed: 987.703826ms; connection_time: 1.905404076s }
+# [HK] SpeedTestResult { speed: 87.53 KB/s; elapsed: 929.789257ms; connection_time: 1.923122533s }
+# TOO FEW BYTES LOADED http://mirrors.tuna.tsinghua.edu.cn/archlinux/
+#     TOP NEIGHBOR - CONNECTION TIME: SG - 273.328669ms
+#     TOP NEIGHBOR - SPEED: SG - 972.99 KB/s
 # 
 # JUMP #3
 # EXPLORING SG
-#     + NEIGHBOR HK (by DistanceFirst)
-#     + NEIGHBOR RU (by DistanceFirst)
+#     + NEIGHBOR CH (by DistanceFirst)
+#     + NEIGHBOR CZ (by DistanceFirst)
 #     + NEIGHBOR TH (by DistanceFirst)
-# EXPLORING SE
-#     + NEIGHBOR EE (by DistanceFirst)
-#     + NEIGHBOR UA (by DistanceFirst)
-#     + NEIGHBOR BG (by DistanceFirst)
-# [EE] SpeedTestResult { speed: 136.82 KB/s; elapsed: 995.917824ms; connection_time: 1.300224696s }
-# [EE] SpeedTestResult { speed: 143.96 KB/s; elapsed: 1.000274937s; connection_time: 1.66477294s }
-# [UA] SpeedTestResult { speed: 90.73 KB/s; elapsed: 877.344337ms; connection_time: 2.205494898s }
-# TOO FEW BYTES LOADED http://mirror.xtom.com.hk/archlinux/
-# [UA] SpeedTestResult { speed: 196.47 KB/s; elapsed: 748.978482ms; connection_time: 3.088461683s }
-# [HK] SpeedTestResult { speed: 165.77 KB/s; elapsed: 989.947963ms; connection_time: 3.171704868s }
-# TOO FEW BYTES LOADED https://mirror.cyberbits.asia/archlinux/
-# [BG] SpeedTestResult { speed: 166.66 KB/s; elapsed: 964.483878ms; connection_time: 4.903556056s }
-# [BG] SpeedTestResult { speed: 111.12 KB/s; elapsed: 996.809399ms; connection_time: 5.21440314s }
-# [RU] SpeedTestResult { speed: 179.10 KB/s; elapsed: 983.795285ms; connection_time: 6.190069881s }
-# [TH] SpeedTestResult { speed: 77.20 KB/s; elapsed: 997.658933ms; connection_time: 6.86424341s }
-# [RU] FAILED TO CONNECT TO https://mirror.yal.sl-chat.ru/archlinux/extra/os/x86_64/extra.files
-#     TOP NEIGHBOR - CONNECTION TIME: EE - 1.300224696s
-#     TOP NEIGHBOR - SPEED: UA - 196.47 KB/s
+# [TH] SpeedTestResult { speed: 95.11 KB/s; elapsed: 823.378472ms; connection_time: 567.953743ms }
+# [CH] SpeedTestResult { speed: 209.58 KB/s; elapsed: 920.581971ms; connection_time: 633.021607ms }
+# [CH] SpeedTestResult { speed: 175.99 KB/s; elapsed: 929.232187ms; connection_time: 1.988918332s }
+# [TH] SpeedTestResult { speed: 1.10 MB/s; elapsed: 998.248662ms; connection_time: 2.405967134s }
+# [CZ] SpeedTestResult { speed: 126.88 KB/s; elapsed: 992.70784ms; connection_time: 3.958322634s }
+# [CZ] SpeedTestResult { speed: 281.04 KB/s; elapsed: 990.109475ms; connection_time: 4.669306596s }
+#     TOP NEIGHBOR - CONNECTION TIME: TH - 567.953743ms
+#     TOP NEIGHBOR - SPEED: TH - 1.10 MB/s
 # 
 # JUMP #4
-# EXPLORING EE
-#     + NEIGHBOR LV (by DistanceFirst)
-#     + NEIGHBOR LT (by DistanceFirst)
-#     + NEIGHBOR BY (by DistanceFirst)
-# EXPLORING UA
-#     + NEIGHBOR AT (by DistanceFirst)
-#     + NEIGHBOR SI (by DistanceFirst)
-#     + NEIGHBOR GR (by DistanceFirst)
-# TOO FEW BYTES LOADED http://mirror.alwyzon.net/archlinux/
-# TOO FEW BYTES LOADED http://ftp.ntua.gr/pub/linux/archlinux/
-# TOO FEW BYTES LOADED http://archlinux.koyanet.lv/archlinux/
-# TOO FEW BYTES LOADED http://archimonde.ts.si/archlinux/
-# TOO FEW BYTES LOADED https://mirror.alwyzon.net/archlinux/
-# TOO FEW BYTES LOADED http://mirror.tux.si/arch/
-# TOO FEW BYTES LOADED http://ftp.byfly.by/pub/archlinux/
-# [LV] FAILED TO CONNECT TO https://archlinux.koyanet.lv/archlinux/extra/os/x86_64/extra.files
-# [GR] FAILED TO CONNECT TO http://ftp.otenet.gr/linux/archlinux/extra/os/x86_64/extra.files
-# [LT] FAILED TO CONNECT TO http://mirrors.atviras.lt/archlinux/extra/os/x86_64/extra.files
-# [BY] FAILED TO CONNECT TO http://mirror.datacenter.by/pub/archlinux/extra/os/x86_64/extra.files
-# [LT] FAILED TO CONNECT TO https://mirrors.atviras.lt/archlinux/extra/os/x86_64/extra.files
-# BLANK ITERATION
-# COUNTRY JUMPING YIELDED TOO FEW MIRRORS (24), ADDING OTHERS TO UNLABELED
+# EXPLORING TH
+#     + NEIGHBOR HU (by DistanceFirst)
+#     + NEIGHBOR SE (by DistanceFirst)
+#     + NEIGHBOR RU (by DistanceFirst)
+# [HU] SpeedTestResult { speed: 451.32 KB/s; elapsed: 870.419756ms; connection_time: 578.606407ms }
+# [HU] SpeedTestResult { speed: 403.42 KB/s; elapsed: 973.777094ms; connection_time: 1.228174548s }
+# [SE] SpeedTestResult { speed: 9.13 MB/s; elapsed: 1.000090177s; connection_time: 1.728624698s }
+# [SE] SpeedTestResult { speed: 414.62 KB/s; elapsed: 947.379864ms; connection_time: 1.879127564s }
+# [RU] FAILED TO CONNECT TO https://repository.su/archlinux/extra/os/x86_64/extra.files
+# [RU] FAILED TO CONNECT TO http://repository.su/archlinux/extra/os/x86_64/extra.files
+#     TOP NEIGHBOR - CONNECTION TIME: HU - 578.606407ms
+#     TOP NEIGHBOR - SPEED: SE - 9.13 MB/s
 # 
-
-# TESTING UNLABELED MIRRORS
-# TOO FEW BYTES LOADED https://archimonde.ts.si/archlinux/
-# TOO FEW BYTES LOADED http://mirror.pmf.kg.ac.rs/archlinux/
-# TOO FEW BYTES LOADED https://mirror.tux.si/arch/
-# [CO] FAILED TO CONNECT TO http://edgeuno-bog2.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO https://www.mirrorservice.org/sites/ftp.archlinux.org/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO http://www.mirrorservice.org/sites/ftp.archlinux.org/extra/os/x86_64/extra.files
-# [BR] FAILED TO CONNECT TO http://mirror.ufscar.br/archlinux/extra/os/x86_64/extra.files
-# [PT] FAILED TO CONNECT TO https://glua.ua.pt/pub/archlinux/extra/os/x86_64/extra.files
-# [SE] FAILED TO CONNECT TO http://ftp.lysator.liu.se/pub/archlinux/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO https://mirrors.hostico.ro/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO http://mirrors.neusoft.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO https://ftp.icm.edu.pl/pub/Linux/dist/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.rit.edu/archlinux/extra/os/x86_64/extra.files
-# [BR] FAILED TO CONNECT TO http://linorg.usp.br/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://repo.ialab.dsu.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://uvermont.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.mia11.us.leaseweb.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.cs.pitt.edu/archlinux/extra/os/x86_64/extra.files
-# [IN] FAILED TO CONNECT TO https://mirrors.nxtgen.com/archlinux-mirror/extra/os/x86_64/extra.files
-# [IN] FAILED TO CONNECT TO http://mirrors.nxtgen.com/archlinux-mirror/extra/os/x86_64/extra.files
-# [SE] FAILED TO CONNECT TO https://ftp.lysator.liu.se/pub/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://nocix.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [IN] FAILED TO CONNECT TO https://archlinux.mirror.net.in/archlinux/extra/os/x86_64/extra.files
-# [TW] FAILED TO CONNECT TO http://mirror.archlinux.tw/ArchLinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.mit.edu/archlinux/extra/os/x86_64/extra.files
-# [CO] FAILED TO CONNECT TO http://mirrors.udenar.edu.co/archlinux/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO http://mirror.onet.pl/pub/mirrors/archlinux/extra/os/x86_64/extra.files
-# [TW] FAILED TO CONNECT TO https://mirror.archlinux.tw/ArchLinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://pkg.adfinis.com/archlinux/
-# [TW] FAILED TO CONNECT TO http://ftp.tku.edu.tw/Linux/ArchLinux/extra/os/x86_64/extra.files
-# [IL] FAILED TO CONNECT TO https://archlinux.mivzakim.net/extra/os/x86_64/extra.files
-# [AU] FAILED TO CONNECT TO https://gsl-syd.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://mirror.lcarilla.de/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://ziply.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [SE] FAILED TO CONNECT TO http://ftpmirror.infania.net/mirror/archlinux/extra/os/x86_64/extra.files
-# [NO] FAILED TO CONNECT TO https://mirror.archlinux.no/extra/os/x86_64/extra.files
-# [TW] FAILED TO CONNECT TO http://archlinux.cs.nycu.edu.tw/extra/os/x86_64/extra.files
-# [TW] FAILED TO CONNECT TO https://archlinux.cs.nycu.edu.tw/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO https://mirrors.sjtug.sjtu.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://archlinux.thaller.ws/extra/os/x86_64/extra.files
-# [DE] SpeedTestResult { speed: 97.92 KB/s; elapsed: 957.699485ms; connection_time: 4.921366419s }
-# [DE] SpeedTestResult { speed: 134.38 KB/s; elapsed: 850.551864ms; connection_time: 4.092686061s }
-# TOO FEW BYTES LOADED http://mirror.init7.net/archlinux/
-# TOO FEW BYTES LOADED http://arch.jensgutermuth.de/
-# TOO FEW BYTES LOADED http://mirror.kumi.systems/archlinux/
-# [CH] FAILED TO CONNECT TO https://mirror.worldhotspot.org/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://archlinux.honkgong.info/
-# TOO FEW BYTES LOADED http://mirror.bahnhof.net/pub/archlinux/
-# TOO FEW BYTES LOADED http://arch.phinau.de/
-# TOO FEW BYTES LOADED http://mirror.fra10.de.leaseweb.net/archlinux/
-# TOO FEW BYTES LOADED http://mirror.f4st.host/archlinux/
-# TOO FEW BYTES LOADED http://mirror.mikrogravitation.org/archlinux/
-# TOO FEW BYTES LOADED http://ftp.fau.de/archlinux/
-# [DE] FAILED TO CONNECT TO https://mirror.lcarilla.de/archlinux/extra/os/x86_64/extra.files
-# [CH] FAILED TO CONNECT TO http://mirror.metanet.ch/archlinux/extra/os/x86_64/extra.files
-# [CH] FAILED TO CONNECT TO https://mirror.init7.net/archlinux/extra/os/x86_64/extra.files
-# [CH] FAILED TO CONNECT TO https://mirror.metanet.ch/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://archlinux.thaller.ws/extra/os/x86_64/extra.files
-# [ZA] FAILED TO CONNECT TO http://archlinux.za.mirror.allworldit.com/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://mirror.ubrco.de/archlinux/extra/os/x86_64/extra.files
-# [ZA] FAILED TO CONNECT TO https://archlinux.za.mirror.allworldit.com/archlinux/extra/os/x86_64/extra.files
-# [ZA] FAILED TO CONNECT TO http://mirror.is.co.za/mirror/archlinux.org/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://arch.jensgutermuth.de/extra/os/x86_64/extra.files
-# [DK] FAILED TO CONNECT TO http://mirror.one.com/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.f4st.host/archlinux/extra/os/x86_64/extra.files
-# [DK] FAILED TO CONNECT TO https://mirror.one.com/archlinux/extra/os/x86_64/extra.files
-# [DK] FAILED TO CONNECT TO https://mirror.safe-con.dk/archlinux/extra/os/x86_64/extra.files
-# [SE] FAILED TO CONNECT TO https://ftp.myrveln.se/pub/linux/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.moson.org/arch/extra/os/x86_64/extra.files
-# [SE] FAILED TO CONNECT TO https://mirror.bahnhof.net/pub/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.ubrco.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://ftp.fau.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://packages.oth-regensburg.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://mirror.23m.com/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://arch.mirror.zachlge.org/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirrors.n-ix.net/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://mirrors.xtom.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://arch.mirror.zachlge.org/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://mirrors.janbruckner.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.metalgamer.eu/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirrors.n-ix.net/archlinux/
-# [DE] FAILED TO CONNECT TO https://ftp.halifax.rwth-aachen.de/archlinux/extra/os/x86_64/extra.files
-# [DE] SpeedTestResult { speed: 228.91 KB/s; elapsed: 995.940597ms; connection_time: 3.868721578s }
-# [DE] SpeedTestResult { speed: 131.42 KB/s; elapsed: 821.327806ms; connection_time: 4.157200742s }
-# [DE] FAILED TO CONNECT TO http://mirror.metalgamer.eu/archlinux/extra/os/x86_64/extra.files
-# [DE] SpeedTestResult { speed: 164.94 KB/s; elapsed: 891.442781ms; connection_time: 5.881158002s }
-# [DE] FAILED TO CONNECT TO https://mirror.pseudoform.org/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://pkg.fef.moe/archlinux/extra/os/x86_64/extra.files
-# [DE] SpeedTestResult { speed: 117.30 KB/s; elapsed: 762.035203ms; connection_time: 4.470203794s }
-# [DE] FAILED TO CONNECT TO https://mirror.dogado.de/archlinux/extra/os/x86_64/extra.files
-# [DE] SpeedTestResult { speed: 123.83 KB/s; elapsed: 995.718485ms; connection_time: 6.068248408s }
-# [DE] FAILED TO CONNECT TO https://arch.unixpeople.org/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.mikrogravitation.org/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.cmt.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://archlinux.homeinfo.de/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://mirror.cmt.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://dist-mirror.fem.tu-ilmenau.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.iusearchbtw.nl/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.netcologne.de/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://mirrors.janbruckner.de/archlinux/
-# TOO FEW BYTES LOADED https://mirror.pagenotfound.de/archlinux/
-# TOO FEW BYTES LOADED http://mirror.selfnet.de/archlinux/
-# [DE] FAILED TO CONNECT TO https://mirror.fra10.de.leaseweb.net/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://mirror.kumi.systems/archlinux/
-# [DE] FAILED TO CONNECT TO https://mirror.selfnet.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://mirror.united-gameserver.de/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://mirror.clientvps.com/archlinux/
-# [DE] FAILED TO CONNECT TO http://mirror.clientvps.com/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://mirror.bethselamin.de/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://ftp.gwdg.de/pub/linux/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://appuals.com/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://archlinux.richard-neumann.de/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://os.codefionn.eu/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://ftp.uni-kl.de/pub/linux/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://ftp.uni-hannover.de/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://os.codefionn.eu/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://ftp.uni-bayreuth.de/linux/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://ftp.spline.inf.fu-berlin.de/mirrors/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://ftp.spline.inf.fu-berlin.de/mirrors/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://ftp.tu-chemnitz.de/pub/linux/archlinux/
-# [DE] SpeedTestResult { speed: 110.35 KB/s; elapsed: 791.76933ms; connection_time: 4.978266644s }
-# [DE] FAILED TO CONNECT TO http://mirror.wtnet.de/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://ftp-stud.hs-esslingen.de/pub/Mirrors/archlinux/
-# [NL] FAILED TO CONNECT TO http://mirror.cj2.nl/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.2degrees.nz/archlinux/
-# [DE] FAILED TO CONNECT TO https://mirror.wtnet.de/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.koddos.net/archlinux/
-# [NL] FAILED TO CONNECT TO https://mirror.cj2.nl/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://ftp.wrz.de/pub/archlinux/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO http://ftp.nluug.nl/os/Linux/distr/archlinux/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO https://ftp.wrz.de/pub/archlinux/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO http://ftp.snt.utwente.nl/pub/os/linux/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://archlinux.mirror.pcextreme.nl/
-# [NL] FAILED TO CONNECT TO http://archlinux.mirror.wearetriple.com/extra/os/x86_64/extra.files
-# [DE] FAILED TO CONNECT TO http://linux.rz.rub.de/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://mirror.koddos.net/archlinux/
-# [NL] FAILED TO CONNECT TO https://archlinux.mirror.wearetriple.com/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO http://mirrors.xtom.nl/archlinux/extra/os/x86_64/extra.files
-# [IT] FAILED TO CONNECT TO https://archmirror.it/repos/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO https://mirrors.xtom.nl/archlinux/extra/os/x86_64/extra.files
-# [IT] FAILED TO CONNECT TO http://archlinux.mirror.garr.it/archlinux/extra/os/x86_64/extra.files
-# [ID] SpeedTestResult { speed: 83.70 KB/s; elapsed: 1.000284966s; connection_time: 6.100334793s }
-# [NZ] SpeedTestResult { speed: 190.88 KB/s; elapsed: 942.835663ms; connection_time: 6.773558392s }
-# [NL] FAILED TO CONNECT TO https://archlinux.mirror.pcextreme.nl/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO http://arch.mirrors.lavatech.top/extra/os/x86_64/extra.files
-# [NZ] FAILED TO CONNECT TO http://mirror.fsmg.org.nz/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://archlinux.ourhome.kiwi/
-# [NZ] FAILED TO CONNECT TO https://mirror.fsmg.org.nz/archlinux/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO http://archlinux.mirror.liteserver.nl/extra/os/x86_64/extra.files
-# [UA] FAILED TO CONNECT TO http://archlinux.astra.in.ua/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO https://archlinux.mirror.liteserver.nl/extra/os/x86_64/extra.files
-# [UA] FAILED TO CONNECT TO https://archlinux.astra.in.ua/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO http://mirrors.evoluso.com/archlinux/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO http://mirror.lyrahosting.com/archlinux/extra/os/x86_64/extra.files
-# [UA] FAILED TO CONNECT TO http://fastmirror.pp.ua/archlinux/extra/os/x86_64/extra.files
-# [UA] FAILED TO CONNECT TO https://fastmirror.pp.ua/archlinux/extra/os/x86_64/extra.files
-# [UA] FAILED TO CONNECT TO http://mirrors.nix.org.ua/linux/archlinux/extra/os/x86_64/extra.files
-# [NL] FAILED TO CONNECT TO https://mirror.lyrahosting.com/archlinux/extra/os/x86_64/extra.files
-# [UA] FAILED TO CONNECT TO https://mirrors.nix.org.ua/linux/archlinux/extra/os/x86_64/extra.files
-# [AT] FAILED TO CONNECT TO http://mirror.digitalnova.at/archlinux/extra/os/x86_64/extra.files
-# [ID] FAILED TO CONNECT TO http://mirror.faizuladib.com/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.repository.id/archlinux/
-# TOO FEW BYTES LOADED http://mirror.csclub.uwaterloo.ca/archlinux/
-# [AT] FAILED TO CONNECT TO http://mirror.easyname.at/archlinux/extra/os/x86_64/extra.files
-# [EC] SpeedTestResult { speed: 92.95 KB/s; elapsed: 897.98961ms; connection_time: 6.169527811s }
-# TOO FEW BYTES LOADED http://mirror.gi.co.id/archlinux/
-# [ID] FAILED TO CONNECT TO https://kacabenggala.uny.ac.id/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.xenyth.net/archlinux/
-# [MD] FAILED TO CONNECT TO http://md.mirrors.hacktegic.com/archlinux/extra/os/x86_64/extra.files
-# [CA] FAILED TO CONNECT TO https://mirror.csclub.uwaterloo.ca/archlinux/extra/os/x86_64/extra.files
-# [MD] FAILED TO CONNECT TO https://md.mirrors.hacktegic.com/archlinux/extra/os/x86_64/extra.files
-# [ID] FAILED TO CONNECT TO https://mirror.gi.co.id/archlinux/extra/os/x86_64/extra.files
-# [CA] FAILED TO CONNECT TO https://mirror.xenyth.net/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.papua.go.id/archlinux/
-# TOO FEW BYTES LOADED http://mirror.nw-sys.ru/archlinux/
-# TOO FEW BYTES LOADED http://mirror.scd31.com/arch/
-# [CA] FAILED TO CONNECT TO http://archlinux.mirror.rafal.ca/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://kebo.pens.ac.id/archlinux/
-# [CA] FAILED TO CONNECT TO https://mirror.scd31.com/arch/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror2.evolution-host.com/archlinux/
-# [EE] FAILED TO CONNECT TO https://repo.br.ee/arch/extra/os/x86_64/extra.files
-# [CA] FAILED TO CONNECT TO http://mirror.its.dal.ca/archlinux/extra/os/x86_64/extra.files
-# [CA] FAILED TO CONNECT TO https://mirror2.evolution-host.com/archlinux/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO http://mirror.kamtv.ru/archlinux/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO https://mirror.nw-sys.ru/archlinux/extra/os/x86_64/extra.files
-# [CA] FAILED TO CONNECT TO https://arch.mirror.winslow.cloud/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO https://mirror.surf/archlinux/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO https://mirror.kamtv.ru/archlinux/extra/os/x86_64/extra.files
-# [EE] FAILED TO CONNECT TO https://mirror.cspacehostings.com/archlinux/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO http://mirror.kpfu.ru/archlinux/extra/os/x86_64/extra.files
-# [EE] FAILED TO CONNECT TO https://mirrors.xtom.ee/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://repo.br.ee/arch/
-# [RU] FAILED TO CONNECT TO https://mirror.kpfu.ru/archlinux/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO http://mirror.truenetwork.ru/archlinux/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO https://mirror.truenetwork.ru/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://mirrors.celianvdb.fr/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://mirror.theo546.fr/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://mirror.theo546.fr/archlinux/extra/os/x86_64/extra.files
-# [RU] FAILED TO CONNECT TO http://mirrors.powernet.com.ru/archlinux/extra/os/x86_64/extra.files
-# [SK] FAILED TO CONNECT TO http://tux.rainside.sk/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://archlinux.mailtunnel.eu/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.oldsql.cc/archlinux/
-# TOO FEW BYTES LOADED http://mirror.lastmikoi.net/archlinux/
-# [FR] SpeedTestResult { speed: 105.56 KB/s; elapsed: 938.770174ms; connection_time: 4.357467154s }
-# TOO FEW BYTES LOADED http://ftp.u-strasbg.fr/linux/distributions/archlinux/
-# TOO FEW BYTES LOADED http://archlinux.mirror.liquidtelecom.com/
-# [KE] FAILED TO CONNECT TO https://archlinux.mirror.liquidtelecom.com/extra/os/x86_64/extra.files
-# [RE] FAILED TO CONNECT TO http://arch.mithril.re/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://mirroir.labhouse.fr/arch/extra/os/x86_64/extra.files
-# [FR] SpeedTestResult { speed: 84.47 KB/s; elapsed: 850.750744ms; connection_time: 3.995200877s }
-# [FR] SpeedTestResult { speed: 135.49 KB/s; elapsed: 841.424918ms; connection_time: 4.729358605s }
-# [FR] FAILED TO CONNECT TO https://mirrors.celianvdb.fr/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://archlinux.mailtunnel.eu/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://mirroir.labhouse.fr/arch/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://archlinux.datagr.am/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://arch.yourlabs.org/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://mirror.thekinrar.fr/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://arch.yourlabs.org/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://mirrors.eric.ovh/arch/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.funami.tech/arch/
-# [FR] FAILED TO CONNECT TO https://mirror.wormhole.eu/archlinux/extra/os/x86_64/extra.files
-# [CZ] SpeedTestResult { speed: 82.08 KB/s; elapsed: 994.682629ms; connection_time: 6.069092464s }
-# [FR] FAILED TO CONNECT TO http://mir.archlinux.fr/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://mirrors.gandi.net/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://mirrors.gandi.net/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO http://mirror.archlinux.ikoula.com/archlinux/extra/os/x86_64/extra.files
-# [FR] FAILED TO CONNECT TO https://mirrors.slaanesh.org/archlinux/extra/os/x86_64/extra.files
-# [MK] FAILED TO CONNECT TO http://arch.softver.org.mk/archlinux/extra/os/x86_64/extra.files
-# [KR] FAILED TO CONNECT TO https://mirror.funami.tech/arch/extra/os/x86_64/extra.files
-# [KR] FAILED TO CONNECT TO https://mirror.premi.st/archlinux/extra/os/x86_64/extra.files
-# [KR] FAILED TO CONNECT TO http://devpg.net/archlinux/extra/os/x86_64/extra.files
-# [KR] FAILED TO CONNECT TO http://mirror.premi.st/archlinux/extra/os/x86_64/extra.files
-# [KR] FAILED TO CONNECT TO https://devpg.net/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.xeonbd.com/archlinux/
-# [CZ] FAILED TO CONNECT TO https://mirror.dkm.cz/archlinux/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO http://mirrors.nic.cz/archlinux/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO http://mirror.dkm.cz/archlinux/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO http://gluttony.sin.cvut.cz/arch/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO https://mirrors.nic.cz/archlinux/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO https://gluttony.sin.cvut.cz/arch/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO https://ftp.sh.cvut.cz/arch/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO http://mirror.vpsfree.cz/archlinux/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO http://ftp.fi.muni.cz/pub/linux/arch/extra/os/x86_64/extra.files
-# [CZ] FAILED TO CONNECT TO http://ftp.linux.cz/pub/linux/arch/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://mirror.it4i.cz/arch/
-# [HK] FAILED TO CONNECT TO https://mirror.xtom.com.hk/archlinux/extra/os/x86_64/extra.files
-# [HK] FAILED TO CONNECT TO https://hkg.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [HK] FAILED TO CONNECT TO http://hkg.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.nishi.network/archlinux/
-# [HK] FAILED TO CONNECT TO http://mirror-hk.koddos.net/archlinux/extra/os/x86_64/extra.files
-# [TH] FAILED TO CONNECT TO https://mirror.kku.ac.th/archlinux/extra/os/x86_64/extra.files
-# [TH] FAILED TO CONNECT TO http://mirror2.totbb.net/archlinux/extra/os/x86_64/extra.files
-# [ES] FAILED TO CONNECT TO http://mirror.librelabucm.org/archlinux/extra/os/x86_64/extra.files
-# [ES] FAILED TO CONNECT TO http://ftp.rediris.es/mirror/archlinux/extra/os/x86_64/extra.files
-# [ES] FAILED TO CONNECT TO https://mirror.librelabucm.org/archlinux/extra/os/x86_64/extra.files
-# [JP] FAILED TO CONNECT TO http://mirrors.cat.net/archlinux/extra/os/x86_64/extra.files
-# [JP] FAILED TO CONNECT TO https://mirrors.cat.net/archlinux/extra/os/x86_64/extra.files
-# [JP] FAILED TO CONNECT TO http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.bizflycloud.vn/archlinux/
-# [JP] FAILED TO CONNECT TO https://mirror.nishi.network/archlinux/extra/os/x86_64/extra.files
-# [SG] FAILED TO CONNECT TO http://mirror.0x.sg/archlinux/extra/os/x86_64/extra.files
-# [SG] FAILED TO CONNECT TO http://ossmirror.mycloud.services/os/linux/archlinux/extra/os/x86_64/extra.files
-# [SG] FAILED TO CONNECT TO https://mirror.0x.sg/archlinux/extra/os/x86_64/extra.files
-# [SG] FAILED TO CONNECT TO https://mirror.aktkn.sg/archlinux/extra/os/x86_64/extra.files
-# [SG] FAILED TO CONNECT TO http://mirror.sg.gs/archlinux/extra/os/x86_64/extra.files
-# [SG] FAILED TO CONNECT TO https://mirror.sg.gs/archlinux/extra/os/x86_64/extra.files
-# [IR] FAILED TO CONNECT TO http://mirror.hostiran.ir/archlinux/extra/os/x86_64/extra.files
-# [IR] FAILED TO CONNECT TO https://mirror.hostiran.ir/archlinux/extra/os/x86_64/extra.files
-# [IR] FAILED TO CONNECT TO http://repo.iut.ac.ir/repo/archlinux/extra/os/x86_64/extra.files
-# [TR] FAILED TO CONNECT TO http://ftp.linux.org.tr/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.acm.wpi.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.cs.vt.edu/pub/ArchLinux/extra/os/x86_64/extra.files
-# [AZ] FAILED TO CONNECT TO https://mirror.hostart.az/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://distro.ibiblio.org/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.fossable.org/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://wcbmedia.io:8000/extra/os/x86_64/extra.files
-# [BG] FAILED TO CONNECT TO http://mirrors.netix.net/archlinux/extra/os/x86_64/extra.files
-# [BG] FAILED TO CONNECT TO http://mirror.host.ag/archlinux/extra/os/x86_64/extra.files
-# [BG] FAILED TO CONNECT TO https://mirrors.uni-plovdiv.net/archlinux/extra/os/x86_64/extra.files
-# [BG] FAILED TO CONNECT TO https://mirror.telepoint.bg/archlinux/extra/os/x86_64/extra.files
-# [AZ] FAILED TO CONNECT TO http://mirror.hostart.az/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://ftp.iinet.net.au/pub/archlinux/
-# [AU] SpeedTestResult { speed: 78.33 KB/s; elapsed: 950.367937ms; connection_time: 6.423968368s }
-# [HR] FAILED TO CONNECT TO http://archlinux.iskon.hr/extra/os/x86_64/extra.files
-# [AU] FAILED TO CONNECT TO http://ftp.swin.edu.au/archlinux/extra/os/x86_64/extra.files
-# [AU] FAILED TO CONNECT TO https://syd.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [AU] FAILED TO CONNECT TO http://syd.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [AU] FAILED TO CONNECT TO http://mirror.internode.on.net/pub/archlinux/extra/os/x86_64/extra.files
-# [GR] FAILED TO CONNECT TO http://ftp.cc.uoc.gr/mirrors/linux/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.lug.mtu.edu/archlinux/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO https://repo.skni.umcs.pl/archlinux/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO http://repo.skni.umcs.pl/archlinux/extra/os/x86_64/extra.files
-# [MU] FAILED TO CONNECT TO http://archlinux-mirror.cloud.mu/extra/os/x86_64/extra.files
-# [MU] FAILED TO CONNECT TO https://archlinux-mirror.cloud.mu/extra/os/x86_64/extra.files
-# [GE] FAILED TO CONNECT TO http://archlinux.grena.ge/extra/os/x86_64/extra.files
-# [GE] FAILED TO CONNECT TO https://archlinux.grena.ge/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://archmirror1.octyl.net/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.lug.mtu.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.hackingand.coffee/arch/extra/os/x86_64/extra.files
-# [US] SpeedTestResult { speed: 95.19 KB/s; elapsed: 944.484764ms; connection_time: 5.687299874s }
-# [US] FAILED TO CONNECT TO https://mirror.hackingand.coffee/arch/extra/os/x86_64/extra.files
-# [IS] SpeedTestResult { speed: 199.74 KB/s; elapsed: 986.753983ms; connection_time: 1.993301683s }
-# [US] FAILED TO CONNECT TO https://arch.hu.fo/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://archmirror1.octyl.net/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.xtom.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.sfo12.us.leaseweb.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://m.lqy.me/arch/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.arizona.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mnvoip.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.ocf.berkeley.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.cat.pdx.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.dal10.us.leaseweb.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://arch.mirror.ivo.st/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.arizona.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://volico.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.adectra.com/archlinux/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO http://mirrors.nxthost.com/archlinux/extra/os/x86_64/extra.files
-# [NO] FAILED TO CONNECT TO http://mirror.archlinux.no/extra/os/x86_64/extra.files
-# [NO] FAILED TO CONNECT TO https://lysakermoen.com/Software/Linux/Mirrors/ArchLinux/extra/os/x86_64/extra.files
-# [NO] FAILED TO CONNECT TO http://lysakermoen.com/Software/Linux/Mirrors/ArchLinux/extra/os/x86_64/extra.files
-# [NC] FAILED TO CONNECT TO http://mirror.lagoon.nc/pub/archlinux/extra/os/x86_64/extra.files
-# [MX] FAILED TO CONNECT TO https://arch.jsc.mx/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://southfront.mm.fcix.net/archlinux/
-# [RO] FAILED TO CONNECT TO https://mirrors.pidginhost.com/arch/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO https://mirror.efect.ro/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED https://is.mirror.flokinet.net/archlinux/
-# TOO FEW BYTES LOADED http://mirror.math.princeton.edu/pub/archlinux/
-# TOO FEW BYTES LOADED http://uvermont.mm.fcix.net/archlinux/
-# TOO FEW BYTES LOADED http://mirror.dc.uz/arch/
-# [UZ] FAILED TO CONNECT TO https://mirror.dc.uz/arch/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirrors.bfsu.edu.cn/archlinux/
-# TOO FEW BYTES LOADED https://mirrors.rit.edu/archlinux/
-# TOO FEW BYTES LOADED http://archlinux.interhost.co.il/
-# TOO FEW BYTES LOADED http://quantum-mirror.hu/mirrors/pub/archlinux/
-# [RO] SpeedTestResult { speed: 101.51 KB/s; elapsed: 885.619555ms; connection_time: 3.639022121s }
-# TOO FEW BYTES LOADED https://mirror.lty.me/archlinux/
-# [US] FAILED TO CONNECT TO http://irltoolkit.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.tmmworkshop.com/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO https://mirrors.cqu.edu.cn/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.flokinet.net/archlinux/
-# [SE] FAILED TO CONNECT TO https://ftp.ludd.ltu.se/mirrors/archlinux/extra/os/x86_64/extra.files
-# [MC] FAILED TO CONNECT TO http://mirrors.qontinuum.space/archlinux/extra/os/x86_64/extra.files
-# [MC] FAILED TO CONNECT TO https://mirrors.qontinuum.space/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO http://mirrors.ustc.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [HU] FAILED TO CONNECT TO https://ftp.ek-cer.hu/pub/mirrors/ftp.archlinux.org/extra/os/x86_64/extra.files
-# [BA] SpeedTestResult { speed: 110.71 KB/s; elapsed: 870.276121ms; connection_time: 6.052016856s }
-# [PL] SpeedTestResult { speed: 136.16 KB/s; elapsed: 660.243004ms; connection_time: 5.217422293s }
-# [IL] FAILED TO CONNECT TO https://archlinux.interhost.co.il/extra/os/x86_64/extra.files
-# [HU] FAILED TO CONNECT TO https://super.quantum-mirror.hu/mirrors/pub/archlinux/extra/os/x86_64/extra.files
-# [HU] FAILED TO CONNECT TO https://nova.quantum-mirror.hu/mirrors/pub/archlinux/extra/os/x86_64/extra.files
-# [HU] FAILED TO CONNECT TO https://quantum-mirror.hu/mirrors/pub/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirrors.jlu.edu.cn/archlinux/
-# [CN] FAILED TO CONNECT TO https://mirrors.tuna.tsinghua.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO https://mirrors.neusoft.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO http://arch.sakamoto.pl/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO https://arch.midov.pl/arch/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO https://ftp.psnc.pl/linux/archlinux/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO http://archlinux.mirrors.linux.ro/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO https://mirror.flokinet.net/archlinux/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO https://mirrors.nxthost.com/archlinux/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO http://mirrors.chroot.ro/archlinux/extra/os/x86_64/extra.files
-# [RO] FAILED TO CONNECT TO https://mirrors.chroot.ro/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.5i.fi/archlinux/
-# [CN] FAILED TO CONNECT TO https://mirrors.shanghaitech.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO http://mirrors.shanghaitech.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO http://mirror.lzu.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO https://mirrors.xjtu.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [FI] FAILED TO CONNECT TO https://arch.kyberorg.fi/extra/os/x86_64/extra.files
-# [FI] FAILED TO CONNECT TO https://arch.yhtez.xyz/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirrors.rutgers.edu/archlinux/
-# [US] FAILED TO CONNECT TO https://plug-mirror.rcac.purdue.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://ziply.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://dfw.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://volico.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.phx1.us.spryservers.net/archlinux/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO https://arch.sakamoto.pl/extra/os/x86_64/extra.files
-# [PL] FAILED TO CONNECT TO http://ftp.psnc.pl/linux/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO http://mirrors.cqu.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [AZ] FAILED TO CONNECT TO http://mirror.yer.az/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO https://mirrors.jlu.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [IN] SpeedTestResult { speed: 443.14 KB/s; elapsed: 995.399201ms; connection_time: 4.734784754s }
-# [AZ] FAILED TO CONNECT TO https://mirror.yer.az/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://dfw.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.radwebhosting.com/archlinux/extra/os/x86_64/extra.files
-# [CL] FAILED TO CONNECT TO http://mirror.hnd.cl/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.clarkson.edu/archlinux/extra/os/x86_64/extra.files
-# [CL] FAILED TO CONNECT TO http://mirror.ufro.cl/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.mit.edu/archlinux/extra/os/x86_64/extra.files
-# [US] SpeedTestResult { speed: 164.34 KB/s; elapsed: 962.148ms; connection_time: 5.905073299s }
-# [CL] FAILED TO CONNECT TO https://mirror.hnd.cl/archlinux/extra/os/x86_64/extra.files
-# [US] SpeedTestResult { speed: 126.98 KB/s; elapsed: 991.967775ms; connection_time: 6.082107067s }
-# [CL] FAILED TO CONNECT TO https://mirror.ufro.cl/archlinux/extra/os/x86_64/extra.files
-# [IN] FAILED TO CONNECT TO https://mirror.sahil.world/archlinux/extra/os/x86_64/extra.files
-# [IN] FAILED TO CONNECT TO https://mirror.albony.xyz/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://ord.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.phx1.us.spryservers.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.sonic.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.advancedhosters.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://zxcvfdsa.com/arch/extra/os/x86_64/extra.files
-# [FI] FAILED TO CONNECT TO https://mirror.5i.fi/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://nnenix.mm.fcix.net/archlinux/
-# [US] FAILED TO CONNECT TO https://nnenix.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [FI] FAILED TO CONNECT TO https://mirror.hel.sl-chat.ru/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.fcix.net/archlinux/
-# [FI] FAILED TO CONNECT TO http://arch.mirror.far.fi/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.stephanie.is/archlinux/extra/os/x86_64/extra.files
-# [US] SpeedTestResult { speed: 75.32 KB/s; elapsed: 991.578602ms; connection_time: 6.064868292s }
-# [FI] FAILED TO CONNECT TO https://mirror.srv.fail/archlinux/extra/os/x86_64/extra.files
-# [AR] FAILED TO CONNECT TO https://mirrors.eze.sysarmy.com/archlinux/extra/os/x86_64/extra.files
-# [AR] FAILED TO CONNECT TO http://mirrors.eze.sysarmy.com/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.siena.edu/archlinux/
-# [US] FAILED TO CONNECT TO http://ohioix.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://coresite.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.adectra.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.xmission.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://codingflyboy.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://irltoolkit.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [UK] SpeedTestResult { speed: 210.90 KB/s; elapsed: 804.700149ms; connection_time: 5.733701776s }
-# [US] FAILED TO CONNECT TO https://mirror.umd.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://southfront.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://forksystems.mm.fcix.net/archlinux/
-# [US] FAILED TO CONNECT TO http://mirror.umd.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.vtti.vt.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.ette.biz/archlinux/extra/os/x86_64/extra.files
-# [CN] FAILED TO CONNECT TO https://mirrors.ustc.edu.cn/archlinux/extra/os/x86_64/extra.files
-# [PL] SpeedTestResult { speed: 138.55 KB/s; elapsed: 537.657008ms; connection_time: 7.228416731s }
-# TOO FEW BYTES LOADED http://glua.ua.pt/pub/archlinux/
-# [UK] FAILED TO CONNECT TO https://mirror.vinehost.net/archlinux/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO http://archlinux.uk.mirror.allworldit.com/archlinux/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO https://archlinux.uk.mirror.allworldit.com/archlinux/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO http://mirror.vinehost.net/archlinux/extra/os/x86_64/extra.files
-# [US] SpeedTestResult { speed: 83.77 KB/s; elapsed: 904.074795ms; connection_time: 4.918598909s }
-# [UK] SpeedTestResult { speed: 128.41 KB/s; elapsed: 684.447209ms; connection_time: 7.286027591s }
-# [UK] FAILED TO CONNECT TO http://mirror.netweaver.uk/archlinux/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO https://mirror.netweaver.uk/archlinux/extra/os/x86_64/extra.files
-# [PT] FAILED TO CONNECT TO https://ftp.rnl.tecnico.ulisboa.pt/pub/archlinux/extra/os/x86_64/extra.files
-# [PT] FAILED TO CONNECT TO http://ftp.rnl.tecnico.ulisboa.pt/pub/archlinux/extra/os/x86_64/extra.files
-# [CO] FAILED TO CONNECT TO https://edgeuno-bog2.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://iad.mirrors.misaka.one/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.dal10.us.leaseweb.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirror.sfo12.us.leaseweb.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.bloomu.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.bloomu.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://ftp.osuosl.org/pub/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://iad.mirrors.misaka.one/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://codingflyboy.mm.fcix.net/archlinux/
-# [UK] FAILED TO CONNECT TO https://mirror.infernocomms.net/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://opencolo.mm.fcix.net/archlinux/
-# [UK] FAILED TO CONNECT TO https://mirrors.ukfast.co.uk/sites/archlinux.org/extra/os/x86_64/extra.files
-# [UK] SpeedTestResult { speed: 157.22 KB/s; elapsed: 931.026041ms; connection_time: 6.838779549s }
-# TOO FEW BYTES LOADED http://ftp.osuosl.org/pub/archlinux/
-# [US] FAILED TO CONNECT TO https://mirror.ette.biz/archlinux/extra/os/x86_64/extra.files
-# [UK] SpeedTestResult { speed: 198.46 KB/s; elapsed: 945.925518ms; connection_time: 7.05479967s }
-# [UK] FAILED TO CONNECT TO https://mirror.bytemark.co.uk/archlinux/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO https://repo.slithery.uk/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mnvoip.mm.fcix.net/archlinux/
-# [US] FAILED TO CONNECT TO http://mirrors.vectair.net/archlinux/extra/os/x86_64/extra.files
-# [UK] FAILED TO CONNECT TO http://mirrors.ukfast.co.uk/sites/archlinux.org/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://mirrors.xtom.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://ord.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://coresite.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://iad.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://ohioix.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirror.clarkson.edu/archlinux/
-# [US] FAILED TO CONNECT TO http://plug-mirror.rcac.purdue.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.ocf.berkeley.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirrors.vectair.net/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://mirrors.sonic.net/archlinux/
-# [US] FAILED TO CONNECT TO https://forksystems.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://opencolo.mm.fcix.net/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO http://iad.mirror.rackspace.com/archlinux/extra/os/x86_64/extra.files
-# TOO FEW BYTES LOADED http://nocix.mm.fcix.net/archlinux/
-# [US] FAILED TO CONNECT TO https://repo.ialab.dsu.edu/archlinux/extra/os/x86_64/extra.files
-# [US] FAILED TO CONNECT TO https://mirror.wdc1.us.leaseweb.net/archlinux/extra/os/x86_64/extra.files
+# JUMP #5
+# EXPLORING HU
+#     + NEIGHBOR AT (by DistanceFirst)
+#     + NEIGHBOR BG (by DistanceFirst)
+#     + NEIGHBOR MK (by DistanceFirst)
+# EXPLORING SE
+#     + NEIGHBOR DK (by DistanceFirst)
+#     + NEIGHBOR NO (by DistanceFirst)
+#     + NEIGHBOR UA (by DistanceFirst)
+# [MK] SpeedTestResult { speed: 265.62 KB/s; elapsed: 996.755578ms; connection_time: 670.743869ms }
+# TOO FEW BYTES LOADED http://mirrors.dotsrc.org/archlinux/
+# [AT] SpeedTestResult { speed: 544.23 KB/s; elapsed: 992.739962ms; connection_time: 872.222014ms }
+# [AT] SpeedTestResult { speed: 341.71 KB/s; elapsed: 936.069691ms; connection_time: 1.216974071s }
+# [NO] SpeedTestResult { speed: 317.51 KB/s; elapsed: 977.577238ms; connection_time: 1.422030901s }
+# [UA] SpeedTestResult { speed: 324.84 KB/s; elapsed: 999.45217ms; connection_time: 1.439006972s }
+# [MK] SpeedTestResult { speed: 447.29 KB/s; elapsed: 695.294373ms; connection_time: 1.48469168s }
+# TOO FEW BYTES LOADED https://mirrors.dotsrc.org/archlinux/
+# [UA] SpeedTestResult { speed: 195.32 KB/s; elapsed: 987.850727ms; connection_time: 2.018576231s }
+# [NO] SpeedTestResult { speed: 334.55 KB/s; elapsed: 880.706972ms; connection_time: 2.13723588s }
+# [BG] SpeedTestResult { speed: 311.11 KB/s; elapsed: 932.222157ms; connection_time: 2.629469043s }
+# [BG] SpeedTestResult { speed: 693.19 KB/s; elapsed: 968.553655ms; connection_time: 3.582397347s }
+#     TOP NEIGHBOR - CONNECTION TIME: MK - 670.743869ms
+#     TOP NEIGHBOR - SPEED: BG - 693.19 KB/s
+# 
+# JUMP #6
+# EXPLORING MK
+#     + NEIGHBOR GR (by DistanceFirst)
+#     + NEIGHBOR TR (by DistanceFirst)
+#     + NEIGHBOR SI (by DistanceFirst)
+# EXPLORING BG
+#     + NEIGHBOR FI (by DistanceFirst)
+#     + NEIGHBOR IT (by DistanceFirst)
+#     + NEIGHBOR IN (by DistanceFirst)
+# [IN] SpeedTestResult { speed: 6.33 MB/s; elapsed: 999.267223ms; connection_time: 1.045475423s }
+# [FI] SpeedTestResult { speed: 301.74 KB/s; elapsed: 963.855645ms; connection_time: 1.485075963s }
+# [SI] SpeedTestResult { speed: 107.54 KB/s; elapsed: 955.406833ms; connection_time: 1.588773925s }
+# [TR] SpeedTestResult { speed: 195.26 KB/s; elapsed: 998.702633ms; connection_time: 1.95991518s }
+# [TR] SpeedTestResult { speed: 400.45 KB/s; elapsed: 980.501476ms; connection_time: 2.219975628s }
+# [SI] SpeedTestResult { speed: 217.37 KB/s; elapsed: 941.014425ms; connection_time: 2.327035795s }
+# [FI] SpeedTestResult { speed: 892.17 KB/s; elapsed: 991.304966ms; connection_time: 2.426206265s }
+# [IN] SpeedTestResult { speed: 512.50 KB/s; elapsed: 956.792129ms; connection_time: 2.710853671s }
+# TOO FEW BYTES LOADED http://ftp.ntua.gr/pub/linux/archlinux/
+# [IT] SpeedTestResult { speed: 384.94 KB/s; elapsed: 999.737614ms; connection_time: 4.401392888s }
+# [GR] SpeedTestResult { speed: 436.53 KB/s; elapsed: 914.071188ms; connection_time: 4.767246463s }
+# [IT] SpeedTestResult { speed: 497.49 KB/s; elapsed: 789.833526ms; connection_time: 5.146946318s }
+#     TOP NEIGHBOR - CONNECTION TIME: IN - 1.045475423s
+#     TOP NEIGHBOR - SPEED: IN - 6.33 MB/s
+# 
+# JUMP #7
+# EXPLORING IN
+#     + NEIGHBOR UZ (by DistanceFirst)
+#     + NEIGHBOR EE (by DistanceFirst)
+#     + NEIGHBOR GE (by DistanceFirst)
+# [EE] SpeedTestResult { speed: 238.36 KB/s; elapsed: 798.615825ms; connection_time: 989.087545ms }
+# [UZ] SpeedTestResult { speed: 199.35 KB/s; elapsed: 768.20858ms; connection_time: 1.251253932s }
+# TOO FEW BYTES LOADED http://archlinux.grena.ge/
+# [UZ] SpeedTestResult { speed: 413.06 KB/s; elapsed: 990.928591ms; connection_time: 1.929797693s }
+# TOO FEW BYTES LOADED https://archlinux.grena.ge/
+# [EE] SpeedTestResult { speed: 211.06 KB/s; elapsed: 914.498347ms; connection_time: 4.087363175s }
+#     TOP NEIGHBOR - CONNECTION TIME: EE - 989.087545ms
+#     TOP NEIGHBOR - SPEED: UZ - 413.06 KB/s
 # 
 
 # RE-TESTING TOP MIRRORS
-# [NL] SpeedTestResult { speed: 264.65 KB/s; elapsed: 555.829294ms; connection_time: 1.997154253s }
-# [IN] SpeedTestResult { speed: 190.52 KB/s; elapsed: 811.169892ms; connection_time: 1.461707364s }
-# TOO FEW BYTES LOADED https://mirror.ditatompel.com/archlinux/
-# [SE] SpeedTestResult { speed: 199.91 KB/s; elapsed: 925.342589ms; connection_time: 1.152521551s }
-# [SG] SpeedTestResult { speed: 289.55 KB/s; elapsed: 1.000222965s; connection_time: 1.056692365s }
+# [SE] SpeedTestResult { speed: 642.21 KB/s; elapsed: 969.45835ms; connection_time: 1.04900064s }
+# [IN] SpeedTestResult { speed: 7.45 MB/s; elapsed: 990.871908ms; connection_time: 147.432089ms }
+# [US] FAILED TO CONNECT TO https://us.mirrors.cicku.me/archlinux/extra/os/x86_64/extra.files
+# [TH] SpeedTestResult { speed: 1.26 MB/s; elapsed: 990.807996ms; connection_time: 580.168545ms }
+# [ID] SpeedTestResult { speed: 822.30 KB/s; elapsed: 992.588227ms; connection_time: 431.92117ms }
 # ==== RESULTS (top re-tested) ====
-#   1. [SG] SpeedTestResult { speed: 289.55 KB/s; elapsed: 1.000222965s; connection_time: 1.056692365s } -> http://mirror.jingk.ai/archlinux/
-#   2. [NL] SpeedTestResult { speed: 264.65 KB/s; elapsed: 555.829294ms; connection_time: 1.997154253s } -> https://mirror.ams1.nl.leaseweb.net/archlinux/
-#   3. [SE] SpeedTestResult { speed: 199.91 KB/s; elapsed: 925.342589ms; connection_time: 1.152521551s } -> https://mirror.osbeck.com/archlinux/
-#   4. [IN] SpeedTestResult { speed: 190.52 KB/s; elapsed: 811.169892ms; connection_time: 1.461707364s } -> http://mirror.sahil.world/archlinux/
-#   5. [NL] SpeedTestResult { speed: 294.26 KB/s; elapsed: 962.101695ms; connection_time: 6.050996372s } -> http://mirror.ams1.nl.leaseweb.net/archlinux/
-#   6. [NO] SpeedTestResult { speed: 258.43 KB/s; elapsed: 632.935674ms; connection_time: 3.361674622s } -> https://mirror.neuf.no/archlinux/
-#   7. [RO] SpeedTestResult { speed: 249.31 KB/s; elapsed: 774.099132ms; connection_time: 6.262619527s } -> http://mirror.efect.ro/archlinux/
-#   8. [DE] SpeedTestResult { speed: 228.91 KB/s; elapsed: 995.940597ms; connection_time: 3.868721578s } -> http://mirror.netcologne.de/archlinux/
-#   9. [UK] SpeedTestResult { speed: 210.90 KB/s; elapsed: 804.700149ms; connection_time: 5.733701776s } -> http://lon.mirror.rackspace.com/archlinux/
-#  10. [IS] SpeedTestResult { speed: 199.74 KB/s; elapsed: 986.753983ms; connection_time: 1.993301683s } -> http://is.mirror.flokinet.net/archlinux/
-#  11. [UK] SpeedTestResult { speed: 198.46 KB/s; elapsed: 945.925518ms; connection_time: 7.05479967s } -> http://mirror.infernocomms.net/archlinux/
-#  12. [UA] SpeedTestResult { speed: 196.47 KB/s; elapsed: 748.978482ms; connection_time: 3.088461683s } -> https://mirror.mirohost.net/archlinux/
-#  13. [NZ] SpeedTestResult { speed: 190.88 KB/s; elapsed: 942.835663ms; connection_time: 6.773558392s } -> https://mirror.2degrees.nz/archlinux/
-#  14. [FI] SpeedTestResult { speed: 184.94 KB/s; elapsed: 918.019511ms; connection_time: 2.918032523s } -> http://arch.kyberorg.fi/
-#  15. [RU] SpeedTestResult { speed: 179.10 KB/s; elapsed: 983.795285ms; connection_time: 6.190069881s } -> http://mirror.surf/archlinux/
-#  16. [SG] SpeedTestResult { speed: 174.77 KB/s; elapsed: 937.44151ms; connection_time: 1.478478943s } -> https://mirror.jingk.ai/archlinux/
-#  17. [FR] SpeedTestResult { speed: 170.26 KB/s; elapsed: 575.865143ms; connection_time: 3.578761682s } -> https://mirror.cyberbits.eu/archlinux/
-#  18. [BG] SpeedTestResult { speed: 166.66 KB/s; elapsed: 964.483878ms; connection_time: 4.903556056s } -> http://mirror.telepoint.bg/archlinux/
-#  19. [HK] SpeedTestResult { speed: 165.77 KB/s; elapsed: 989.947963ms; connection_time: 3.171704868s } -> https://arch-mirror.wtako.net/
-#  20. [DE] SpeedTestResult { speed: 164.94 KB/s; elapsed: 891.442781ms; connection_time: 5.881158002s } -> https://mirrors.xtom.de/archlinux/
-#  21. [US] SpeedTestResult { speed: 164.34 KB/s; elapsed: 962.148ms; connection_time: 5.905073299s } -> http://mirror.rackspace.com/archlinux/
-#  22. [UK] SpeedTestResult { speed: 157.22 KB/s; elapsed: 931.026041ms; connection_time: 6.838779549s } -> http://mirror.bytemark.co.uk/archlinux/
-#  23. [EE] SpeedTestResult { speed: 143.96 KB/s; elapsed: 1.000274937s; connection_time: 1.66477294s } -> http://mirrors.xtom.ee/archlinux/
-#  24. [ID] SpeedTestResult { speed: 142.85 KB/s; elapsed: 998.061715ms; connection_time: 2.226381858s } -> http://mirror.ditatompel.com/archlinux/
-#  25. [PL] SpeedTestResult { speed: 138.55 KB/s; elapsed: 537.657008ms; connection_time: 7.228416731s } -> http://ftp.icm.edu.pl/pub/Linux/dist/archlinux/
-#  26. [EE] SpeedTestResult { speed: 136.82 KB/s; elapsed: 995.917824ms; connection_time: 1.300224696s } -> http://mirror.cspacehostings.com/archlinux/
-#  27. [PL] SpeedTestResult { speed: 136.16 KB/s; elapsed: 660.243004ms; connection_time: 5.217422293s } -> http://arch.midov.pl/arch/
-#  28. [FR] SpeedTestResult { speed: 135.49 KB/s; elapsed: 841.424918ms; connection_time: 4.729358605s } -> https://mirror.oldsql.cc/archlinux/
-#  29. [DE] SpeedTestResult { speed: 134.38 KB/s; elapsed: 850.551864ms; connection_time: 4.092686061s } -> https://mirror.sunred.org/archlinux/
-#  30. [DE] SpeedTestResult { speed: 131.42 KB/s; elapsed: 821.327806ms; connection_time: 4.157200742s } -> http://ftp.hosteurope.de/mirror/ftp.archlinux.org/
-#  31. [UK] SpeedTestResult { speed: 128.41 KB/s; elapsed: 684.447209ms; connection_time: 7.286027591s } -> https://lon.mirror.rackspace.com/archlinux/
-#  32. [US] SpeedTestResult { speed: 126.98 KB/s; elapsed: 991.967775ms; connection_time: 6.082107067s } -> http://mirrors.radwebhosting.com/archlinux/
-#  33. [DE] SpeedTestResult { speed: 123.83 KB/s; elapsed: 995.718485ms; connection_time: 6.068248408s } -> http://archlinux.mirror.iphh.net/
-#  34. [DE] SpeedTestResult { speed: 117.30 KB/s; elapsed: 762.035203ms; connection_time: 4.470203794s } -> http://mirror.pagenotfound.de/archlinux/
-#  35. [UK] SpeedTestResult { speed: 112.94 KB/s; elapsed: 795.887634ms; connection_time: 3.340665057s } -> http://mirrors.melbourne.co.uk/archlinux/
-#  36. [FR] SpeedTestResult { speed: 112.30 KB/s; elapsed: 900.637726ms; connection_time: 2.025282403s } -> http://mirror.cyberbits.eu/archlinux/
-#  37. [CH] SpeedTestResult { speed: 112.10 KB/s; elapsed: 986.568477ms; connection_time: 3.412634202s } -> https://theswissbay.ch/archlinux/
-#  38. [BG] SpeedTestResult { speed: 111.12 KB/s; elapsed: 996.809399ms; connection_time: 5.21440314s } -> http://mirrors.uni-plovdiv.net/archlinux/
-#  39. [BA] SpeedTestResult { speed: 110.71 KB/s; elapsed: 870.276121ms; connection_time: 6.052016856s } -> http://archlinux.mirror.ba/
-#  40. [DE] SpeedTestResult { speed: 110.35 KB/s; elapsed: 791.76933ms; connection_time: 4.978266644s } -> http://artfiles.org/archlinux.org/
-#  41. [SE] SpeedTestResult { speed: 108.40 KB/s; elapsed: 805.365219ms; connection_time: 2.794303916s } -> http://ftp.myrveln.se/pub/linux/archlinux/
-#  42. [FR] SpeedTestResult { speed: 105.56 KB/s; elapsed: 938.770174ms; connection_time: 4.357467154s } -> https://mirror.ibakerserver.pt/Arch/
-#  43. [RO] SpeedTestResult { speed: 101.51 KB/s; elapsed: 885.619555ms; connection_time: 3.639022121s } -> http://mirrors.hostico.ro/archlinux/
-#  44. [DE] SpeedTestResult { speed: 97.92 KB/s; elapsed: 957.699485ms; connection_time: 4.921366419s } -> http://packages.oth-regensburg.de/archlinux/
-#  45. [US] SpeedTestResult { speed: 95.19 KB/s; elapsed: 944.484764ms; connection_time: 5.687299874s } -> http://mirror.wdc1.us.leaseweb.net/archlinux/
-#  46. [EC] SpeedTestResult { speed: 92.95 KB/s; elapsed: 897.98961ms; connection_time: 6.169527811s } -> http://mirror.cedia.org.ec/archlinux/
-#  47. [UA] SpeedTestResult { speed: 90.73 KB/s; elapsed: 877.344337ms; connection_time: 2.205494898s } -> http://mirror.mirohost.net/archlinux/
-#  48. [FR] SpeedTestResult { speed: 84.47 KB/s; elapsed: 850.750744ms; connection_time: 3.995200877s } -> http://mirrors.standaloneinstaller.com/archlinux/
-#  49. [US] SpeedTestResult { speed: 83.77 KB/s; elapsed: 904.074795ms; connection_time: 4.918598909s } -> http://mirror.mia11.us.leaseweb.net/archlinux/
-#  50. [ID] SpeedTestResult { speed: 83.70 KB/s; elapsed: 1.000284966s; connection_time: 6.100334793s } -> http://vpsmurah.jagoanhosting.com/archlinux/
-#  51. [CZ] SpeedTestResult { speed: 82.08 KB/s; elapsed: 994.682629ms; connection_time: 6.069092464s } -> http://mirror.it4i.cz/arch/
-#  52. [AU] SpeedTestResult { speed: 78.33 KB/s; elapsed: 950.367937ms; connection_time: 6.423968368s } -> http://gsl-syd.mm.fcix.net/archlinux/
-#  53. [TH] SpeedTestResult { speed: 77.20 KB/s; elapsed: 997.658933ms; connection_time: 6.86424341s } -> http://mirror.kku.ac.th/archlinux/
-#  54. [US] SpeedTestResult { speed: 75.32 KB/s; elapsed: 991.578602ms; connection_time: 6.064868292s } -> http://mirror.stephanie.is/archlinux/
-# FINISHED AT: 2023-08-13 20:22:07.592470711 +05:30
-Server = http://mirror.jingk.ai/archlinux/$repo/os/$arch
-Server = https://mirror.ams1.nl.leaseweb.net/archlinux/$repo/os/$arch
-Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
-Server = http://mirror.sahil.world/archlinux/$repo/os/$arch
-Server = http://mirror.ams1.nl.leaseweb.net/archlinux/$repo/os/$arch
-Server = https://mirror.neuf.no/archlinux/$repo/os/$arch
-Server = http://mirror.efect.ro/archlinux/$repo/os/$arch
-Server = http://mirror.netcologne.de/archlinux/$repo/os/$arch
-Server = http://lon.mirror.rackspace.com/archlinux/$repo/os/$arch
-Server = http://is.mirror.flokinet.net/archlinux/$repo/os/$arch
-Server = http://mirror.infernocomms.net/archlinux/$repo/os/$arch
-Server = https://mirror.mirohost.net/archlinux/$repo/os/$arch
-Server = https://mirror.2degrees.nz/archlinux/$repo/os/$arch
-Server = http://arch.kyberorg.fi/$repo/os/$arch
-Server = http://mirror.surf/archlinux/$repo/os/$arch
-Server = https://mirror.jingk.ai/archlinux/$repo/os/$arch
-Server = https://mirror.cyberbits.eu/archlinux/$repo/os/$arch
-Server = http://mirror.telepoint.bg/archlinux/$repo/os/$arch
-Server = https://arch-mirror.wtako.net/$repo/os/$arch
-Server = https://mirrors.xtom.de/archlinux/$repo/os/$arch
-Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch
-Server = http://mirror.bytemark.co.uk/archlinux/$repo/os/$arch
-Server = http://mirrors.xtom.ee/archlinux/$repo/os/$arch
+#   1. [IN] SpeedTestResult { speed: 7.45 MB/s; elapsed: 990.871908ms; connection_time: 147.432089ms } -> http://arch.niranjan.co/
+#   2. [TH] SpeedTestResult { speed: 1.26 MB/s; elapsed: 990.807996ms; connection_time: 580.168545ms } -> https://mirror.cyberbits.asia/archlinux/
+#   3. [ID] SpeedTestResult { speed: 822.30 KB/s; elapsed: 992.588227ms; connection_time: 431.92117ms } -> http://mirror.ditatompel.com/archlinux/
+#   4. [SE] SpeedTestResult { speed: 642.21 KB/s; elapsed: 969.45835ms; connection_time: 1.04900064s } -> https://mirror.osbeck.com/archlinux/
+#   5. [SG] SpeedTestResult { speed: 972.99 KB/s; elapsed: 996.972403ms; connection_time: 493.518318ms } -> http://sg.mirrors.cicku.me/archlinux/
+#   6. [FI] SpeedTestResult { speed: 892.17 KB/s; elapsed: 991.304966ms; connection_time: 2.426206265s } -> https://arch.yhtez.xyz/
+#   7. [BG] SpeedTestResult { speed: 693.19 KB/s; elapsed: 968.553655ms; connection_time: 3.582397347s } -> https://mirrors.uni-plovdiv.net/archlinux/
+#   8. [SG] SpeedTestResult { speed: 605.94 KB/s; elapsed: 960.201546ms; connection_time: 273.328669ms } -> http://mirror.jingk.ai/archlinux/
+#   9. [AT] SpeedTestResult { speed: 544.23 KB/s; elapsed: 992.739962ms; connection_time: 872.222014ms } -> https://at.arch.mirror.kescher.at/
+#  10. [IN] SpeedTestResult { speed: 512.50 KB/s; elapsed: 956.792129ms; connection_time: 2.710853671s } -> http://mirror.sahil.world/archlinux/
+#  11. [IT] SpeedTestResult { speed: 497.49 KB/s; elapsed: 789.833526ms; connection_time: 5.146946318s } -> https://archlinux.mirror.server24.net/
+#  12. [CA] SpeedTestResult { speed: 488.60 KB/s; elapsed: 999.916418ms; connection_time: 982.376802ms } -> http://ca.mirrors.cicku.me/archlinux/
+#  13. [HU] SpeedTestResult { speed: 451.32 KB/s; elapsed: 870.419756ms; connection_time: 578.606407ms } -> http://quantum-mirror.hu/mirrors/pub/archlinux/
+#  14. [MK] SpeedTestResult { speed: 447.29 KB/s; elapsed: 695.294373ms; connection_time: 1.48469168s } -> https://mirror.t-home.mk/archlinux/
+#  15. [JP] SpeedTestResult { speed: 446.38 KB/s; elapsed: 987.703826ms; connection_time: 1.905404076s } -> https://jp.mirrors.cicku.me/archlinux/
+#  16. [RO] SpeedTestResult { speed: 444.72 KB/s; elapsed: 772.817045ms; connection_time: 1.857842304s } -> https://mirrors.pidginhost.com/arch/
+#  17. [GR] SpeedTestResult { speed: 436.53 KB/s; elapsed: 914.071188ms; connection_time: 4.767246463s } -> http://ftp.otenet.gr/linux/archlinux/
+#  18. [ID] SpeedTestResult { speed: 431.40 KB/s; elapsed: 986.55189ms; connection_time: 622.486093ms } -> https://mirror.ditatompel.com/archlinux/
+#  19. [DE] SpeedTestResult { speed: 424.93 KB/s; elapsed: 809.307528ms; connection_time: 389.370161ms } -> http://mirror.moson.org/arch/
+#  20. [SE] SpeedTestResult { speed: 414.62 KB/s; elapsed: 947.379864ms; connection_time: 1.879127564s } -> http://ftp.myrveln.se/pub/linux/archlinux/
+#  21. [UZ] SpeedTestResult { speed: 413.06 KB/s; elapsed: 990.928591ms; connection_time: 1.929797693s } -> https://mirror.dc.uz/arch/
+#  22. [JP] SpeedTestResult { speed: 409.83 KB/s; elapsed: 997.025531ms; connection_time: 1.53471182s } -> http://jp.mirrors.cicku.me/archlinux/
+#  23. [HU] SpeedTestResult { speed: 403.42 KB/s; elapsed: 973.777094ms; connection_time: 1.228174548s } -> http://nova.quantum-mirror.hu/mirrors/pub/archlinux/
+#  24. [TR] SpeedTestResult { speed: 400.45 KB/s; elapsed: 980.501476ms; connection_time: 2.219975628s } -> http://mirror.timtal.com.tr/archlinux/
+#  25. [PL] SpeedTestResult { speed: 392.31 KB/s; elapsed: 834.603661ms; connection_time: 1.551695846s } -> https://arch.sakamoto.pl/
+#  26. [IT] SpeedTestResult { speed: 384.94 KB/s; elapsed: 999.737614ms; connection_time: 4.401392888s } -> http://archlinux.mirror.server24.net/
+#  27. [FR] SpeedTestResult { speed: 367.81 KB/s; elapsed: 979.281912ms; connection_time: 1.002562878s } -> https://mirror.cyberbits.eu/archlinux/
+#  28. [RO] SpeedTestResult { speed: 363.36 KB/s; elapsed: 984.671439ms; connection_time: 570.147435ms } -> http://mirrors.pidginhost.com/arch/
+#  29. [AT] SpeedTestResult { speed: 341.71 KB/s; elapsed: 936.069691ms; connection_time: 1.216974071s } -> https://arch.mirror.zachlge.org/
+#  30. [NO] SpeedTestResult { speed: 334.55 KB/s; elapsed: 880.706972ms; connection_time: 2.13723588s } -> https://mirror.neuf.no/archlinux/
+#  31. [UA] SpeedTestResult { speed: 324.84 KB/s; elapsed: 999.45217ms; connection_time: 1.439006972s } -> http://repo.hyron.dev/archlinux/
+#  32. [NO] SpeedTestResult { speed: 317.51 KB/s; elapsed: 977.577238ms; connection_time: 1.422030901s } -> http://mirror.neuf.no/archlinux/
+#  33. [BG] SpeedTestResult { speed: 311.11 KB/s; elapsed: 932.222157ms; connection_time: 2.629469043s } -> http://mirrors.uni-plovdiv.net/archlinux/
+#  34. [FI] SpeedTestResult { speed: 301.74 KB/s; elapsed: 963.855645ms; connection_time: 1.485075963s } -> http://arch.yhtez.xyz/
+#  35. [FR] SpeedTestResult { speed: 287.08 KB/s; elapsed: 823.277718ms; connection_time: 361.278477ms } -> http://mirror.cyberbits.eu/archlinux/
+#  36. [CZ] SpeedTestResult { speed: 281.04 KB/s; elapsed: 990.109475ms; connection_time: 4.669306596s } -> https://gluttony.sin.cvut.cz/arch/
+#  37. [MK] SpeedTestResult { speed: 265.62 KB/s; elapsed: 996.755578ms; connection_time: 670.743869ms } -> http://mirror.t-home.mk/archlinux/
+#  38. [NL] SpeedTestResult { speed: 258.42 KB/s; elapsed: 876.224295ms; connection_time: 392.954651ms } -> http://mirror.ams1.nl.leaseweb.net/archlinux/
+#  39. [EE] SpeedTestResult { speed: 238.36 KB/s; elapsed: 798.615825ms; connection_time: 989.087545ms } -> http://mirror.cspacehostings.com/archlinux/
+#  40. [PL] SpeedTestResult { speed: 224.11 KB/s; elapsed: 856.312973ms; connection_time: 509.360769ms } -> http://arch.sakamoto.pl/
+#  41. [SI] SpeedTestResult { speed: 217.37 KB/s; elapsed: 941.014425ms; connection_time: 2.327035795s } -> https://mirror.tux.si/arch/
+#  42. [EE] SpeedTestResult { speed: 211.06 KB/s; elapsed: 914.498347ms; connection_time: 4.087363175s } -> http://repo.br.ee/arch/
+#  43. [CH] SpeedTestResult { speed: 209.58 KB/s; elapsed: 920.581971ms; connection_time: 633.021607ms } -> http://mirror.init7.net/archlinux/
+#  44. [UZ] SpeedTestResult { speed: 199.35 KB/s; elapsed: 768.20858ms; connection_time: 1.251253932s } -> http://mirror.dc.uz/arch/
+#  45. [UA] SpeedTestResult { speed: 195.32 KB/s; elapsed: 987.850727ms; connection_time: 2.018576231s } -> http://mirror.mirohost.net/archlinux/
+#  46. [TR] SpeedTestResult { speed: 195.26 KB/s; elapsed: 998.702633ms; connection_time: 1.95991518s } -> http://ftp.linux.org.tr/archlinux/
+#  47. [CH] SpeedTestResult { speed: 175.99 KB/s; elapsed: 929.232187ms; connection_time: 1.988918332s } -> https://mirror.worldhotspot.org/archlinux/
+#  48. [CZ] SpeedTestResult { speed: 126.88 KB/s; elapsed: 992.70784ms; connection_time: 3.958322634s } -> http://gluttony.sin.cvut.cz/arch/
+#  49. [DE] SpeedTestResult { speed: 125.58 KB/s; elapsed: 651.715792ms; connection_time: 423.516334ms } -> http://archlinux.thaller.ws/
+#  50. [SI] SpeedTestResult { speed: 107.54 KB/s; elapsed: 955.406833ms; connection_time: 1.588773925s } -> http://mirror.tux.si/arch/
+#  51. [CA] SpeedTestResult { speed: 106.07 KB/s; elapsed: 707.904487ms; connection_time: 2.367860775s } -> https://mirror.qctronics.com/archlinux/
+#  52. [TH] SpeedTestResult { speed: 95.11 KB/s; elapsed: 823.378472ms; connection_time: 567.953743ms } -> http://mirror.kku.ac.th/archlinux/
+#  53. [HK] SpeedTestResult { speed: 87.53 KB/s; elapsed: 929.789257ms; connection_time: 1.923122533s } -> https://mirror.xtom.com.hk/archlinux/
+#  54. [US] SpeedTestResult { speed: 78.51 KB/s; elapsed: 996.858421ms; connection_time: 603.938607ms } -> http://arch.hu.fo/archlinux/
+# FINISHED AT: 2024-07-06 11:15:54.358380631 +05:30
+Server = http://arch.niranjan.co/$repo/os/$arch
+Server = https://mirror.cyberbits.asia/archlinux/$repo/os/$arch
 Server = http://mirror.ditatompel.com/archlinux/$repo/os/$arch
-Server = http://ftp.icm.edu.pl/pub/Linux/dist/archlinux/$repo/os/$arch
-Server = http://mirror.cspacehostings.com/archlinux/$repo/os/$arch
-Server = http://arch.midov.pl/arch/$repo/os/$arch
-Server = https://mirror.oldsql.cc/archlinux/$repo/os/$arch
-Server = https://mirror.sunred.org/archlinux/$repo/os/$arch
-Server = http://ftp.hosteurope.de/mirror/ftp.archlinux.org/$repo/os/$arch
-Server = https://lon.mirror.rackspace.com/archlinux/$repo/os/$arch
-Server = http://mirrors.radwebhosting.com/archlinux/$repo/os/$arch
-Server = http://archlinux.mirror.iphh.net/$repo/os/$arch
-Server = http://mirror.pagenotfound.de/archlinux/$repo/os/$arch
-Server = http://mirrors.melbourne.co.uk/archlinux/$repo/os/$arch
-Server = http://mirror.cyberbits.eu/archlinux/$repo/os/$arch
-Server = https://theswissbay.ch/archlinux/$repo/os/$arch
-Server = http://mirrors.uni-plovdiv.net/archlinux/$repo/os/$arch
-Server = http://archlinux.mirror.ba/$repo/os/$arch
-Server = http://artfiles.org/archlinux.org/$repo/os/$arch
+Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
+Server = http://sg.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = https://arch.yhtez.xyz/$repo/os/$arch
+Server = https://mirrors.uni-plovdiv.net/archlinux/$repo/os/$arch
+Server = http://mirror.jingk.ai/archlinux/$repo/os/$arch
+Server = https://at.arch.mirror.kescher.at/$repo/os/$arch
+Server = http://mirror.sahil.world/archlinux/$repo/os/$arch
+Server = https://archlinux.mirror.server24.net/$repo/os/$arch
+Server = http://ca.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = http://quantum-mirror.hu/mirrors/pub/archlinux/$repo/os/$arch
+Server = https://mirror.t-home.mk/archlinux/$repo/os/$arch
+Server = https://jp.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = https://mirrors.pidginhost.com/arch/$repo/os/$arch
+Server = http://ftp.otenet.gr/linux/archlinux/$repo/os/$arch
+Server = https://mirror.ditatompel.com/archlinux/$repo/os/$arch
+Server = http://mirror.moson.org/arch/$repo/os/$arch
 Server = http://ftp.myrveln.se/pub/linux/archlinux/$repo/os/$arch
-Server = https://mirror.ibakerserver.pt/Arch/$repo/os/$arch
-Server = http://mirrors.hostico.ro/archlinux/$repo/os/$arch
-Server = http://packages.oth-regensburg.de/archlinux/$repo/os/$arch
-Server = http://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch
-Server = http://mirror.cedia.org.ec/archlinux/$repo/os/$arch
+Server = https://mirror.dc.uz/arch/$repo/os/$arch
+Server = http://jp.mirrors.cicku.me/archlinux/$repo/os/$arch
+Server = http://nova.quantum-mirror.hu/mirrors/pub/archlinux/$repo/os/$arch
+Server = http://mirror.timtal.com.tr/archlinux/$repo/os/$arch
+Server = https://arch.sakamoto.pl/$repo/os/$arch
+Server = http://archlinux.mirror.server24.net/$repo/os/$arch
+Server = https://mirror.cyberbits.eu/archlinux/$repo/os/$arch
+Server = http://mirrors.pidginhost.com/arch/$repo/os/$arch
+Server = https://arch.mirror.zachlge.org/$repo/os/$arch
+Server = https://mirror.neuf.no/archlinux/$repo/os/$arch
+Server = http://repo.hyron.dev/archlinux/$repo/os/$arch
+Server = http://mirror.neuf.no/archlinux/$repo/os/$arch
+Server = http://mirrors.uni-plovdiv.net/archlinux/$repo/os/$arch
+Server = http://arch.yhtez.xyz/$repo/os/$arch
+Server = http://mirror.cyberbits.eu/archlinux/$repo/os/$arch
+Server = https://gluttony.sin.cvut.cz/arch/$repo/os/$arch
+Server = http://mirror.t-home.mk/archlinux/$repo/os/$arch
+Server = http://mirror.ams1.nl.leaseweb.net/archlinux/$repo/os/$arch
+Server = http://mirror.cspacehostings.com/archlinux/$repo/os/$arch
+Server = http://arch.sakamoto.pl/$repo/os/$arch
+Server = https://mirror.tux.si/arch/$repo/os/$arch
+Server = http://repo.br.ee/arch/$repo/os/$arch
+Server = http://mirror.init7.net/archlinux/$repo/os/$arch
+Server = http://mirror.dc.uz/arch/$repo/os/$arch
 Server = http://mirror.mirohost.net/archlinux/$repo/os/$arch
-Server = http://mirrors.standaloneinstaller.com/archlinux/$repo/os/$arch
-Server = http://mirror.mia11.us.leaseweb.net/archlinux/$repo/os/$arch
-Server = http://vpsmurah.jagoanhosting.com/archlinux/$repo/os/$arch
-Server = http://mirror.it4i.cz/arch/$repo/os/$arch
-Server = http://gsl-syd.mm.fcix.net/archlinux/$repo/os/$arch
+Server = http://ftp.linux.org.tr/archlinux/$repo/os/$arch
+Server = https://mirror.worldhotspot.org/archlinux/$repo/os/$arch
+Server = http://gluttony.sin.cvut.cz/arch/$repo/os/$arch
+Server = http://archlinux.thaller.ws/$repo/os/$arch
+Server = http://mirror.tux.si/arch/$repo/os/$arch
+Server = https://mirror.qctronics.com/archlinux/$repo/os/$arch
 Server = http://mirror.kku.ac.th/archlinux/$repo/os/$arch
-Server = http://mirror.stephanie.is/archlinux/$repo/os/$arch
+Server = https://mirror.xtom.com.hk/archlinux/$repo/os/$arch
+Server = http://arch.hu.fo/archlinux/$repo/os/$arch

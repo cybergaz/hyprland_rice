@@ -38,7 +38,7 @@ ___
 ## Essential packages (afaik) :
 
 ```
-make wlroots wayland-protocols pkgconf ninja patch catch2 waybar-hyprland-git brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr grim slurp sddm hyprland-git foot
+make wlroots wayland-protocols pkgconf ninja patch catch2 waybar brightnessctl pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber xdg-desktop-portal-wlr hyprland
 
 ```
 <br>
@@ -126,7 +126,7 @@ gsettings set org.gnome.desktop.interface cursor-theme {theme-folder}
 ### GRUB theme
 1. Download and place at : `/usr/share/grub/themes/`            
 2. then just edit `/etc/default/grub` : GRUB_THEME=`/usr/share/grub/themes/{theme_name}/theme.txt`      
-3. a lil `grub-update` and you are good to go           
+3. a lil `update-grub` and you are good to go           
 
 <br>
 
@@ -208,11 +208,11 @@ systemctl --user start pipewire.service
 ```
 ---
 
-* If you are facing bluetooth headset `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol
+* If you are facing bluetooth headset's `mic` related issue , then `try changing profile to HSP/HFP` using pavucontrol or pactl
 ---
 
 * To adjust the `ownership and permissions of drives` :    
-* * mount the partition first at desired location say /mnt and then the following commands   
+* * mount the partition at desired location say /mnt and then the following commands   
 ```
 sudo chown -R yourusername:yourusername /mnt
 sudo chmod -R u+w /mnt
@@ -263,7 +263,7 @@ sudo pacman -S archlinux-keyring
 ```
 
 ---
-#### incorrect password limit
+#### 'incorrect password' limit
 + open `/etc/security/faillock.conf` file and look for variable **deny and unlock-time** and change them accordingly
 
 

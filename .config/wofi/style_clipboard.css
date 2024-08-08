@@ -72,6 +72,6 @@ window {
     /* background: rgba(255,255,255,0.15); */
     padding-left: 10px;
     background: linear-gradient(60deg,transparent, rgba(255,255,255,0.05) ,transparent,transparent,transparent);
-    border-left: 2px solid rgba(220, 220, 220, 0.6);
+    border-left: 2px solid #5ea1ff;
 }
 

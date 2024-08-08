@@ -11,10 +11,12 @@ if status is-interactive
     alias l="exa -la"
     alias grep="rg"
     alias unzip="ripunzip unzip-file"
-    alias cp="xcp"
+    alias cp="xcp -r"
 
     alias vim="nvim"
     alias nv="nvim"
+    alias lv="nvim -c 'lua require(\"persistence\").load()'"
+    alias sv="nvim -c 'lua require(\"persistence\").select()'"
     alias sunv="sudo -E -s nvim"
     alias svim="sudo -E -s nvim"
     alias tm="tmux"
@@ -27,11 +29,11 @@ if status is-interactive
     alias niriconf="nvim ~/.config/niri/config.kdl"
 
     alias rat='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
-    alias yy='yay -S'
-    alias yr='yay -R'
-    alias yrc='yay -Rsc'
+    alias yin='yay -S --answerclean All --answerdiff None --answeredit None'
+    alias yun='yay -R'
     alias ariad='aria2c -s 32 -x 16'
-    alias ariar='aria2c -s 32 -x 16 -c'
+    alias ariac='aria2c -s 32 -x 16 -c'
+    alias zad='cd $HOME/Downloads/ ; aria2c -s 32 -x 16 -c'
 
     alias lokate="sudo updatedb && sudo locate"
     alias piper-play="piper-tts --model $HOME/.local/en_US-hfc_female-medium.onnx --output_file /tmp/temp_piper_audio.wav && mpv /tmp/temp_piper_audio.wav"
@@ -39,9 +41,9 @@ if status is-interactive
     alias winmount="sudo mkdir -p /run/media/gaz/windows_mount ; sudo mount /dev/nvme0n1p3 /run/media/gaz/windows_mount"
     alias budsbattery='echo "$(bluetoothctl info | grep "Name:" | cut -b 8-)  ->  $(bluetoothctl info | grep "Battery" | sed "s/.*(\([0-9]\+\))/\1/") %"'
 
-    alias netscan="iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') scan on ; iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') get-networks"
-    alias netconnect="iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') connect"
-    alias netdevice="iwctl device $(iwctl device list | tail -n +5 | awk '{ print($2) }') set-property Powered"
+    alias nscan="iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') scan on ; iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') get-networks"
+    alias nconn="iwctl station $(iwctl device list | tail -n +5 | awk '{ print($2) }') connect"
+    alias ndev="iwctl device $(iwctl device list | tail -n +5 | awk '{ print($2) }') set-property Powered"
     alias warpon="sh $HOME/scripts/warp_start.sh"
     alias warpoff="sh $HOME/scripts/warp_stop.sh"
 
@@ -50,6 +52,7 @@ if status is-interactive
     # -------------------------------------------------------------------------
     alias gittoken="cat $HOME/Desktop/workspace/my_token | wl-copy -n"
     alias gcl="git clone"
+    alias gcld="git clone --depth 1"
     alias gcm="git commit -m"
     alias ga="git add"
     alias gps="git push"
@@ -101,11 +104,23 @@ if status is-interactive
 
         set user (whoami)
 
-        random choice "...:: welcome back hehhee sir ::..." "..:: hi $user , welcome again ::.." "..:: $gt $user , what do you have for me  ::.." "...:: here you go ::..." "Hello $user..::..How are you?" "..:: on your demand boss ::.." "..:: ready to receive commands sir ::.." "...:: hello $user , $gt ::..." "..:: $gt sir ::.." "..:: ready for action as always ::.." "..:: Hungry for commands boss ::.." "..:: $gt $user , what's next?" "..:: nice to see you again $user ::..." "..:: $gt $user , how are you ::.." "..:: welcome back sir ::.." "..:: what do you want ::.." "..:: just type it ::.." "..:: give me a command already ::.." "..:: hello mr $user , $gt to you ::.." "..:: what do you want this time huh ::.." "..:: at your service sir ::.." "..:: $gt sir , where have you been this whole time sir ::.." "..:: put it on fire ::.." | lolcat
+        echo "$(random choice "...:: welcome back sir ::..." "..:: hi $user , welcome once again ::.." "..:: $gt $user , what do you have for me  ::.." "...:: here you go ::..." "Hello $user..::..How are you?" "..:: on your demand boss ::.." "..:: ready to receive commands sir ::.." "...:: hello $user , $gt ::..." "..:: $gt sir ::.." "..:: ready for action as always ::.." "..:: Hungry for commands boss ::.." "..:: $gt $user , what's next?" "..:: nice to see you again $user ::..." "..:: $gt $user , how are you ::.." "..:: welcome back sir ::.." "..:: what do you want ::.." "..:: just type it ::.." "..:: give me a command already ::.." "..:: hello mr $user , $gt to you ::.." "..:: what do you want this time huh ::.." "..:: at your service sir ::.." "..:: $gt sir , where have you been this whole time sir ::.." "..:: put it on fire ::..")   ( you have $(wc -l $HOME/.tasks | awk '{ print $1 }') tasks pending ) "| lolcat
+        # echo "{ you have $(wc -l $HOME/.tasks | awk '{ print $1 }') tasks pending }"
 
         # echo $li[(math (random) % (count $li))] | lolcat
+    end
+
+    # tasks
+    alias lstsk="sh $HOME/scripts/tasks.sh"
+    alias etsk="nv $HOME/.tasks"
+    function rmtsk
+        sed -i "$argv[1]d" $HOME/.tasks
+    end
+    function addtsk
+        echo "$argv[1]" >> $HOME/.tasks
     end
 
 end
 
 # Non-interactive mode is used when the shell is executing a script or commands without direct user interaction.
+# set -ax PATH ~/go/bin
