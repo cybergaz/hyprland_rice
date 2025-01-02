@@ -23,7 +23,7 @@ white = "#cdd6f4"
 yellow = "#f09383"
 
 [colors.primary]
-background = "#000000"
+background = "#04080c"
 foreground = "#d0e0f0"
 
 [colors.vi_mode_cursor]
@@ -51,7 +51,7 @@ TERM = "xterm-256color"
 size = 12.0
 
 [font.normal]
-family = "JetBrainsMono"
+family = "Maple Mono"
 style = "regular"
 
 [selection]
@@ -59,7 +59,7 @@ save_to_clipboard = true
 
 [window]
 decorations = "none"
-opacity = 0.7
+opacity = 0.8
 
 [window.dimensions]
 columns = 115

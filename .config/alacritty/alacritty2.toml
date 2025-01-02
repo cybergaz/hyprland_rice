@@ -46,7 +46,7 @@ TERM = "xterm-256color"
 size = 12
 
 [font.normal]
-family = "jetbrains mono"
+family = "Maple Mono"
 style = "regular"
 
 [[keyboard.bindings]]
