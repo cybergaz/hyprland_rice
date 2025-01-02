@@ -7,9 +7,10 @@ window {
 
 #outer-box {
     padding: 0 5px;
-    background-color: rgba(0,0,0,0.30);
-    /* border-radius: 10px; */
-    /* border: 1px solid rgba(220, 220, 220, 0.1); */
+    background-color: rgba(9, 16, 20,0.3);
+    /* opacity: 0.2; */
+    border-radius: 15px;
+    border: 2px solid rgba(79, 87, 87 ,0.8);
 }
 
 #input {
