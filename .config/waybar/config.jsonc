@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "width": 1750,
-    "margin-top": 2,
+    "width": 1700,
+    "margin-top": 4,
     "gtk-layer-shell": true,
     // "reload_style_on_change": true,
     "fixed-center": true,
@@ -12,6 +12,8 @@
     // "spacing": 2,
     "modules-left": [
         "hyprland/workspaces",
+        "niri/workspaces",
+        // "niri/window",
         "custom/player"
     ],
     "modules-center": [
@@ -29,6 +31,7 @@
         "pulseaudio",
         "battery",
     ],
+
     "hyprland/workspaces": {
         "active-only": false,
         "all-outputs": true,
@@ -43,6 +46,31 @@
         //   // "default": ""
         // }
     },
+
+    "niri/workspaces": {
+        "format": "{value}",
+        "format-icons": {
+            // Named workspaces
+            // (you need to configure them in niri)
+            "browser": "",
+            "discord": "",
+            "chat": "<b></b>",
+
+            // Icons by state
+            "active": "",
+            "default": ""
+        }
+    },
+    //
+    // "niri/window": {
+    //     "format": "{}",
+    //         "icon": true,
+    //     "rewrite": {
+    //         "(.*) - Mozilla Firefox": "🌎 $1",
+    //         "(.*) - fish": "> [$1]"
+    //     }
+    // },
+
 
     "custom/player": {
         "interval": 5,
@@ -79,6 +107,7 @@
     "clock": {
         "interval": 1,
         "format": "{:%H:%M:%S  %a %d %B}",
+        "tooltip": false,
         // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "on-click": "$HOME/scripts/waybar/wallpapers_v2.sh",
         "on-click-right": "alacritty -T fast -e fast"

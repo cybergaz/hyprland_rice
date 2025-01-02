@@ -8,7 +8,7 @@
 
 window#waybar {
     background: rgba(0,0,0,0.3);
-    border-radius: 15px;
+    border-radius: 50px;
     /* border: 0.5px solid gray; */
 }
 
@@ -41,6 +41,13 @@ tooltip {
     font-size: 18px;
 }
 
+#custom-workspaces {
+    border-radius: 20px; 
+    padding: 6px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
 #custom-player {
     /* background-color : rgba(94, 161, 255,0.3); */
     padding-left: 10px;
