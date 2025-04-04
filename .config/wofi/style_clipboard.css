@@ -7,32 +7,35 @@ window {
 
 #outer-box {
     padding: 0 5px;
-    background-color: rgba(9, 16, 20,0.3);
+    background-color: rgba(9, 16, 20, 0.96);
     /* opacity: 0.2; */
     border-radius: 15px;
-    border: 2px solid rgba(79, 87, 87 ,0.8);
+    /* border: 2px solid rgba(79, 87, 87, 0.8); */
 }
 
 #input {
     color: #d6d6d6;
     font-size: 15px;
     padding: 0px 15px 0px 20px;
-    margin: 0px 8px 0px 8px ;
-    background-color: rgba(0,0,0,0);
+    margin: 0px 8px 0px 8px;
+    background-color: rgba(0, 0, 0, 0);
     /* background: rgba(255,255,255,0.04); */
     border-radius: 30px;
 
 }
+
 #input:focus {
-    transition-duration:0.3s;
-    background: rgba(255,255,255,0.04);
+    transition-duration: 0.3s;
+    background: rgba(255, 255, 255, 0.04);
 }
+
 /* #input > image.left { */
 /*     -gtk-icon-transform:scaleX(0); */
 /* } */
-#input > image.right {
-    -gtk-icon-transform:scaleX(0);
+#input>image.right {
+    -gtk-icon-transform: scaleX(0);
 }
+
 /* #input > image { */
 /*     -gtk-icon-transform:scalex(0); */
 /* } */
@@ -55,8 +58,9 @@ window {
 
 #text {
     color: #a2acb0;
-    padding-left : 15px;
+    padding-left: 15px;
 }
+
 #text:selected {
     color: #ffffff;
 }
@@ -68,11 +72,11 @@ window {
     margin-bottom: 12px;
     border-radius: 0px;
 }
+
 #entry:selected {
-    transition-duration:0.1s;
+    transition-duration: 0.1s;
     /* background: rgba(255,255,255,0.15); */
     padding-left: 10px;
-    background: linear-gradient(60deg,transparent, rgba(255,255,255,0.05) ,transparent,transparent,transparent);
+    background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.05), transparent, transparent, transparent);
     border-left: 2px solid #5ea1ff;
 }
-
